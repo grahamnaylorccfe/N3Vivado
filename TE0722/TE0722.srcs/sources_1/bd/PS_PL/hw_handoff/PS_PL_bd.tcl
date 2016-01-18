@@ -190,10 +190,10 @@ proc create_root_design { parentCell } {
 
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.1 clk_wiz_0 ]
-  set_property -dict [ list CONFIG.CLKIN1_JITTER_PS {200.0} CONFIG.CLKOUT1_JITTER {208.390} CONFIG.CLKOUT1_PHASE_ERROR {159.814} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {33} CONFIG.MMCM_CLKFBOUT_MULT_F {20.625} CONFIG.MMCM_CLKIN1_PERIOD {20.0} CONFIG.MMCM_CLKOUT0_DIVIDE_F {31.250} CONFIG.PRIM_IN_FREQ {50.000} CONFIG.RESET_PORT {resetn} CONFIG.RESET_TYPE {ACTIVE_LOW}  ] $clk_wiz_0
+  set_property -dict [ list CONFIG.CLKIN1_JITTER_PS {200.0} CONFIG.CLKOUT1_JITTER {355.349} CONFIG.CLKOUT1_PHASE_ERROR {294.178} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {48.517} CONFIG.PRIM_IN_FREQ {50.000} CONFIG.RESET_TYPE {ACTIVE_LOW}  ] $clk_wiz_0
 
   # Create instance: n3_te0722_0, and set properties
-  set n3_te0722_0 [ create_bd_cell -type ip -vlnv AssociationNicola:SysGen:n3_te0722:1.06 n3_te0722_0 ]
+  set n3_te0722_0 [ create_bd_cell -type ip -vlnv AssociationNicola:SysGen:n3_te0722:1.10 n3_te0722_0 ]
 
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]

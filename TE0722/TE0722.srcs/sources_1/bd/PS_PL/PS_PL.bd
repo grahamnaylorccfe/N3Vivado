@@ -1012,10 +1012,10 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">PS_PL_clk_wiz_0_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PRIM_IN_FREQ">50.000</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CLKIN1_JITTER_PS">200.0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_REQUESTED_OUT_FREQ">33</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_REQUESTED_OUT_FREQ">48.517</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="RESET_TYPE">ACTIVE_LOW</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_JITTER">208.390</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_PHASE_ERROR">159.814</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_JITTER">355.349</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_PHASE_ERROR">294.178</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -1027,7 +1027,7 @@
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>n3_te0722_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="SysGen" spirit:name="n3_te0722" spirit:vendor="AssociationNicola" spirit:version="1.06"/>
+        <spirit:componentRef spirit:library="SysGen" spirit:name="n3_te0722" spirit:vendor="AssociationNicola" spirit:version="1.10"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">PS_PL_n3_te0722_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>

@@ -68,10 +68,10 @@ set rc [catch {
   set_property processing_order EARLY [get_files /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_clk_wiz_0_0/PS_PL_clk_wiz_0_0.xdc]
   read_xdc -ref n3_te0722_fifo_generator_v12_0_0 -cells U0 /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_fifo_generator_v12_0_0/n3_te0722_fifo_generator_v12_0_0/n3_te0722_fifo_generator_v12_0_0.xdc
   set_property processing_order EARLY [get_files /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_fifo_generator_v12_0_0/n3_te0722_fifo_generator_v12_0_0/n3_te0722_fifo_generator_v12_0_0.xdc]
-  read_xdc -ref PS_PL_n3_te0722_0_0 -cells U0 /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/ipshared/AssociationNicola/n3_te0722_v1_06/92f19804/constrs/n3_te0722_clock.xdc
-  set_property processing_order EARLY [get_files /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/ipshared/AssociationNicola/n3_te0722_v1_06/92f19804/constrs/n3_te0722_clock.xdc]
-  read_xdc -ref PS_PL_n3_te0722_0_0 -cells U0 /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/ipshared/AssociationNicola/n3_te0722_v1_06/92f19804/constrs/n3_te0722.xdc
-  set_property processing_order EARLY [get_files /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/ipshared/AssociationNicola/n3_te0722_v1_06/92f19804/constrs/n3_te0722.xdc]
+  read_xdc -ref PS_PL_n3_te0722_0_0 -cells U0 /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/ipshared/AssociationNicola/n3_te0722_v1_10/c5929fa4/constrs/n3_te0722_clock.xdc
+  set_property processing_order EARLY [get_files /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/ipshared/AssociationNicola/n3_te0722_v1_10/c5929fa4/constrs/n3_te0722_clock.xdc]
+  read_xdc -ref PS_PL_n3_te0722_0_0 -cells U0 /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/ipshared/AssociationNicola/n3_te0722_v1_10/c5929fa4/constrs/n3_te0722.xdc
+  set_property processing_order EARLY [get_files /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/ipshared/AssociationNicola/n3_te0722_v1_10/c5929fa4/constrs/n3_te0722.xdc]
   read_xdc /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/constrs_1/imports/VivadoProject/n3_te0722a5_clock.xdc
   link_design -top PS_PL_wrapper -part xc7z010clg225-1
   close_msg_db -file init_design.pb

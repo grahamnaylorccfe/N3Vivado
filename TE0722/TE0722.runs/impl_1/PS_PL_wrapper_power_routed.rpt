@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date             : Thu Jan 14 20:26:28 2016
+| Date             : Mon Jan 18 17:11:33 2016
 | Host             : graham-Latitude-E5500 running 64-bit unknown
 | Command          : report_power -file PS_PL_wrapper_power_routed.rpt -pb PS_PL_wrapper_power_summary_routed.pb
 | Design           : PS_PL_wrapper
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.897 |
-| Dynamic (W)              | 0.785 |
+| Total On-Chip Power (W)  | 0.886 |
+| Dynamic (W)              | 0.774 |
 | Device Static (W)        | 0.112 |
 | Effective TJA (C/W)      | 11.5  |
-| Max Ambient (C)          | 74.7  |
-| Junction Temperature (C) | 35.3  |
+| Max Ambient (C)          | 74.8  |
+| Junction Temperature (C) | 35.2  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,23 +49,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.004 |        6 |       --- |             --- |
-| Slice Logic              |     0.005 |     6879 |       --- |             --- |
-|   LUT as Logic           |     0.004 |     1776 |     17600 |           10.09 |
+| Clocks                   |     0.005 |        6 |       --- |             --- |
+| Slice Logic              |     0.007 |     6917 |       --- |             --- |
+|   LUT as Logic           |     0.005 |     1771 |     17600 |           10.06 |
 |   LUT as Distributed RAM |    <0.001 |      240 |      6000 |            4.00 |
-|   CARRY4                 |    <0.001 |      297 |      4400 |            6.75 |
-|   Register               |    <0.001 |     2668 |     35200 |            7.57 |
+|   CARRY4                 |    <0.001 |      300 |      4400 |            6.81 |
+|   Register               |    <0.001 |     2670 |     35200 |            7.58 |
 |   F7/F8 Muxes            |    <0.001 |      163 |     17600 |            0.92 |
-|   LUT as Shift Register  |    <0.001 |       78 |      6000 |            1.30 |
-|   Others                 |     0.000 |     1095 |       --- |             --- |
-| Signals                  |     0.006 |     4125 |       --- |             --- |
-| Block RAM                |     0.007 |     12.5 |        60 |           20.83 |
-| MMCM                     |     0.124 |        1 |         2 |           50.00 |
-| DSPs                     |    <0.001 |        3 |        80 |            3.75 |
-| I/O                      |     0.003 |       44 |        54 |           81.48 |
+|   LUT as Shift Register  |    <0.001 |       86 |      6000 |            1.43 |
+|   Others                 |     0.000 |     1121 |       --- |             --- |
+| Signals                  |     0.008 |     4125 |       --- |             --- |
+| Block RAM                |     0.011 |     12.5 |        60 |           20.83 |
+| MMCM                     |     0.102 |        1 |         2 |           50.00 |
+| DSPs                     |     0.001 |        3 |        80 |            3.75 |
+| I/O                      |     0.005 |       44 |        54 |           81.48 |
 | PS7                      |     0.635 |        1 |       --- |             --- |
 | Static Power             |     0.112 |          |           |                 |
-| Total                    |     0.897 |          |           |                 |
+| Total                    |     0.886 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,8 +75,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.027 |       0.022 |      0.005 |
-| Vccaux    |       1.800 |     0.080 |       0.069 |      0.011 |
+| Vccint    |       1.000 |     0.037 |       0.032 |      0.005 |
+| Vccaux    |       1.800 |     0.068 |       0.057 |      0.011 |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -84,7 +84,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.001 |       0.001 |      0.001 |
+| Vccbram   |       1.000 |     0.002 |       0.001 |      0.001 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -140,8 +140,8 @@ Table of Contents
 +----------------------------+----------------------------------------------------------+-----------------+
 | clk_fpga_0                 | PS_PL_i/processing_system7_0/inst/FCLK_CLK0              |            20.0 |
 | clk_fpga_0                 | PS_PL_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0] |            20.0 |
-| clk_out1_PS_PL_clk_wiz_0_0 | PS_PL_i/clk_wiz_0/inst/clk_out1_PS_PL_clk_wiz_0_0        |            30.3 |
-| clkfbout_PS_PL_clk_wiz_0_0 | PS_PL_i/clk_wiz_0/inst/clkfbout_PS_PL_clk_wiz_0_0        |            20.0 |
+| clk_out1_PS_PL_clk_wiz_0_0 | PS_PL_i/clk_wiz_0/inst/clk_out1_PS_PL_clk_wiz_0_0        |            20.6 |
+| clkfbout_PS_PL_clk_wiz_0_0 | PS_PL_i/clk_wiz_0/inst/clkfbout_PS_PL_clk_wiz_0_0        |            40.0 |
 +----------------------------+----------------------------------------------------------+-----------------+
 
 
@@ -154,15 +154,15 @@ Table of Contents
 +-------------------------------------------------------------------+-----------+
 | Name                                                              | Power (W) |
 +-------------------------------------------------------------------+-----------+
-| PS_PL_wrapper                                                     |     0.785 |
-|   PS_PL_i                                                         |     0.781 |
+| PS_PL_wrapper                                                     |     0.774 |
+|   PS_PL_i                                                         |     0.769 |
 |     JTAG_Monitor_0                                                |    <0.001 |
 |       U0                                                          |    <0.001 |
-|     clk_wiz_0                                                     |     0.124 |
-|       inst                                                        |     0.124 |
-|     n3_te0722_0                                                   |     0.022 |
-|       U0                                                          |     0.022 |
-|         n3_te0722_struct                                          |     0.022 |
+|     clk_wiz_0                                                     |     0.102 |
+|       inst                                                        |     0.102 |
+|     n3_te0722_0                                                   |     0.032 |
+|       U0                                                          |     0.032 |
+|         n3_te0722_struct                                          |     0.032 |
 |           adcread                                                 |    <0.001 |
 |             subsystem1                                            |    <0.001 |
 |               delay1                                              |    <0.001 |
@@ -231,11 +231,11 @@ Table of Contents
 |                 inst_blk_mem_gen                                  |     0.002 |
 |                   gnativebmg.native_blk_mem_gen                   |     0.002 |
 |                     valid.cstr                                    |     0.002 |
-|                       ramloop[0].ram.r                            |    <0.001 |
-|                         prim_init.ram                             |    <0.001 |
-|                       ramloop[1].ram.r                            |    <0.001 |
-|                         prim_init.ram                             |    <0.001 |
-|           btinterface                                             |     0.003 |
+|                       ramloop[0].ram.r                            |     0.001 |
+|                         prim_init.ram                             |     0.001 |
+|                       ramloop[1].ram.r                            |     0.001 |
+|                         prim_init.ram                             |     0.001 |
+|           btinterface                                             |     0.004 |
 |             black_box2                                            |    <0.001 |
 |               data_present_lut                                    |    <0.001 |
 |               div01_lut                                           |    <0.001 |
@@ -264,24 +264,24 @@ Table of Contents
 |                             gdm.dm                                |    <0.001 |
 |                               RAM_reg_0_15_0_5                    |    <0.001 |
 |                               RAM_reg_0_15_6_7                    |    <0.001 |
-|             dual_port_ram                                         |    <0.001 |
-|               comp1.core_instance1                                |    <0.001 |
-|                 U0                                                |    <0.001 |
-|                   inst_blk_mem_gen                                |    <0.001 |
-|                     gnativebmg.native_blk_mem_gen                 |    <0.001 |
-|                       valid.cstr                                  |    <0.001 |
+|             dual_port_ram                                         |     0.001 |
+|               comp1.core_instance1                                |     0.001 |
+|                 U0                                                |     0.001 |
+|                   inst_blk_mem_gen                                |     0.001 |
+|                     gnativebmg.native_blk_mem_gen                 |     0.001 |
+|                       valid.cstr                                  |     0.001 |
 |                         ramloop[0].ram.r                          |    <0.001 |
 |                           prim_init.ram                           |    <0.001 |
 |                         ramloop[1].ram.r                          |    <0.001 |
 |                           prim_init.ram                           |    <0.001 |
-|             dual_port_ram1                                        |    <0.001 |
-|               comp2.core_instance2                                |    <0.001 |
-|                 U0                                                |    <0.001 |
-|                   inst_blk_mem_gen                                |    <0.001 |
-|                     gnativebmg.native_blk_mem_gen                 |    <0.001 |
-|                       valid.cstr                                  |    <0.001 |
-|                         ramloop[0].ram.r                          |    <0.001 |
-|                           prim_init.ram                           |    <0.001 |
+|             dual_port_ram1                                        |     0.001 |
+|               comp2.core_instance2                                |     0.001 |
+|                 U0                                                |     0.001 |
+|                   inst_blk_mem_gen                                |     0.001 |
+|                     gnativebmg.native_blk_mem_gen                 |     0.001 |
+|                       valid.cstr                                  |     0.001 |
+|                         ramloop[0].ram.r                          |     0.001 |
+|                           prim_init.ram                           |     0.001 |
 |             monostable                                            |    <0.001 |
 |               delay1                                              |    <0.001 |
 |                 srl_delay.synth_reg_srl_inst                      |    <0.001 |
@@ -326,7 +326,7 @@ Table of Contents
 |                 register1                                         |    <0.001 |
 |                   synth_reg_inst                                  |    <0.001 |
 |                     latency_gt_0.fd_array[1].reg_comp             |    <0.001 |
-|             picoblaze6                                            |     0.001 |
+|             picoblaze6                                            |     0.002 |
 |               address_loop[0].output_data.pc_vector_mux_lut       |    <0.001 |
 |               address_loop[10].output_data.pc_vector_mux_lut      |    <0.001 |
 |               address_loop[2].output_data.pc_vector_mux_lut       |    <0.001 |
@@ -480,18 +480,34 @@ Table of Contents
 |             synth_reg_inst                                        |    <0.001 |
 |               latency_gt_0.fd_array[1].reg_comp                   |    <0.001 |
 |           dac_xapp154                                             |    <0.001 |
-|             delta_adder                                           |    <0.001 |
-|             r1                                                    |    <0.001 |
-|               synth_reg_inst                                      |    <0.001 |
-|                 latency_gt_0.fd_array[1].reg_comp                 |    <0.001 |
+|             counter                                               |    <0.001 |
+|               comp2.core_instance2                                |    <0.001 |
+|                 U0                                                |    <0.001 |
+|                   i_synth                                         |    <0.001 |
+|                     i_baseblox.i_baseblox_counter                 |    <0.001 |
+|                       the_addsub                                  |    <0.001 |
+|                         no_pipelining.the_addsub                  |    <0.001 |
+|                           i_lut6.i_lut6_addsub                    |    <0.001 |
+|                             i_q.i_simple.qreg                     |    <0.001 |
 |             register1                                             |    <0.001 |
 |               synth_reg_inst                                      |    <0.001 |
 |                 latency_gt_0.fd_array[1].reg_comp                 |    <0.001 |
-|             sigma_adder                                           |    <0.001 |
+|             relational                                            |    <0.001 |
 |           delay1                                                  |    <0.001 |
 |             srl_delay.synth_reg_srl_inst                          |    <0.001 |
 |               partial_one.last_srl17e                             |    <0.001 |
-|           demodulationssb1                                        |     0.005 |
+|           delay16ms                                               |    <0.001 |
+|             delay                                                 |    <0.001 |
+|               srl_delay.synth_reg_srl_inst                        |    <0.001 |
+|                 complete_ones.srl17e_array[0].delay_comp          |    <0.001 |
+|                 complete_ones.srl17e_array[1].delay_comp          |    <0.001 |
+|                 complete_ones.srl17e_array[2].delay_comp          |    <0.001 |
+|                 complete_ones.srl17e_array[3].delay_comp          |    <0.001 |
+|                 complete_ones.srl17e_array[4].delay_comp          |    <0.001 |
+|                 complete_ones.srl17e_array[5].delay_comp          |    <0.001 |
+|                 complete_ones.srl17e_array[6].delay_comp          |    <0.001 |
+|                 partial_one.last_srl17e                           |    <0.001 |
+|           demodulationssb1                                        |     0.007 |
 |             accumulator                                           |    <0.001 |
 |             addsub                                                |    <0.001 |
 |               comp1.core_instance1                                |    <0.001 |
@@ -500,8 +516,8 @@ Table of Contents
 |                     i_baseblox.i_baseblox_addsub                  |    <0.001 |
 |                       no_pipelining.the_addsub                    |    <0.001 |
 |                         i_lut6.i_lut6_addsub                      |    <0.001 |
-|             agcandfilter1                                         |     0.001 |
-|               filter1                                             |     0.001 |
+|             agcandfilter1                                         |     0.002 |
+|               filter1                                             |     0.002 |
 |                 accumulator                                       |    <0.001 |
 |                 addsub                                            |    <0.001 |
 |                   comp1.core_instance1                            |    <0.001 |
@@ -537,14 +553,14 @@ Table of Contents
 |                 delay3                                            |    <0.001 |
 |                   srl_delay.synth_reg_srl_inst                    |    <0.001 |
 |                     partial_one.last_srl17e                       |    <0.001 |
-|                 dual_port_ram                                     |    <0.001 |
-|                   comp5.core_instance5                            |    <0.001 |
-|                     U0                                            |    <0.001 |
-|                       inst_blk_mem_gen                            |    <0.001 |
-|                         gnativebmg.native_blk_mem_gen             |    <0.001 |
-|                           valid.cstr                              |    <0.001 |
-|                             ramloop[0].ram.r                      |    <0.001 |
-|                               prim_init.ram                       |    <0.001 |
+|                 dual_port_ram                                     |     0.001 |
+|                   comp5.core_instance5                            |     0.001 |
+|                     U0                                            |     0.001 |
+|                       inst_blk_mem_gen                            |     0.001 |
+|                         gnativebmg.native_blk_mem_gen             |     0.001 |
+|                           valid.cstr                              |     0.001 |
+|                             ramloop[0].ram.r                      |     0.001 |
+|                               prim_init.ram                       |     0.001 |
 |                 latch                                             |    <0.001 |
 |                   register2                                       |    <0.001 |
 |                     synth_reg_inst                                |    <0.001 |
@@ -602,7 +618,7 @@ Table of Contents
 |             delay1                                                |    <0.001 |
 |               srl_delay.synth_reg_srl_inst                        |    <0.001 |
 |                 partial_one.last_srl17e                           |    <0.001 |
-|             filterstreamintegration                               |     0.001 |
+|             filterstreamintegration                               |     0.002 |
 |               accumulator1                                        |    <0.001 |
 |               accumulator2                                        |    <0.001 |
 |               accumulator3                                        |    <0.001 |
@@ -735,7 +751,7 @@ Table of Contents
 |                   srl_delay.synth_reg_srl_inst                    |    <0.001 |
 |                     partial_one.last_srl17e                       |    <0.001 |
 |               relational1                                         |    <0.001 |
-|           dsprocessor1                                            |     0.004 |
+|           dsprocessor1                                            |     0.006 |
 |             buffer_x0                                             |    <0.001 |
 |               delay                                               |    <0.001 |
 |                 srl_delay.synth_reg_srl_inst                      |    <0.001 |
@@ -759,24 +775,24 @@ Table of Contents
 |             delay                                                 |    <0.001 |
 |               srl_delay.synth_reg_srl_inst                        |    <0.001 |
 |                 complete_ones.srl17e_array[0].delay_comp          |    <0.001 |
-|             dual_port_ram                                         |    <0.001 |
-|               comp3.core_instance3                                |    <0.001 |
-|                 U0                                                |    <0.001 |
-|                   inst_blk_mem_gen                                |    <0.001 |
-|                     gnativebmg.native_blk_mem_gen                 |    <0.001 |
-|                       valid.cstr                                  |    <0.001 |
+|             dual_port_ram                                         |     0.001 |
+|               comp3.core_instance3                                |     0.001 |
+|                 U0                                                |     0.001 |
+|                   inst_blk_mem_gen                                |     0.001 |
+|                     gnativebmg.native_blk_mem_gen                 |     0.001 |
+|                       valid.cstr                                  |     0.001 |
 |                         ramloop[0].ram.r                          |    <0.001 |
 |                           prim_init.ram                           |    <0.001 |
 |                         ramloop[1].ram.r                          |    <0.001 |
 |                           prim_init.ram                           |    <0.001 |
-|             dual_port_ram1                                        |    <0.001 |
-|               comp4.core_instance4                                |    <0.001 |
-|                 U0                                                |    <0.001 |
-|                   inst_blk_mem_gen                                |    <0.001 |
-|                     gnativebmg.native_blk_mem_gen                 |    <0.001 |
-|                       valid.cstr                                  |    <0.001 |
-|                         ramloop[0].ram.r                          |    <0.001 |
-|                           prim_init.ram                           |    <0.001 |
+|             dual_port_ram1                                        |     0.001 |
+|               comp4.core_instance4                                |     0.001 |
+|                 U0                                                |     0.001 |
+|                   inst_blk_mem_gen                                |     0.001 |
+|                     gnativebmg.native_blk_mem_gen                 |     0.001 |
+|                       valid.cstr                                  |     0.001 |
+|                         ramloop[0].ram.r                          |     0.001 |
+|                           prim_init.ram                           |     0.001 |
 |             inputselect                                           |    <0.001 |
 |               mux                                                 |    <0.001 |
 |             monostable1_x0                                        |    <0.001 |
@@ -963,7 +979,7 @@ Table of Contents
 |                 register1                                         |    <0.001 |
 |                   synth_reg_inst                                  |    <0.001 |
 |                     latency_gt_0.fd_array[1].reg_comp             |    <0.001 |
-|             picoblaze6                                            |     0.001 |
+|             picoblaze6                                            |     0.002 |
 |               address_loop[0].output_data.pc_vector_mux_lut       |    <0.001 |
 |               address_loop[10].output_data.pc_vector_mux_lut      |    <0.001 |
 |               address_loop[2].output_data.pc_vector_mux_lut       |    <0.001 |
@@ -1015,7 +1031,7 @@ Table of Contents
 |               t_state_lut                                         |    <0.001 |
 |               upper_reg_banks                                     |    <0.001 |
 |               use_zero_flag_lut                                   |    <0.001 |
-|           keypadinterface                                         |     0.003 |
+|           keypadinterface                                         |     0.004 |
 |             addsub                                                |    <0.001 |
 |               comp4.core_instance4                                |    <0.001 |
 |                 U0                                                |    <0.001 |
@@ -1043,7 +1059,7 @@ Table of Contents
 |                             gdm.dm                                |    <0.001 |
 |                               RAM_reg_0_15_0_5                    |    <0.001 |
 |                               RAM_reg_0_15_6_7                    |    <0.001 |
-|             dual_port_ram                                         |    <0.001 |
+|             dual_port_ram                                         |     0.001 |
 |               comp6.core_instance6                                |    <0.001 |
 |                 U0                                                |    <0.001 |
 |                   inst_blk_mem_gen                                |    <0.001 |
@@ -1053,14 +1069,14 @@ Table of Contents
 |                           prim_init.ram                           |    <0.001 |
 |                         ramloop[1].ram.r                          |    <0.001 |
 |                           prim_init.ram                           |    <0.001 |
-|             dual_port_ram1                                        |    <0.001 |
-|               comp7.core_instance7                                |    <0.001 |
-|                 U0                                                |    <0.001 |
-|                   inst_blk_mem_gen                                |    <0.001 |
-|                     gnativebmg.native_blk_mem_gen                 |    <0.001 |
-|                       valid.cstr                                  |    <0.001 |
-|                         ramloop[0].ram.r                          |    <0.001 |
-|                           prim_init.ram                           |    <0.001 |
+|             dual_port_ram1                                        |     0.001 |
+|               comp7.core_instance7                                |     0.001 |
+|                 U0                                                |     0.001 |
+|                   inst_blk_mem_gen                                |     0.001 |
+|                     gnativebmg.native_blk_mem_gen                 |     0.001 |
+|                       valid.cstr                                  |     0.001 |
+|                         ramloop[0].ram.r                          |     0.001 |
+|                           prim_init.ram                           |     0.001 |
 |             logical                                               |    <0.001 |
 |             monostable                                            |    <0.001 |
 |               delay1                                              |    <0.001 |
@@ -1135,7 +1151,7 @@ Table of Contents
 |                 register1                                         |    <0.001 |
 |                   synth_reg_inst                                  |    <0.001 |
 |                     latency_gt_0.fd_array[1].reg_comp             |    <0.001 |
-|             picoblaze6                                            |    <0.001 |
+|             picoblaze6                                            |     0.001 |
 |               address_loop[0].output_data.pc_vector_mux_lut       |    <0.001 |
 |               address_loop[10].output_data.pc_vector_mux_lut      |    <0.001 |
 |               address_loop[2].output_data.pc_vector_mux_lut       |    <0.001 |
@@ -1258,7 +1274,7 @@ Table of Contents
 |           logical2                                                |    <0.001 |
 |           logical3                                                |    <0.001 |
 |           logical4                                                |    <0.001 |
-|           loranpulsedetect                                        |     0.001 |
+|           loranpulsedetect                                        |     0.002 |
 |             fastlevelmonitor                                      |    <0.001 |
 |               addsub                                              |    <0.001 |
 |                 comp5.core_instance5                              |    <0.001 |
@@ -1295,7 +1311,7 @@ Table of Contents
 |                   latency_gt_0.fd_array[1].reg_comp               |    <0.001 |
 |             lorantrigger                                          |    <0.001 |
 |               relational                                          |    <0.001 |
-|             lranpass                                              |    <0.001 |
+|             lranpass                                              |     0.001 |
 |               addsub                                              |    <0.001 |
 |                 comp5.core_instance5                              |    <0.001 |
 |                   U0                                              |    <0.001 |
@@ -1552,6 +1568,7 @@ Table of Contents
 |               delay1                                              |    <0.001 |
 |                 srl_delay.synth_reg_srl_inst                      |    <0.001 |
 |                   partial_one.last_srl17e                         |    <0.001 |
+|             mux2                                                  |     0.000 |
 |             rampgen                                               |    <0.001 |
 |               accumulator                                         |    <0.001 |
 |             register_x0                                           |    <0.001 |
@@ -1665,7 +1682,7 @@ Table of Contents
 |           touch4                                                  |    <0.001 |
 |             synth_reg_inst                                        |    <0.001 |
 |               latency_gt_0.fd_array[1].reg_comp                   |    <0.001 |
-|           user_interface                                          |     0.003 |
+|           user_interface                                          |     0.004 |
 |             black_box                                             |    <0.001 |
 |               data_present_lut                                    |    <0.001 |
 |               div01_lut                                           |    <0.001 |
@@ -1734,12 +1751,12 @@ Table of Contents
 |                             gdm.dm                                |    <0.001 |
 |                               RAM_reg_0_15_0_5                    |    <0.001 |
 |                               RAM_reg_0_15_6_7                    |    <0.001 |
-|             dual_port_ram                                         |    <0.001 |
-|               comp8.core_instance8                                |    <0.001 |
-|                 U0                                                |    <0.001 |
-|                   inst_blk_mem_gen                                |    <0.001 |
-|                     gnativebmg.native_blk_mem_gen                 |    <0.001 |
-|                       valid.cstr                                  |    <0.001 |
+|             dual_port_ram                                         |     0.001 |
+|               comp8.core_instance8                                |     0.001 |
+|                 U0                                                |     0.001 |
+|                   inst_blk_mem_gen                                |     0.001 |
+|                     gnativebmg.native_blk_mem_gen                 |     0.001 |
+|                       valid.cstr                                  |     0.001 |
 |                         ramloop[0].ram.r                          |    <0.001 |
 |                           prim_init.ram                           |    <0.001 |
 |                         ramloop[1].ram.r                          |    <0.001 |
@@ -1841,7 +1858,7 @@ Table of Contents
 |                 register1                                         |    <0.001 |
 |                   synth_reg_inst                                  |    <0.001 |
 |                     latency_gt_0.fd_array[1].reg_comp             |    <0.001 |
-|             picoblaze1                                            |     0.001 |
+|             picoblaze1                                            |     0.002 |
 |               address_loop[0].output_data.pc_vector_mux_lut       |    <0.001 |
 |               address_loop[10].output_data.pc_vector_mux_lut      |    <0.001 |
 |               address_loop[2].output_data.pc_vector_mux_lut       |    <0.001 |
