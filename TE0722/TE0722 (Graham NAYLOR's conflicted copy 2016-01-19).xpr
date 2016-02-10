@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2014.4 (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.   -->
+
+<Project Version="7" Minor="2" Path="/home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="04d2fd20cff741d29270d9402326ad82"/>
+    <Option Name="Part" Val="xc7z010clg225-1"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="BoardPart" Val=""/>
+    <Option Name="ActiveSimSet" Val="sim_1"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../SysgenOutput/TE0722/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../trenz.biz_user_JTAG_Monitor_1.0"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/PS_PL.bd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="PS_PL_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="hw_handoff/PS_PL.hwh"/>
+        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="ip/PS_PL_JTAG_Monitor_0_0/PS_PL_JTAG_Monitor_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="ip/PS_PL_n3_te0722_0_0/PS_PL_n3_te0722_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="ip/PS_PL_clk_wiz_0_0/PS_PL_clk_wiz_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="hdl/PS_PL.v"/>
+        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="ip/PS_PL_processing_system7_0_0/PS_PL_processing_system7_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="hw_handoff/PS_PL_bd.tcl"/>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/hdl/PS_PL_wrapper.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_0_vivado.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_1_vivado.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_2_vivado.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_3_vivado.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_4_vivado.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_5_vivado.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_6_vivado.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_7_vivado.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_8_vivado.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_9_vivado.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_0_vivado.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_1_vivado.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/PS_PL_n3_te0722_0_0.upgrade_log"/>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="PS_PL_wrapper"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+      <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/imports/VivadoProject/n3_te0722a5_clock.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../VivadoProject/n3_te0722a5_clock.xdc"/>
+          <Attr Name="ImportTime" Val="1450560519"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/VivadoProject/n3_te0722a5_clock.xdc"/>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="PS_PL_wrapper"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+      <Option Name="CompiledLib" Val="0"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="QuestaSim/ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="IES">
+      <Option Name="Description" Val="Incisive Enterprise Simulator (IES)"/>
+    </Simulator>
+    <Simulator Name="VCS">
+      <Option Name="Description" Val="Verilog Compiler Simulator (VCS)"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="9">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z010clg225-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg225-1" ConstrsSet="constrs_1" Description="Vivado Implementation Defaults" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+  </Runs>
+</Project>

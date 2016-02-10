@@ -160,6 +160,7 @@ proc create_root_design { parentCell } {
   set ledb [ create_bd_port -dir O -from 0 -to 0 -type data ledb ]
   set ledg [ create_bd_port -dir O -from 0 -to 0 -type data ledg ]
   set ledr [ create_bd_port -dir O -from 0 -to 0 -type data ledr ]
+  set psuclk [ create_bd_port -dir O -from 0 -to 0 -type data psuclk ]
   set ptt [ create_bd_port -dir I -from 0 -to 0 -type data ptt ]
   set_property -dict [ list CONFIG.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}}  ] $ptt
   set pwmaudio [ create_bd_port -dir O -from 0 -to 0 -type data pwmaudio ]
@@ -180,29 +181,28 @@ proc create_root_design { parentCell } {
   set srd_bt [ create_bd_port -dir O -from 0 -to 0 -type data srd_bt ]
   set std_bt [ create_bd_port -dir I -from 0 -to 0 -type data std_bt ]
   set_property -dict [ list CONFIG.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}}  ] $std_bt
-  set strobe [ create_bd_port -dir O -from 0 -to 0 -type data strobe ]
+  set touchdown [ create_bd_port -dir I -from 0 -to 0 -type data touchdown ]
+  set_property -dict [ list CONFIG.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}}  ] $touchdown
+  set touchon [ create_bd_port -dir I -from 0 -to 0 -type data touchon ]
+  set_property -dict [ list CONFIG.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}}  ] $touchon
+  set touchselect [ create_bd_port -dir I -from 0 -to 0 -type data touchselect ]
+  set_property -dict [ list CONFIG.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}}  ] $touchselect
   set touchup [ create_bd_port -dir I -from 0 -to 0 -type data touchup ]
   set_property -dict [ list CONFIG.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}}  ] $touchup
   set tx_low [ create_bd_port -dir O -from 0 -to 0 -type data tx_low ]
 
-  # Create instance: JTAG_Monitor_0, and set properties
-  set JTAG_Monitor_0 [ create_bd_cell -type ip -vlnv trenz.biz:user:JTAG_Monitor:1.0 JTAG_Monitor_0 ]
-
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.1 clk_wiz_0 ]
-  set_property -dict [ list CONFIG.CLKIN1_JITTER_PS {200.0} CONFIG.CLKOUT1_JITTER {355.349} CONFIG.CLKOUT1_PHASE_ERROR {294.178} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {48.517} CONFIG.PRIM_IN_FREQ {50.000} CONFIG.RESET_TYPE {ACTIVE_LOW}  ] $clk_wiz_0
+  set_property -dict [ list CONFIG.CLKIN1_JITTER_PS {200.0} CONFIG.CLKOUT1_JITTER {355.349} CONFIG.CLKOUT1_PHASE_ERROR {294.178} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {48.517} CONFIG.PRIM_IN_FREQ {50} CONFIG.RESET_TYPE {ACTIVE_LOW}  ] $clk_wiz_0
 
   # Create instance: n3_te0722_0, and set properties
-  set n3_te0722_0 [ create_bd_cell -type ip -vlnv AssociationNicola:SysGen:n3_te0722:1.10 n3_te0722_0 ]
+  set n3_te0722_0 [ create_bd_cell -type ip -vlnv AssociationNicola:SysGen:n3_te0722:1.17 n3_te0722_0 ]
 
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]
   set_property -dict [ list CONFIG.PCW_UIPARAM_DDR_ENABLE {0} CONFIG.PCW_USE_M_AXI_GP0 {0}  ] $processing_system7_0
 
   # Create port connections
-  connect_bd_net -net JTAG_Monitor_0_TCK [get_bd_pins JTAG_Monitor_0/TCK] [get_bd_pins n3_te0722_0/touchon]
-  connect_bd_net -net JTAG_Monitor_0_TDI [get_bd_pins JTAG_Monitor_0/TDI] [get_bd_pins n3_te0722_0/touchdown]
-  connect_bd_net -net JTAG_Monitor_0_TMS [get_bd_pins JTAG_Monitor_0/TMS] [get_bd_pins n3_te0722_0/touchselect]
   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins n3_te0722_0/clk]
   connect_bd_net -net n3_te0722_0_adc_cal [get_bd_ports adc_cal] [get_bd_pins n3_te0722_0/adc_cal]
   connect_bd_net -net n3_te0722_0_adc_gain [get_bd_ports adc_gain] [get_bd_pins n3_te0722_0/adc_gain]
@@ -219,6 +219,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net n3_te0722_0_ledb [get_bd_ports ledb] [get_bd_pins n3_te0722_0/ledb]
   connect_bd_net -net n3_te0722_0_ledg [get_bd_ports ledg] [get_bd_pins n3_te0722_0/ledg]
   connect_bd_net -net n3_te0722_0_ledr [get_bd_ports ledr] [get_bd_pins n3_te0722_0/ledr]
+  connect_bd_net -net n3_te0722_0_psuclk [get_bd_ports psuclk] [get_bd_pins n3_te0722_0/psuclk]
   connect_bd_net -net n3_te0722_0_pwmaudio [get_bd_ports pwmaudio] [get_bd_pins n3_te0722_0/pwmaudio]
   connect_bd_net -net n3_te0722_0_rs232_to_bt [get_bd_ports rs232_to_bt] [get_bd_pins n3_te0722_0/rs232_to_bt]
   connect_bd_net -net n3_te0722_0_rs232tx [get_bd_ports rs232tx] [get_bd_pins n3_te0722_0/rs232tx]
@@ -227,7 +228,6 @@ proc create_root_design { parentCell } {
   connect_bd_net -net n3_te0722_0_sclk_bt [get_bd_ports sclk_bt] [get_bd_pins n3_te0722_0/sclk_bt]
   connect_bd_net -net n3_te0722_0_sfs_bt [get_bd_ports sfs_bt] [get_bd_pins n3_te0722_0/sfs_bt]
   connect_bd_net -net n3_te0722_0_srd_bt [get_bd_ports srd_bt] [get_bd_pins n3_te0722_0/srd_bt]
-  connect_bd_net -net n3_te0722_0_strobe [get_bd_ports strobe] [get_bd_pins n3_te0722_0/strobe]
   connect_bd_net -net n3_te0722_0_tx_low [get_bd_ports tx_low] [get_bd_pins n3_te0722_0/tx_low]
   connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins processing_system7_0/FCLK_CLK0]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins clk_wiz_0/resetn] [get_bd_pins processing_system7_0/FCLK_RESET0_N]
@@ -237,6 +237,9 @@ proc create_root_design { parentCell } {
   connect_bd_net -net sdoa_1 [get_bd_ports sdoa] [get_bd_pins n3_te0722_0/sdoa]
   connect_bd_net -net sdob_1 [get_bd_ports sdob] [get_bd_pins n3_te0722_0/sdob]
   connect_bd_net -net std_bt_1 [get_bd_ports std_bt] [get_bd_pins n3_te0722_0/std_bt]
+  connect_bd_net -net touchdown_1 [get_bd_ports touchdown] [get_bd_pins n3_te0722_0/touchdown]
+  connect_bd_net -net touchon_1 [get_bd_ports touchon] [get_bd_pins n3_te0722_0/touchon]
+  connect_bd_net -net touchselect_1 [get_bd_ports touchselect] [get_bd_pins n3_te0722_0/touchselect]
   connect_bd_net -net touchup_1 [get_bd_ports touchup] [get_bd_pins n3_te0722_0/touchup]
 
   # Create address segments

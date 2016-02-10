@@ -11,8 +11,22 @@ set_property IOSTANDARD LVCMOS33 [get_ports sdob[0]]
 set_property PACKAGE_PIN M10 [get_ports std_bt[0]]
 set_property IOSTANDARD LVCMOS33 [get_ports std_bt[0]]
 
-set_property PACKAGE_PIN E13 [get_ports touchup[0]]
+set_property PACKAGE_PIN R10 [get_ports touchup[0]]
 set_property IOSTANDARD LVCMOS33 [get_ports touchup[0]]
+
+set_property PACKAGE_PIN E13 [get_ports touchdown[0]]
+set_property IOSTANDARD LVCMOS33 [get_ports touchdown[0]]
+set_property PACKAGE_PIN R11 [get_ports touchselect[0]]
+set_property IOSTANDARD LVCMOS33 [get_ports touchselect[0]]
+set_property PACKAGE_PIN M9 [get_ports touchon[0]]
+set_property IOSTANDARD LVCMOS33 [get_ports touchon[0]]
+
+set_property PACKAGE_PIN R15 [get_ports psuclk[0]]
+set_property IOSTANDARD LVCMOS33 [get_ports psuclk[0]]
+
+
+
+
 set_property PACKAGE_PIN L12 [get_ports adc_cal[0]]
 set_property IOSTANDARD LVCMOS33 [get_ports adc_cal[0]]
 set_property PACKAGE_PIN P10 [get_ports adc_gain[0]]
@@ -83,7 +97,6 @@ set_property PACKAGE_PIN N13 [get_ports sfs_bt[0]]
 set_property IOSTANDARD LVCMOS33 [get_ports sfs_bt[0]]
 set_property PACKAGE_PIN H12 [get_ports srd_bt[0]]
 set_property IOSTANDARD LVCMOS33 [get_ports srd_bt[0]]
-set_property PACKAGE_PIN P9 [get_ports strobe[0]]
-set_property IOSTANDARD LVCMOS33 [get_ports strobe[0]]
+
 set_property PACKAGE_PIN P15 [get_ports tx_low[0]]
 set_property IOSTANDARD LVCMOS33 [get_ports tx_low[0]]

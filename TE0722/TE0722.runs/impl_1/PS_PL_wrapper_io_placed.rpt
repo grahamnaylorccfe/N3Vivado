@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date         : Mon Jan 18 17:10:45 2016
+| Date         : Fri Feb  5 11:27:08 2016
 | Host         : graham-Latitude-E5500 running 64-bit unknown
 | Command      : report_io -file PS_PL_wrapper_io_placed.rpt
 | Design       : PS_PL_wrapper
@@ -23,7 +23,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            44 |
+|            47 |
 +---------------+
 
 
@@ -105,7 +105,7 @@ Table of Contents
 | E10        |                  |            | VCCINT                  | VCCINT      |             |         |            |      |                     |                      |         |            |           |      |                  |
 | E11        | lcdcontrast[0]   | High Range | IO_L2P_T0_AD8P_35       | OUTPUT      | LVCMOS33    |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | E12        |                  | High Range | IO_L2N_T0_AD8N_35       | User IO     |             |      35 |            |      |                     |                      |         |            |           |      |                  |
-| E13        | touchup[0]       | High Range | IO_L1N_T0_AD0N_35       | INPUT       | LVCMOS33    |      35 |            |      |                     |                 NONE |         | FIXED      |           |      | NONE             |
+| E13        | touchdown[0]     | High Range | IO_L1N_T0_AD0N_35       | INPUT       | LVCMOS33    |      35 |            |      |                     |                 NONE |         | FIXED      |           |      | NONE             |
 | E14        |                  |            | VCCO_MIO1_501           | VCCO        |             |         |            |      |                     |                      |   any** |            |           |      |                  |
 | E15        |                  |            | PS_MIO32_501            | PSS IO      |             |         |            |      |                     |                      |         |            |           |      |                  |
 | F1         |                  |            | VCCO_DDR_502            | VCCO        |             |         |            |      |                     |                      |   any** |            |           |      |                  |
@@ -206,7 +206,7 @@ Table of Contents
 | M6         |                  |            | PS_DDR_BA0_502          | PSS IO      |             |         |            |      |                     |                      |         |            |           |      |                  |
 | M7         |                  | Dedicated  | DONE_0                  | Config      |             |       0 |            |      |                     |                      |         |            |           |      |                  |
 | M8         |                  |            | GND                     | GND         |             |         |            |      |                     |                      |     0.0 |            |           |      |                  |
-| M9         |                  | High Range | IO_L19P_T3_34           | User IO     |             |      34 |            |      |                     |                      |         |            |           |      |                  |
+| M9         | touchon[0]       | High Range | IO_L19P_T3_34           | INPUT       | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |      | NONE             |
 | M10        | std_bt[0]        | High Range | IO_L21P_T3_DQS_34       | INPUT       | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |      | NONE             |
 | M11        | adc_gain[3]      | High Range | IO_L21N_T3_DQS_34       | OUTPUT      | LVCMOS33    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | M12        | conv[0]          | High Range | IO_L12N_T1_MRCC_34      | OUTPUT      | LVCMOS33    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
@@ -236,7 +236,7 @@ Table of Contents
 | P6         |                  |            | PS_DDR_A8_502           | PSS IO      |             |         |            |      |                     |                      |         |            |           |      |                  |
 | P7         |                  | High Range | VCCO_34                 | VCCO        |             |      34 |            |      |                     |                      |    3.30 |            |           |      |                  |
 | P8         | rs232tx[0]       | High Range | IO_L23P_T3_34           | OUTPUT      | LVCMOS33    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
-| P9         | strobe[0]        | High Range | IO_L23N_T3_34           | OUTPUT      | LVCMOS33    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
+| P9         |                  | High Range | IO_L23N_T3_34           | User IO     |             |      34 |            |      |                     |                      |         |            |           |      |                  |
 | P10        | adc_gain[0]      | High Range | IO_L24P_T3_34           | OUTPUT      | LVCMOS33    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | P11        | adc_gain[1]      | High Range | IO_L16P_T2_34           | OUTPUT      | LVCMOS33    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | P12        |                  |            | GND                     | GND         |             |         |            |      |                     |                      |     0.0 |            |           |      |                  |
@@ -252,12 +252,12 @@ Table of Contents
 | R7         | classd_hinb[0]   | High Range | IO_L20P_T3_34           | OUTPUT      | LVCMOS33    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | R8         | classd_linb[0]   | High Range | IO_L20N_T3_34           | OUTPUT      | LVCMOS33    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | R9         |                  |            | GND                     | GND         |             |         |            |      |                     |                      |     0.0 |            |           |      |                  |
-| R10        |                  | High Range | IO_L24N_T3_34           | User IO     |             |      34 |            |      |                     |                      |         |            |           |      |                  |
-| R11        |                  | High Range | IO_L16N_T2_34           | User IO     |             |      34 |            |      |                     |                      |         |            |           |      |                  |
+| R10        | touchup[0]       | High Range | IO_L24N_T3_34           | INPUT       | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |      | NONE             |
+| R11        | touchselect[0]   | High Range | IO_L16N_T2_34           | INPUT       | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |      | NONE             |
 | R12        | sdoa[0]          | High Range | IO_L17P_T2_34           | INPUT       | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |      | NONE             |
 | R13        | sck[0]           | High Range | IO_L17N_T2_34           | OUTPUT      | LVCMOS33    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | R14        |                  | High Range | VCCO_34                 | VCCO        |             |      34 |            |      |                     |                      |    3.30 |            |           |      |                  |
-| R15        |                  | High Range | IO_L15N_T2_DQS_34       | User IO     |             |      34 |            |      |                     |                      |         |            |           |      |                  |
+| R15        | psuclk[0]        | High Range | IO_L15N_T2_DQS_34       | OUTPUT      | LVCMOS33    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 +------------+------------------+------------+-------------------------+-------------+-------------+---------+------------+------+---------------------+----------------------+---------+------------+-----------+------+------------------+
 * Default value
 ** Special VCCO requirements may apply. Please consult the device family datasheet for specific guideline on VCCO requirements.

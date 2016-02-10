@@ -1,7 +1,7 @@
 //Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-//Date        : Mon Jan 18 16:45:49 2016
+//Date        : Fri Feb  5 11:00:17 2016
 //Host        : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
 //Command     : generate_target PS_PL_wrapper.bd
 //Design      : PS_PL_wrapper
@@ -25,6 +25,7 @@ module PS_PL_wrapper
     ledb,
     ledg,
     ledr,
+    psuclk,
     ptt,
     pwmaudio,
     rs232_from_bt,
@@ -39,7 +40,9 @@ module PS_PL_wrapper
     sfs_bt,
     srd_bt,
     std_bt,
-    strobe,
+    touchdown,
+    touchon,
+    touchselect,
     touchup,
     tx_low);
   output [0:0]adc_cal;
@@ -57,6 +60,7 @@ module PS_PL_wrapper
   output [0:0]ledb;
   output [0:0]ledg;
   output [0:0]ledr;
+  output [0:0]psuclk;
   input [0:0]ptt;
   output [0:0]pwmaudio;
   input [0:0]rs232_from_bt;
@@ -71,7 +75,9 @@ module PS_PL_wrapper
   output [0:0]sfs_bt;
   output [0:0]srd_bt;
   input [0:0]std_bt;
-  output [0:0]strobe;
+  input [0:0]touchdown;
+  input [0:0]touchon;
+  input [0:0]touchselect;
   input [0:0]touchup;
   output [0:0]tx_low;
 
@@ -90,6 +96,7 @@ module PS_PL_wrapper
   wire [0:0]ledb;
   wire [0:0]ledg;
   wire [0:0]ledr;
+  wire [0:0]psuclk;
   wire [0:0]ptt;
   wire [0:0]pwmaudio;
   wire [0:0]rs232_from_bt;
@@ -104,7 +111,9 @@ module PS_PL_wrapper
   wire [0:0]sfs_bt;
   wire [0:0]srd_bt;
   wire [0:0]std_bt;
-  wire [0:0]strobe;
+  wire [0:0]touchdown;
+  wire [0:0]touchon;
+  wire [0:0]touchselect;
   wire [0:0]touchup;
   wire [0:0]tx_low;
 
@@ -124,6 +133,7 @@ PS_PL PS_PL_i
         .ledb(ledb),
         .ledg(ledg),
         .ledr(ledr),
+        .psuclk(psuclk),
         .ptt(ptt),
         .pwmaudio(pwmaudio),
         .rs232_from_bt(rs232_from_bt),
@@ -138,7 +148,9 @@ PS_PL PS_PL_i
         .sfs_bt(sfs_bt),
         .srd_bt(srd_bt),
         .std_bt(std_bt),
-        .strobe(strobe),
+        .touchdown(touchdown),
+        .touchon(touchon),
+        .touchselect(touchselect),
         .touchup(touchup),
         .tx_low(tx_low));
 endmodule

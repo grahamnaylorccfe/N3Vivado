@@ -24,14 +24,13 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="ip/PS_PL_n3_te0722_0_0/PS_PL_n3_te0722_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="ip/PS_PL_JTAG_Monitor_0_0/PS_PL_JTAG_Monitor_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="hdl/PS_PL.v"/>
-        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="ip/PS_PL_clk_wiz_0_0/PS_PL_clk_wiz_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="ip/PS_PL_processing_system7_0_0/PS_PL_processing_system7_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="hw_handoff/PS_PL_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="hw_handoff/PS_PL.hwh"/>
         <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="PS_PL_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="ip/PS_PL_n3_te0722_0_1/PS_PL_n3_te0722_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="ip/PS_PL_clk_wiz_0_1/PS_PL_clk_wiz_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="hdl/PS_PL.v"/>
+        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="ip/PS_PL_processing_system7_0_0/PS_PL_processing_system7_0_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/PS_PL/hdl/PS_PL_wrapper.v">
         <FileInfo>
@@ -40,79 +39,79 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_0_vivado.coe">
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_blk_mem_gen_v8_2_0_vivado.coe">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_1_vivado.coe">
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_blk_mem_gen_v8_2_1_vivado.coe">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_2_vivado.coe">
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_blk_mem_gen_v8_2_2_vivado.coe">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_3_vivado.coe">
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_blk_mem_gen_v8_2_3_vivado.coe">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_4_vivado.coe">
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_blk_mem_gen_v8_2_4_vivado.coe">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_5_vivado.coe">
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_blk_mem_gen_v8_2_5_vivado.coe">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_6_vivado.coe">
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_blk_mem_gen_v8_2_6_vivado.coe">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_7_vivado.coe">
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_blk_mem_gen_v8_2_7_vivado.coe">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_8_vivado.coe">
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_blk_mem_gen_v8_2_8_vivado.coe">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_9_vivado.coe">
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_blk_mem_gen_v8_2_9_vivado.coe">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_0_vivado.coe">
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_dist_mem_gen_v8_0_0_vivado.coe">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_1_vivado.coe">
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_dist_mem_gen_v8_0_1_vivado.coe">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/PS_PL_n3_te0722_0_0.upgrade_log"/>
+      <File Path="$PSRCDIR/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/PS_PL_n3_te0722_0_1.upgrade_log"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="PS_PL_wrapper"/>
@@ -141,6 +140,7 @@
         <Option Name="TopModule" Val="PS_PL_wrapper"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="SimMode" Val="post-implementation"/>
         <Option Name="SrcSet" Val="sources_1"/>
       </Config>
     </FileSet>

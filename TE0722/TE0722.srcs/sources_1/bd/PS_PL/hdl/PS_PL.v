@@ -1,7 +1,7 @@
 //Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-//Date        : Mon Jan 18 16:45:48 2016
+//Date        : Fri Feb  5 11:00:15 2016
 //Host        : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
 //Command     : generate_target PS_PL.bd
 //Design      : PS_PL
@@ -25,6 +25,7 @@ module PS_PL
     ledb,
     ledg,
     ledr,
+    psuclk,
     ptt,
     pwmaudio,
     rs232_from_bt,
@@ -39,7 +40,9 @@ module PS_PL
     sfs_bt,
     srd_bt,
     std_bt,
-    strobe,
+    touchdown,
+    touchon,
+    touchselect,
     touchup,
     tx_low);
   output [0:0]adc_cal;
@@ -57,6 +60,7 @@ module PS_PL
   output [0:0]ledb;
   output [0:0]ledg;
   output [0:0]ledr;
+  output [0:0]psuclk;
   input [0:0]ptt;
   output [0:0]pwmaudio;
   input [0:0]rs232_from_bt;
@@ -71,13 +75,12 @@ module PS_PL
   output [0:0]sfs_bt;
   output [0:0]srd_bt;
   input [0:0]std_bt;
-  output [0:0]strobe;
+  input [0:0]touchdown;
+  input [0:0]touchon;
+  input [0:0]touchselect;
   input [0:0]touchup;
   output [0:0]tx_low;
 
-  wire JTAG_Monitor_0_TCK;
-  wire JTAG_Monitor_0_TDI;
-  wire JTAG_Monitor_0_TMS;
   wire clk_wiz_0_clk_out1;
   wire [0:0]n3_te0722_0_adc_cal;
   wire [3:0]n3_te0722_0_adc_gain;
@@ -94,6 +97,7 @@ module PS_PL
   wire [0:0]n3_te0722_0_ledb;
   wire [0:0]n3_te0722_0_ledg;
   wire [0:0]n3_te0722_0_ledr;
+  wire [0:0]n3_te0722_0_psuclk;
   wire [0:0]n3_te0722_0_pwmaudio;
   wire [0:0]n3_te0722_0_rs232_to_bt;
   wire [0:0]n3_te0722_0_rs232tx;
@@ -102,7 +106,6 @@ module PS_PL
   wire [0:0]n3_te0722_0_sclk_bt;
   wire [0:0]n3_te0722_0_sfs_bt;
   wire [0:0]n3_te0722_0_srd_bt;
-  wire [0:0]n3_te0722_0_strobe;
   wire [0:0]n3_te0722_0_tx_low;
   wire processing_system7_0_FCLK_CLK0;
   wire processing_system7_0_FCLK_RESET0_N;
@@ -112,6 +115,9 @@ module PS_PL
   wire [0:0]sdoa_1;
   wire [0:0]sdob_1;
   wire [0:0]std_bt_1;
+  wire [0:0]touchdown_1;
+  wire [0:0]touchon_1;
+  wire [0:0]touchselect_1;
   wire [0:0]touchup_1;
 
   assign adc_cal[0] = n3_te0722_0_adc_cal;
@@ -129,6 +135,7 @@ module PS_PL
   assign ledb[0] = n3_te0722_0_ledb;
   assign ledg[0] = n3_te0722_0_ledg;
   assign ledr[0] = n3_te0722_0_ledr;
+  assign psuclk[0] = n3_te0722_0_psuclk;
   assign ptt_1 = ptt[0];
   assign pwmaudio[0] = n3_te0722_0_pwmaudio;
   assign rs232_from_bt_1 = rs232_from_bt[0];
@@ -143,18 +150,16 @@ module PS_PL
   assign sfs_bt[0] = n3_te0722_0_sfs_bt;
   assign srd_bt[0] = n3_te0722_0_srd_bt;
   assign std_bt_1 = std_bt[0];
-  assign strobe[0] = n3_te0722_0_strobe;
+  assign touchdown_1 = touchdown[0];
+  assign touchon_1 = touchon[0];
+  assign touchselect_1 = touchselect[0];
   assign touchup_1 = touchup[0];
   assign tx_low[0] = n3_te0722_0_tx_low;
-PS_PL_JTAG_Monitor_0_0 JTAG_Monitor_0
-       (.TCK(JTAG_Monitor_0_TCK),
-        .TDI(JTAG_Monitor_0_TDI),
-        .TMS(JTAG_Monitor_0_TMS));
-PS_PL_clk_wiz_0_0 clk_wiz_0
+PS_PL_clk_wiz_0_1 clk_wiz_0
        (.clk_in1(processing_system7_0_FCLK_CLK0),
         .clk_out1(clk_wiz_0_clk_out1),
         .resetn(processing_system7_0_FCLK_RESET0_N));
-PS_PL_n3_te0722_0_0 n3_te0722_0
+PS_PL_n3_te0722_0_1 n3_te0722_0
        (.adc_cal(n3_te0722_0_adc_cal),
         .adc_gain(n3_te0722_0_adc_gain),
         .attenuatoron(n3_te0722_0_attenuatoron),
@@ -171,6 +176,7 @@ PS_PL_n3_te0722_0_0 n3_te0722_0
         .ledb(n3_te0722_0_ledb),
         .ledg(n3_te0722_0_ledg),
         .ledr(n3_te0722_0_ledr),
+        .psuclk(n3_te0722_0_psuclk),
         .ptt(ptt_1),
         .pwmaudio(n3_te0722_0_pwmaudio),
         .rs232_from_bt(rs232_from_bt_1),
@@ -185,10 +191,9 @@ PS_PL_n3_te0722_0_0 n3_te0722_0
         .sfs_bt(n3_te0722_0_sfs_bt),
         .srd_bt(n3_te0722_0_srd_bt),
         .std_bt(std_bt_1),
-        .strobe(n3_te0722_0_strobe),
-        .touchdown(JTAG_Monitor_0_TDI),
-        .touchon(JTAG_Monitor_0_TCK),
-        .touchselect(JTAG_Monitor_0_TMS),
+        .touchdown(touchdown_1),
+        .touchon(touchon_1),
+        .touchselect(touchselect_1),
         .touchup(touchup_1),
         .tx_low(n3_te0722_0_tx_low));
 PS_PL_processing_system7_0_0 processing_system7_0

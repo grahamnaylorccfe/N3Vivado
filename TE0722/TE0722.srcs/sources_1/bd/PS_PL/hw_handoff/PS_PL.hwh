@@ -1,92 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jan 18 16:45:45 2016" VIVADOVERSION="2014.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Feb  5 11:00:09 2016" VIVADOVERSION="2014.4">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="PS_PL_imp" PACKAGE="clg225" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
-    <PORT DIR="I" LEFT="0" NAME="rs232_from_bt" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_rs232_from_bt">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="rs232_from_bt"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="0" NAME="ptt" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_ptt">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="ptt"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="0" NAME="sdoa" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_sdoa">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="sdoa"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="0" NAME="rs232rx" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_rs232rx">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="rs232rx"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="0" NAME="std_bt" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_std_bt">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="std_bt"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="0" NAME="sdob" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_sdob">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="sdob"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="0" NAME="touchup" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_touchup">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="touchup"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="strobe" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_strobe">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="strobe"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="conv" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_conv">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="conv"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="rst_bb" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_rst_bb">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="rst_bb"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="rs232tx" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_rs232tx">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="rs232tx"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT DIR="O" LEFT="0" NAME="adc_cal" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_adc_cal">
       <CONNECTIONS>
         <CONNECTION INSTANCE="n3_te0722_0" PORT="adc_cal"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="classd_lina" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_classd_lina">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="classd_lina"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="classd_hinb" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_classd_hinb">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="classd_hinb"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="attenuatoron" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_attenuatoron">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="attenuatoron"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="keepon" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_keepon">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="keepon"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="classd_linb" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_classd_linb">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="classd_linb"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" LEFT="3" NAME="adc_gain" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_adc_gain">
@@ -94,64 +14,14 @@
         <CONNECTION INSTANCE="n3_te0722_0" PORT="adc_gain"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="2" NAME="lcdctrl" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_lcdctrl">
+    <PORT DIR="O" LEFT="0" NAME="attenuatoron" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_attenuatoron">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="lcdctrl"/>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="attenuatoron"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="0" NAME="lcdcontrast" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_lcdcontrast">
+    <PORT DIR="O" LEFT="0" NAME="conv" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_conv">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="lcdcontrast"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="ledb" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_ledb">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="ledb"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="7" NAME="lcddata" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_lcddata">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="lcddata"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="sclk_bt" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_sclk_bt">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="sclk_bt"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="sck" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_sck">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="sck"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="ledr" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_ledr">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="ledr"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="ledg" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_ledg">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="ledg"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="srd_bt" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_srd_bt">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="srd_bt"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="sfs_bt" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_sfs_bt">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="sfs_bt"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="rs232_to_bt" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_rs232_to_bt">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="rs232_to_bt"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="pwmaudio" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_pwmaudio">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="pwmaudio"/>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="conv"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" LEFT="0" NAME="classd_hina" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_classd_hina">
@@ -159,40 +29,159 @@
         <CONNECTION INSTANCE="n3_te0722_0" PORT="classd_hina"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="O" LEFT="0" NAME="classd_hinb" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_classd_hinb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="classd_hinb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="classd_lina" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_classd_lina">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="classd_lina"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="classd_linb" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_classd_linb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="classd_linb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="keepon" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_keepon">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="keepon"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="lcdcontrast" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_lcdcontrast">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="lcdcontrast"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="lcdctrl" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_lcdctrl">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="lcdctrl"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="lcddata" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_lcddata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="lcddata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="ledb" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_ledb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="ledb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="ledg" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_ledg">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="ledg"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="ledr" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_ledr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="ledr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="pwmaudio" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_pwmaudio">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="pwmaudio"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="rs232_to_bt" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_rs232_to_bt">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="rs232_to_bt"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="rs232tx" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_rs232tx">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="rs232tx"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="rst_bb" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_rst_bb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="rst_bb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="sck" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_sck">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="sck"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="sclk_bt" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_sclk_bt">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="sclk_bt"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="sfs_bt" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_sfs_bt">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="sfs_bt"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="srd_bt" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_srd_bt">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="srd_bt"/>
+      </CONNECTIONS>
+    </PORT>
     <PORT DIR="O" LEFT="0" NAME="tx_low" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_tx_low">
       <CONNECTIONS>
         <CONNECTION INSTANCE="n3_te0722_0" PORT="tx_low"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="I" LEFT="0" NAME="ptt" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_ptt">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="ptt"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="rs232_from_bt" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_rs232_from_bt">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="rs232_from_bt"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="rs232rx" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_rs232rx">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="rs232rx"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="sdoa" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_sdoa">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="sdoa"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="sdob" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_sdob">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="sdob"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="std_bt" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_std_bt">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="std_bt"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="touchdown" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_touchdown">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="touchdown"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="touchon" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_touchon">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="touchon"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="touchselect" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_touchselect">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="touchselect"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="touchup" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_touchup">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="touchup"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="psuclk" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_psuclk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="psuclk"/>
+      </CONNECTIONS>
+    </PORT>
   </EXTERNALPORTS>
 
   <MODULES>
-    <MODULE FULLNAME="/JTAG_Monitor_0" HWVERSION="1.0" INSTANCE="JTAG_Monitor_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="JTAG_Monitor" VLNV="trenz.biz:user:JTAG_Monitor:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="C_JTAG_CHAIN" VALUE="4"/>
-        <PARAMETER NAME="Component_Name" VALUE="PS_PL_JTAG_Monitor_0_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="O" NAME="TCK" SIGIS="undef" SIGNAME="JTAG_Monitor_0_TCK">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="n3_te0722_0" PORT="touchon"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="TDI" SIGIS="undef" SIGNAME="JTAG_Monitor_0_TDI">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="n3_te0722_0" PORT="touchdown"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="TMS" SIGIS="undef" SIGNAME="JTAG_Monitor_0_TMS">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="n3_te0722_0" PORT="touchselect"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
     <MODULE FULLNAME="/clk_wiz_0" HWVERSION="5.1" INSTANCE="clk_wiz_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_wiz" VLNV="xilinx.com:ip:clk_wiz:5.1">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=clk_wiz;v=v5_1;d=pg065-clk-wiz.pdf"/>
@@ -208,7 +197,7 @@
         <PARAMETER NAME="C_USE_CLKOUT2_BAR" VALUE="0"/>
         <PARAMETER NAME="C_USE_CLKOUT3_BAR" VALUE="0"/>
         <PARAMETER NAME="C_USE_CLKOUT4_BAR" VALUE="0"/>
-        <PARAMETER NAME="c_component_name" VALUE="PS_PL_clk_wiz_0_0"/>
+        <PARAMETER NAME="c_component_name" VALUE="PS_PL_clk_wiz_0_1"/>
         <PARAMETER NAME="C_PLATFORM" VALUE="UNKNOWN"/>
         <PARAMETER NAME="C_USE_FREQ_SYNTH" VALUE="1"/>
         <PARAMETER NAME="C_USE_PHASE_ALIGNMENT" VALUE="1"/>
@@ -225,7 +214,7 @@
         <PARAMETER NAME="C_USE_FAST_SIMULATION" VALUE="0"/>
         <PARAMETER NAME="C_PRIMTYPE_SEL" VALUE="AUTO"/>
         <PARAMETER NAME="C_USE_CLK_VALID" VALUE="0"/>
-        <PARAMETER NAME="C_PRIM_IN_FREQ" VALUE="50.000"/>
+        <PARAMETER NAME="C_PRIM_IN_FREQ" VALUE="50"/>
         <PARAMETER NAME="C_IN_FREQ_UNITS" VALUE="Units_MHz"/>
         <PARAMETER NAME="C_SECONDARY_IN_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_FEEDBACK_SOURCE" VALUE="FDBK_AUTO"/>
@@ -249,7 +238,7 @@
         <PARAMETER NAME="C_CLKOUT6_DRIVES" VALUE="BUFG"/>
         <PARAMETER NAME="C_CLKOUT7_DRIVES" VALUE="BUFG"/>
         <PARAMETER NAME="C_INCLK_SUM_ROW0" VALUE="Input Clock   Freq (MHz)    Input Jitter (UI)"/>
-        <PARAMETER NAME="C_INCLK_SUM_ROW1" VALUE="__primary__________50.000____________0.010"/>
+        <PARAMETER NAME="C_INCLK_SUM_ROW1" VALUE="__primary______________50____________0.010"/>
         <PARAMETER NAME="C_INCLK_SUM_ROW2" VALUE="no_secondary_input_clock"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW0A" VALUE="Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW0B" VALUE="Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)"/>
@@ -430,7 +419,7 @@
         <PARAMETER NAME="C_INTERFACE_SELECTION" VALUE="0"/>
         <PARAMETER NAME="C_S_AXI_ADDR_WIDTH" VALUE="11"/>
         <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="Component_Name" VALUE="PS_PL_clk_wiz_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="PS_PL_clk_wiz_0_1"/>
         <PARAMETER NAME="PRIMITIVE" VALUE="MMCM"/>
         <PARAMETER NAME="PRIMTYPE_SEL" VALUE="mmcm_adv"/>
         <PARAMETER NAME="CLOCK_MGR_TYPE" VALUE="auto"/>
@@ -441,7 +430,7 @@
         <PARAMETER NAME="USE_DYN_PHASE_SHIFT" VALUE="false"/>
         <PARAMETER NAME="USE_DYN_RECONFIG" VALUE="false"/>
         <PARAMETER NAME="JITTER_SEL" VALUE="No_Jitter"/>
-        <PARAMETER NAME="PRIM_IN_FREQ" VALUE="50.000"/>
+        <PARAMETER NAME="PRIM_IN_FREQ" VALUE="50"/>
         <PARAMETER NAME="IN_FREQ_UNITS" VALUE="Units_MHz"/>
         <PARAMETER NAME="IN_JITTER_UNITS" VALUE="Units_UI"/>
         <PARAMETER NAME="RELATIVE_INCLK" VALUE="REL_PRIMARY"/>
@@ -680,10 +669,10 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE FULLNAME="/n3_te0722_0" HWVERSION="1.10" INSTANCE="n3_te0722_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="n3_te0722" VLNV="AssociationNicola:SysGen:n3_te0722:1.10">
+    <MODULE FULLNAME="/n3_te0722_0" HWVERSION="1.17" INSTANCE="n3_te0722_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="n3_te0722" VLNV="AssociationNicola:SysGen:n3_te0722:1.17">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="PS_PL_n3_te0722_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="PS_PL_n3_te0722_0_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -717,19 +706,19 @@
             <CONNECTION INSTANCE="External_Ports" PORT="std_bt"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="touchdown" RIGHT="0" SIGIS="data" SIGNAME="JTAG_Monitor_0_TDI">
+        <PORT DIR="I" LEFT="0" NAME="touchdown" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_touchdown">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JTAG_Monitor_0" PORT="TDI"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="touchdown"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="touchon" RIGHT="0" SIGIS="data" SIGNAME="JTAG_Monitor_0_TCK">
+        <PORT DIR="I" LEFT="0" NAME="touchon" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_touchon">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JTAG_Monitor_0" PORT="TCK"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="touchon"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="touchselect" RIGHT="0" SIGIS="data" SIGNAME="JTAG_Monitor_0_TMS">
+        <PORT DIR="I" LEFT="0" NAME="touchselect" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_touchselect">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="JTAG_Monitor_0" PORT="TMS"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="touchselect"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="0" NAME="touchup" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_touchup">
@@ -819,6 +808,11 @@
             <CONNECTION INSTANCE="External_Ports" PORT="ledr"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" LEFT="0" NAME="psuclk" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_psuclk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="psuclk"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="0" NAME="pwmaudio" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_pwmaudio">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="pwmaudio"/>
@@ -859,11 +853,7 @@
             <CONNECTION INSTANCE="External_Ports" PORT="srd_bt"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="strobe" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_strobe">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="strobe"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="strobe" RIGHT="0" SIGIS="data"/>
         <PORT DIR="O" LEFT="0" NAME="tx_low" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_tx_low">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="tx_low"/>
