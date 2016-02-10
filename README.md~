@@ -2,9 +2,13 @@
 Vivado project for the TE0722 based N3
 to update Git repository:
 
+cd Dropbox/N3workingG
+cd TE0722Rebuild/N3Vivado/
+git add -A
+git commit -m "Comment"
+git push
 
-
-  159  git add -A
-  160  git commit -m "Comment"
-  161  git push
-
+(Enter username grahamnaylorccfe and password)
+if you get the error:
+fatal: Reference has invalid format: 'refs/remotes/origin/master
+then look for conflicting copy files in refs/ and delete them
