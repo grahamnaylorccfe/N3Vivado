@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Feb  5 11:00:09 2016" VIVADOVERSION="2014.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Mar 13 22:38:24 2016" VIVADOVERSION="2014.4">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="PS_PL_imp" PACKAGE="clg225" SPEEDGRADE="-1"/>
 
@@ -12,11 +12,6 @@
     <PORT DIR="O" LEFT="3" NAME="adc_gain" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_adc_gain">
       <CONNECTIONS>
         <CONNECTION INSTANCE="n3_te0722_0" PORT="adc_gain"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="attenuatoron" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_attenuatoron">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="attenuatoron"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" LEFT="0" NAME="conv" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_conv">
@@ -77,11 +72,6 @@
     <PORT DIR="O" LEFT="0" NAME="ledr" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_ledr">
       <CONNECTIONS>
         <CONNECTION INSTANCE="n3_te0722_0" PORT="ledr"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="pwmaudio" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_pwmaudio">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="n3_te0722_0" PORT="pwmaudio"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" LEFT="0" NAME="rs232_to_bt" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_rs232_to_bt">
@@ -177,6 +167,26 @@
     <PORT DIR="O" LEFT="0" NAME="psuclk" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_psuclk">
       <CONNECTIONS>
         <CONNECTION INSTANCE="n3_te0722_0" PORT="psuclk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="match_z" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_match_z">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="match_z"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="pwmaudio" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_pwmaudio">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="pwmaudio"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="attenuatoron" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_attenuatoron">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="attenuatoron"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="dummy" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_dummy">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="n3_te0722_0" PORT="dummy"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -669,7 +679,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE FULLNAME="/n3_te0722_0" HWVERSION="1.17" INSTANCE="n3_te0722_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="n3_te0722" VLNV="AssociationNicola:SysGen:n3_te0722:1.17">
+    <MODULE FULLNAME="/n3_te0722_0" HWVERSION="1.23" INSTANCE="n3_te0722_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="n3_te0722" VLNV="AssociationNicola:SysGen:n3_te0722:1.23">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="PS_PL_n3_te0722_0_1"/>
@@ -726,6 +736,16 @@
             <CONNECTION INSTANCE="External_Ports" PORT="touchup"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" LEFT="0" NAME="attenuatoron" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_attenuatoron">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="attenuatoron"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="dummy" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_dummy">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="dummy"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT CLKFREQUENCY="48516949" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
@@ -741,11 +761,6 @@
         <PORT DIR="O" LEFT="3" NAME="adc_gain" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_adc_gain">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="adc_gain"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="attenuatoron" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_attenuatoron">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="attenuatoron"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="conv" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_conv">
@@ -806,6 +821,11 @@
         <PORT DIR="O" LEFT="0" NAME="ledr" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_ledr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="ledr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="match_z" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_match_z">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="match_z"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="psuclk" RIGHT="0" SIGIS="data" SIGNAME="n3_te0722_0_psuclk">

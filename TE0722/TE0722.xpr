@@ -24,13 +24,13 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="hw_handoff/PS_PL_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="hw_handoff/PS_PL.hwh"/>
-        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="PS_PL_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="ip/PS_PL_n3_te0722_0_1/PS_PL_n3_te0722_0_1.xci"/>
         <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="ip/PS_PL_clk_wiz_0_1/PS_PL_clk_wiz_0_1.xci"/>
         <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="hdl/PS_PL.v"/>
         <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="ip/PS_PL_processing_system7_0_0/PS_PL_processing_system7_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="hw_handoff/PS_PL_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="PS_PL_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="PS_PL.bd" FileRelPathName="hw_handoff/PS_PL.hwh"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/PS_PL/hdl/PS_PL_wrapper.v">
         <FileInfo>

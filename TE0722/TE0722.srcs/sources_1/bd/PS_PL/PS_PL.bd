@@ -52,25 +52,6 @@
         <spirit:parameters/>
       </spirit:busInterface>
       <spirit:busInterface>
-        <spirit:name>DATA.ATTENUATORON</spirit:name>
-        <spirit:displayName>Data</spirit:displayName>
-        <spirit:description>Data</spirit:description>
-        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:slave/>
-        <spirit:portMaps>
-          <spirit:portMap>
-            <spirit:logicalPort>
-              <spirit:name>DATA</spirit:name>
-            </spirit:logicalPort>
-            <spirit:physicalPort>
-              <spirit:name>attenuatoron</spirit:name>
-            </spirit:physicalPort>
-          </spirit:portMap>
-        </spirit:portMaps>
-        <spirit:parameters/>
-      </spirit:busInterface>
-      <spirit:busInterface>
         <spirit:name>DATA.CONV</spirit:name>
         <spirit:displayName>Data</spirit:displayName>
         <spirit:description>Data</spirit:description>
@@ -293,25 +274,6 @@
             </spirit:logicalPort>
             <spirit:physicalPort>
               <spirit:name>ledr</spirit:name>
-            </spirit:physicalPort>
-          </spirit:portMap>
-        </spirit:portMaps>
-        <spirit:parameters/>
-      </spirit:busInterface>
-      <spirit:busInterface>
-        <spirit:name>DATA.PWMAUDIO</spirit:name>
-        <spirit:displayName>Data</spirit:displayName>
-        <spirit:description>Data</spirit:description>
-        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:slave/>
-        <spirit:portMaps>
-          <spirit:portMap>
-            <spirit:logicalPort>
-              <spirit:name>DATA</spirit:name>
-            </spirit:logicalPort>
-            <spirit:physicalPort>
-              <spirit:name>pwmaudio</spirit:name>
             </spirit:physicalPort>
           </spirit:portMap>
         </spirit:portMaps>
@@ -728,6 +690,92 @@
         </spirit:portMaps>
         <spirit:parameters/>
       </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>DATA.MATCH_Z</spirit:name>
+        <spirit:displayName>Data</spirit:displayName>
+        <spirit:description>Data</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>DATA</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>match_z</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters/>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>DATA.PWMAUDIO</spirit:name>
+        <spirit:displayName>Data</spirit:displayName>
+        <spirit:description>Data</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>DATA</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>pwmaudio</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters/>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>DATA.ATTENUATORON</spirit:name>
+        <spirit:displayName>Data</spirit:displayName>
+        <spirit:description>Data</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>DATA</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>attenuatoron</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>LAYERED_METADATA</spirit:name>
+            <spirit:value>xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>DATA.DUMMY</spirit:name>
+        <spirit:displayName>Data</spirit:displayName>
+        <spirit:description>Data</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>DATA</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>dummy</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>LAYERED_METADATA</spirit:name>
+            <spirit:value>xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
     </spirit:busInterfaces>
     <spirit:model>
       <spirit:views>
@@ -754,16 +802,6 @@
             <spirit:direction>out</spirit:direction>
             <spirit:vector>
               <spirit:left>3</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>attenuatoron</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-            <spirit:vector>
-              <spirit:left>0</spirit:left>
               <spirit:right>0</spirit:right>
             </spirit:vector>
           </spirit:wire>
@@ -880,16 +918,6 @@
         </spirit:port>
         <spirit:port>
           <spirit:name>ledr</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-            <spirit:vector>
-              <spirit:left>0</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>pwmaudio</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
             <spirit:vector>
@@ -1088,6 +1116,46 @@
             </spirit:vector>
           </spirit:wire>
         </spirit:port>
+        <spirit:port>
+          <spirit:name>match_z</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>0</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>pwmaudio</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>0</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>attenuatoron</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>0</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>dummy</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>0</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
       </spirit:ports>
     </spirit:model>
   </spirit:component>
@@ -1122,7 +1190,7 @@
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>n3_te0722_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="SysGen" spirit:name="n3_te0722" spirit:vendor="AssociationNicola" spirit:version="1.17"/>
+        <spirit:componentRef spirit:library="SysGen" spirit:name="n3_te0722" spirit:vendor="AssociationNicola" spirit:version="1.23"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">PS_PL_n3_te0722_0_1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
@@ -1138,11 +1206,6 @@
         <spirit:name>n3_te0722_0_adc_gain</spirit:name>
         <spirit:internalPortReference spirit:componentRef="n3_te0722_0" spirit:portRef="adc_gain"/>
         <spirit:externalPortReference spirit:portRef="adc_gain"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>n3_te0722_0_attenuatoron</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="n3_te0722_0" spirit:portRef="attenuatoron"/>
-        <spirit:externalPortReference spirit:portRef="attenuatoron"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>n3_te0722_0_conv</spirit:name>
@@ -1203,11 +1266,6 @@
         <spirit:name>n3_te0722_0_ledr</spirit:name>
         <spirit:internalPortReference spirit:componentRef="n3_te0722_0" spirit:portRef="ledr"/>
         <spirit:externalPortReference spirit:portRef="ledr"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>n3_te0722_0_pwmaudio</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="n3_te0722_0" spirit:portRef="pwmaudio"/>
-        <spirit:externalPortReference spirit:portRef="pwmaudio"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>n3_te0722_0_rs232_to_bt</spirit:name>
@@ -1318,6 +1376,26 @@
         <spirit:name>processing_system7_0_FCLK_RESET0_N</spirit:name>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="FCLK_RESET0_N"/>
         <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="resetn"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>n3_te0722_0_match_z</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="n3_te0722_0" spirit:portRef="match_z"/>
+        <spirit:externalPortReference spirit:portRef="match_z"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>n3_te0722_0_pwmaudio</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="n3_te0722_0" spirit:portRef="pwmaudio"/>
+        <spirit:externalPortReference spirit:portRef="pwmaudio"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>attenuatoron_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="attenuatoron"/>
+        <spirit:internalPortReference spirit:componentRef="n3_te0722_0" spirit:portRef="attenuatoron"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dummy_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="dummy"/>
+        <spirit:internalPortReference spirit:componentRef="n3_te0722_0" spirit:portRef="dummy"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
   </spirit:design>

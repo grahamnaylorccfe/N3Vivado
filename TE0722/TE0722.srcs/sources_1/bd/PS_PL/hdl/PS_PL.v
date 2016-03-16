@@ -1,7 +1,7 @@
 //Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-//Date        : Fri Feb  5 11:00:15 2016
+//Date        : Sun Mar 13 22:38:31 2016
 //Host        : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
 //Command     : generate_target PS_PL.bd
 //Design      : PS_PL
@@ -18,6 +18,7 @@ module PS_PL
     classd_lina,
     classd_linb,
     conv,
+    dummy,
     keepon,
     lcdcontrast,
     lcdctrl,
@@ -25,6 +26,7 @@ module PS_PL
     ledb,
     ledg,
     ledr,
+    match_z,
     psuclk,
     ptt,
     pwmaudio,
@@ -47,12 +49,13 @@ module PS_PL
     tx_low);
   output [0:0]adc_cal;
   output [3:0]adc_gain;
-  output [0:0]attenuatoron;
+  input [0:0]attenuatoron;
   output [0:0]classd_hina;
   output [0:0]classd_hinb;
   output [0:0]classd_lina;
   output [0:0]classd_linb;
   output [0:0]conv;
+  input [0:0]dummy;
   output [0:0]keepon;
   output [0:0]lcdcontrast;
   output [2:0]lcdctrl;
@@ -60,6 +63,7 @@ module PS_PL
   output [0:0]ledb;
   output [0:0]ledg;
   output [0:0]ledr;
+  output [0:0]match_z;
   output [0:0]psuclk;
   input [0:0]ptt;
   output [0:0]pwmaudio;
@@ -81,10 +85,11 @@ module PS_PL
   input [0:0]touchup;
   output [0:0]tx_low;
 
+  wire [0:0]attenuatoron_1;
   wire clk_wiz_0_clk_out1;
+  wire [0:0]dummy_1;
   wire [0:0]n3_te0722_0_adc_cal;
   wire [3:0]n3_te0722_0_adc_gain;
-  wire [0:0]n3_te0722_0_attenuatoron;
   wire [0:0]n3_te0722_0_classd_hina;
   wire [0:0]n3_te0722_0_classd_hinb;
   wire [0:0]n3_te0722_0_classd_lina;
@@ -97,6 +102,7 @@ module PS_PL
   wire [0:0]n3_te0722_0_ledb;
   wire [0:0]n3_te0722_0_ledg;
   wire [0:0]n3_te0722_0_ledr;
+  wire [0:0]n3_te0722_0_match_z;
   wire [0:0]n3_te0722_0_psuclk;
   wire [0:0]n3_te0722_0_pwmaudio;
   wire [0:0]n3_te0722_0_rs232_to_bt;
@@ -122,12 +128,13 @@ module PS_PL
 
   assign adc_cal[0] = n3_te0722_0_adc_cal;
   assign adc_gain[3:0] = n3_te0722_0_adc_gain;
-  assign attenuatoron[0] = n3_te0722_0_attenuatoron;
+  assign attenuatoron_1 = attenuatoron[0];
   assign classd_hina[0] = n3_te0722_0_classd_hina;
   assign classd_hinb[0] = n3_te0722_0_classd_hinb;
   assign classd_lina[0] = n3_te0722_0_classd_lina;
   assign classd_linb[0] = n3_te0722_0_classd_linb;
   assign conv[0] = n3_te0722_0_conv;
+  assign dummy_1 = dummy[0];
   assign keepon[0] = n3_te0722_0_keepon;
   assign lcdcontrast[0] = n3_te0722_0_lcdcontrast;
   assign lcdctrl[2:0] = n3_te0722_0_lcdctrl;
@@ -135,6 +142,7 @@ module PS_PL
   assign ledb[0] = n3_te0722_0_ledb;
   assign ledg[0] = n3_te0722_0_ledg;
   assign ledr[0] = n3_te0722_0_ledr;
+  assign match_z[0] = n3_te0722_0_match_z;
   assign psuclk[0] = n3_te0722_0_psuclk;
   assign ptt_1 = ptt[0];
   assign pwmaudio[0] = n3_te0722_0_pwmaudio;
@@ -162,13 +170,14 @@ PS_PL_clk_wiz_0_1 clk_wiz_0
 PS_PL_n3_te0722_0_1 n3_te0722_0
        (.adc_cal(n3_te0722_0_adc_cal),
         .adc_gain(n3_te0722_0_adc_gain),
-        .attenuatoron(n3_te0722_0_attenuatoron),
+        .attenuatoron(attenuatoron_1),
         .classd_hina(n3_te0722_0_classd_hina),
         .classd_hinb(n3_te0722_0_classd_hinb),
         .classd_lina(n3_te0722_0_classd_lina),
         .classd_linb(n3_te0722_0_classd_linb),
         .clk(clk_wiz_0_clk_out1),
         .conv(n3_te0722_0_conv),
+        .dummy(dummy_1),
         .keepon(n3_te0722_0_keepon),
         .lcdcontrast(n3_te0722_0_lcdcontrast),
         .lcdctrl(n3_te0722_0_lcdctrl),
@@ -176,6 +185,7 @@ PS_PL_n3_te0722_0_1 n3_te0722_0
         .ledb(n3_te0722_0_ledb),
         .ledg(n3_te0722_0_ledg),
         .ledr(n3_te0722_0_ledr),
+        .match_z(n3_te0722_0_match_z),
         .psuclk(n3_te0722_0_psuclk),
         .ptt(ptt_1),
         .pwmaudio(n3_te0722_0_pwmaudio),

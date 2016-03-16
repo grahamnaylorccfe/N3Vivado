@@ -147,12 +147,15 @@ proc create_root_design { parentCell } {
   # Create ports
   set adc_cal [ create_bd_port -dir O -from 0 -to 0 -type data adc_cal ]
   set adc_gain [ create_bd_port -dir O -from 3 -to 0 -type data adc_gain ]
-  set attenuatoron [ create_bd_port -dir O -from 0 -to 0 -type data attenuatoron ]
+  set attenuatoron [ create_bd_port -dir I -from 0 -to 0 -type data attenuatoron ]
+  set_property -dict [ list CONFIG.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}}  ] $attenuatoron
   set classd_hina [ create_bd_port -dir O -from 0 -to 0 -type data classd_hina ]
   set classd_hinb [ create_bd_port -dir O -from 0 -to 0 -type data classd_hinb ]
   set classd_lina [ create_bd_port -dir O -from 0 -to 0 -type data classd_lina ]
   set classd_linb [ create_bd_port -dir O -from 0 -to 0 -type data classd_linb ]
   set conv [ create_bd_port -dir O -from 0 -to 0 -type data conv ]
+  set dummy [ create_bd_port -dir I -from 0 -to 0 -type data dummy ]
+  set_property -dict [ list CONFIG.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}}  ] $dummy
   set keepon [ create_bd_port -dir O -from 0 -to 0 -type data keepon ]
   set lcdcontrast [ create_bd_port -dir O -from 0 -to 0 -type data lcdcontrast ]
   set lcdctrl [ create_bd_port -dir O -from 2 -to 0 -type data lcdctrl ]
@@ -160,6 +163,7 @@ proc create_root_design { parentCell } {
   set ledb [ create_bd_port -dir O -from 0 -to 0 -type data ledb ]
   set ledg [ create_bd_port -dir O -from 0 -to 0 -type data ledg ]
   set ledr [ create_bd_port -dir O -from 0 -to 0 -type data ledr ]
+  set match_z [ create_bd_port -dir O -from 0 -to 0 -type data match_z ]
   set psuclk [ create_bd_port -dir O -from 0 -to 0 -type data psuclk ]
   set ptt [ create_bd_port -dir I -from 0 -to 0 -type data ptt ]
   set_property -dict [ list CONFIG.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}}  ] $ptt
@@ -196,17 +200,18 @@ proc create_root_design { parentCell } {
   set_property -dict [ list CONFIG.CLKIN1_JITTER_PS {200.0} CONFIG.CLKOUT1_JITTER {355.349} CONFIG.CLKOUT1_PHASE_ERROR {294.178} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {48.517} CONFIG.PRIM_IN_FREQ {50} CONFIG.RESET_TYPE {ACTIVE_LOW}  ] $clk_wiz_0
 
   # Create instance: n3_te0722_0, and set properties
-  set n3_te0722_0 [ create_bd_cell -type ip -vlnv AssociationNicola:SysGen:n3_te0722:1.17 n3_te0722_0 ]
+  set n3_te0722_0 [ create_bd_cell -type ip -vlnv AssociationNicola:SysGen:n3_te0722:1.23 n3_te0722_0 ]
 
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]
   set_property -dict [ list CONFIG.PCW_UIPARAM_DDR_ENABLE {0} CONFIG.PCW_USE_M_AXI_GP0 {0}  ] $processing_system7_0
 
   # Create port connections
+  connect_bd_net -net attenuatoron_1 [get_bd_ports attenuatoron] [get_bd_pins n3_te0722_0/attenuatoron]
   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins n3_te0722_0/clk]
+  connect_bd_net -net dummy_1 [get_bd_ports dummy] [get_bd_pins n3_te0722_0/dummy]
   connect_bd_net -net n3_te0722_0_adc_cal [get_bd_ports adc_cal] [get_bd_pins n3_te0722_0/adc_cal]
   connect_bd_net -net n3_te0722_0_adc_gain [get_bd_ports adc_gain] [get_bd_pins n3_te0722_0/adc_gain]
-  connect_bd_net -net n3_te0722_0_attenuatoron [get_bd_ports attenuatoron] [get_bd_pins n3_te0722_0/attenuatoron]
   connect_bd_net -net n3_te0722_0_classd_hina [get_bd_ports classd_hina] [get_bd_pins n3_te0722_0/classd_hina]
   connect_bd_net -net n3_te0722_0_classd_hinb [get_bd_ports classd_hinb] [get_bd_pins n3_te0722_0/classd_hinb]
   connect_bd_net -net n3_te0722_0_classd_lina [get_bd_ports classd_lina] [get_bd_pins n3_te0722_0/classd_lina]
@@ -219,6 +224,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net n3_te0722_0_ledb [get_bd_ports ledb] [get_bd_pins n3_te0722_0/ledb]
   connect_bd_net -net n3_te0722_0_ledg [get_bd_ports ledg] [get_bd_pins n3_te0722_0/ledg]
   connect_bd_net -net n3_te0722_0_ledr [get_bd_ports ledr] [get_bd_pins n3_te0722_0/ledr]
+  connect_bd_net -net n3_te0722_0_match_z [get_bd_ports match_z] [get_bd_pins n3_te0722_0/match_z]
   connect_bd_net -net n3_te0722_0_psuclk [get_bd_ports psuclk] [get_bd_pins n3_te0722_0/psuclk]
   connect_bd_net -net n3_te0722_0_pwmaudio [get_bd_ports pwmaudio] [get_bd_pins n3_te0722_0/pwmaudio]
   connect_bd_net -net n3_te0722_0_rs232_to_bt [get_bd_ports rs232_to_bt] [get_bd_pins n3_te0722_0/rs232_to_bt]

@@ -227,10 +227,10 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_mult_gen_v12_0_2/n3_te0722_mult_gen_v12_0_2_ooc.xdc
 
-# XDC: ipshared/AssociationNicola/n3_te0722_v1_17/4b62fc81/constrs/n3_te0722_clock.xdc
+# XDC: ipshared/AssociationNicola/n3_te0722_v1_23/8eb28535/constrs/n3_te0722_clock.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==PS_PL_n3_te0722_0_1 || ORIG_REF_NAME==PS_PL_n3_te0722_0_1}] {/U0 }]/U0 ]]
 
-# XDC: ipshared/AssociationNicola/n3_te0722_v1_17/4b62fc81/constrs/n3_te0722.xdc
+# XDC: ipshared/AssociationNicola/n3_te0722_v1_23/8eb28535/constrs/n3_te0722.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==PS_PL_n3_te0722_0_1 || ORIG_REF_NAME==PS_PL_n3_te0722_0_1}] {/U0 }]/U0 ]]
 
 # XDC: bd/PS_PL/ip/PS_PL_clk_wiz_0_1/PS_PL_clk_wiz_0_1_board.xdc

@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: AssociationNicola:SysGen:n3_te0722:1.17
--- IP Revision: 85574016
+-- IP VLNV: AssociationNicola:SysGen:n3_te0722:1.23
+-- IP Revision: 88813840
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -68,12 +68,13 @@ ENTITY PS_PL_n3_te0722_0_1 IS
     touchon : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     touchselect : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     touchup : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    attenuatoron : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    dummy : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     clk : IN STD_LOGIC;
     rs232datapresent : OUT STD_LOGIC;
     signallevel : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
     adc_cal : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
     adc_gain : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-    attenuatoron : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
     conv : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
     classd_hina : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
     classd_hinb : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
@@ -86,6 +87,7 @@ ENTITY PS_PL_n3_te0722_0_1 IS
     ledb : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
     ledg : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
     ledr : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+    match_z : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
     psuclk : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
     pwmaudio : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
     rs232_to_bt : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
@@ -116,12 +118,13 @@ ARCHITECTURE PS_PL_n3_te0722_0_1_arch OF PS_PL_n3_te0722_0_1 IS
       touchon : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       touchselect : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       touchup : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+      attenuatoron : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+      dummy : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       clk : IN STD_LOGIC;
       rs232datapresent : OUT STD_LOGIC;
       signallevel : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
       adc_cal : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
       adc_gain : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-      attenuatoron : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
       conv : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
       classd_hina : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
       classd_hinb : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
@@ -134,6 +137,7 @@ ARCHITECTURE PS_PL_n3_te0722_0_1_arch OF PS_PL_n3_te0722_0_1 IS
       ledb : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
       ledg : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
       ledr : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+      match_z : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
       psuclk : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
       pwmaudio : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
       rs232_to_bt : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
@@ -162,12 +166,13 @@ ARCHITECTURE PS_PL_n3_te0722_0_1_arch OF PS_PL_n3_te0722_0_1 IS
   ATTRIBUTE X_INTERFACE_INFO OF touchon: SIGNAL IS "xilinx.com:signal:data:1.0 touchon DATA";
   ATTRIBUTE X_INTERFACE_INFO OF touchselect: SIGNAL IS "xilinx.com:signal:data:1.0 touchselect DATA";
   ATTRIBUTE X_INTERFACE_INFO OF touchup: SIGNAL IS "xilinx.com:signal:data:1.0 touchup DATA";
+  ATTRIBUTE X_INTERFACE_INFO OF attenuatoron: SIGNAL IS "xilinx.com:signal:data:1.0 attenuatoron DATA";
+  ATTRIBUTE X_INTERFACE_INFO OF dummy: SIGNAL IS "xilinx.com:signal:data:1.0 dummy DATA";
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
   ATTRIBUTE X_INTERFACE_INFO OF rs232datapresent: SIGNAL IS "xilinx.com:signal:data:1.0 rs232datapresent DATA";
   ATTRIBUTE X_INTERFACE_INFO OF signallevel: SIGNAL IS "xilinx.com:signal:data:1.0 signallevel DATA";
   ATTRIBUTE X_INTERFACE_INFO OF adc_cal: SIGNAL IS "xilinx.com:signal:data:1.0 adc_cal DATA";
   ATTRIBUTE X_INTERFACE_INFO OF adc_gain: SIGNAL IS "xilinx.com:signal:data:1.0 adc_gain DATA";
-  ATTRIBUTE X_INTERFACE_INFO OF attenuatoron: SIGNAL IS "xilinx.com:signal:data:1.0 attenuatoron DATA";
   ATTRIBUTE X_INTERFACE_INFO OF conv: SIGNAL IS "xilinx.com:signal:data:1.0 conv DATA";
   ATTRIBUTE X_INTERFACE_INFO OF classd_hina: SIGNAL IS "xilinx.com:signal:data:1.0 classd_hina DATA";
   ATTRIBUTE X_INTERFACE_INFO OF classd_hinb: SIGNAL IS "xilinx.com:signal:data:1.0 classd_hinb DATA";
@@ -180,6 +185,7 @@ ARCHITECTURE PS_PL_n3_te0722_0_1_arch OF PS_PL_n3_te0722_0_1 IS
   ATTRIBUTE X_INTERFACE_INFO OF ledb: SIGNAL IS "xilinx.com:signal:data:1.0 ledb DATA";
   ATTRIBUTE X_INTERFACE_INFO OF ledg: SIGNAL IS "xilinx.com:signal:data:1.0 ledg DATA";
   ATTRIBUTE X_INTERFACE_INFO OF ledr: SIGNAL IS "xilinx.com:signal:data:1.0 ledr DATA";
+  ATTRIBUTE X_INTERFACE_INFO OF match_z: SIGNAL IS "xilinx.com:signal:data:1.0 match_z DATA";
   ATTRIBUTE X_INTERFACE_INFO OF psuclk: SIGNAL IS "xilinx.com:signal:data:1.0 psuclk DATA";
   ATTRIBUTE X_INTERFACE_INFO OF pwmaudio: SIGNAL IS "xilinx.com:signal:data:1.0 pwmaudio DATA";
   ATTRIBUTE X_INTERFACE_INFO OF rs232_to_bt: SIGNAL IS "xilinx.com:signal:data:1.0 rs232_to_bt DATA";
@@ -204,12 +210,13 @@ BEGIN
       touchon => touchon,
       touchselect => touchselect,
       touchup => touchup,
+      attenuatoron => attenuatoron,
+      dummy => dummy,
       clk => clk,
       rs232datapresent => rs232datapresent,
       signallevel => signallevel,
       adc_cal => adc_cal,
       adc_gain => adc_gain,
-      attenuatoron => attenuatoron,
       conv => conv,
       classd_hina => classd_hina,
       classd_hinb => classd_hinb,
@@ -222,6 +229,7 @@ BEGIN
       ledb => ledb,
       ledg => ledg,
       ledr => ledr,
+      match_z => match_z,
       psuclk => psuclk,
       pwmaudio => pwmaudio,
       rs232_to_bt => rs232_to_bt,
