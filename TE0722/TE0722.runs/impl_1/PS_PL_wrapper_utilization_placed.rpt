@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date         : Sun Mar 13 23:11:22 2016
-| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Date         : Sat Mar 19 17:53:43 2016
+| Host         : graham-Latitude-E5500 running 64-bit unknown
 | Command      : report_utilization -file PS_PL_wrapper_utilization_placed.rpt -pb PS_PL_wrapper_utilization_placed.pb
 | Design       : PS_PL_wrapper
 | Device       : xc7z010

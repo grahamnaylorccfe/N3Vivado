@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: AssociationNicola:SysGen:n3_te0722:1.23
--- IP Revision: 88813840
+-- IP VLNV: AssociationNicola:SysGen:n3_te0722:1.24
+-- IP Revision: 89299520
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -58,6 +58,8 @@ USE xil_defaultlib.n3_te0722;
 
 ENTITY PS_PL_n3_te0722_0_1 IS
   PORT (
+    attenuatoron : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    dummy : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     ptt : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     rs232_from_bt : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     rs232rx : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
@@ -68,8 +70,6 @@ ENTITY PS_PL_n3_te0722_0_1 IS
     touchon : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     touchselect : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     touchup : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    attenuatoron : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    dummy : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     clk : IN STD_LOGIC;
     rs232datapresent : OUT STD_LOGIC;
     signallevel : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
@@ -108,6 +108,8 @@ ARCHITECTURE PS_PL_n3_te0722_0_1_arch OF PS_PL_n3_te0722_0_1 IS
 
   COMPONENT n3_te0722 IS
     PORT (
+      attenuatoron : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+      dummy : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       ptt : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       rs232_from_bt : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       rs232rx : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
@@ -118,8 +120,6 @@ ARCHITECTURE PS_PL_n3_te0722_0_1_arch OF PS_PL_n3_te0722_0_1 IS
       touchon : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       touchselect : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       touchup : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-      attenuatoron : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-      dummy : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       clk : IN STD_LOGIC;
       rs232datapresent : OUT STD_LOGIC;
       signallevel : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
@@ -156,6 +156,8 @@ ARCHITECTURE PS_PL_n3_te0722_0_1_arch OF PS_PL_n3_te0722_0_1 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF PS_PL_n3_te0722_0_1_arch : ARCHITECTURE IS "PS_PL_n3_te0722_0_1,n3_te0722,{}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
+  ATTRIBUTE X_INTERFACE_INFO OF attenuatoron: SIGNAL IS "xilinx.com:signal:data:1.0 attenuatoron DATA";
+  ATTRIBUTE X_INTERFACE_INFO OF dummy: SIGNAL IS "xilinx.com:signal:data:1.0 dummy DATA";
   ATTRIBUTE X_INTERFACE_INFO OF ptt: SIGNAL IS "xilinx.com:signal:data:1.0 ptt DATA";
   ATTRIBUTE X_INTERFACE_INFO OF rs232_from_bt: SIGNAL IS "xilinx.com:signal:data:1.0 rs232_from_bt DATA";
   ATTRIBUTE X_INTERFACE_INFO OF rs232rx: SIGNAL IS "xilinx.com:signal:data:1.0 rs232rx DATA";
@@ -166,8 +168,6 @@ ARCHITECTURE PS_PL_n3_te0722_0_1_arch OF PS_PL_n3_te0722_0_1 IS
   ATTRIBUTE X_INTERFACE_INFO OF touchon: SIGNAL IS "xilinx.com:signal:data:1.0 touchon DATA";
   ATTRIBUTE X_INTERFACE_INFO OF touchselect: SIGNAL IS "xilinx.com:signal:data:1.0 touchselect DATA";
   ATTRIBUTE X_INTERFACE_INFO OF touchup: SIGNAL IS "xilinx.com:signal:data:1.0 touchup DATA";
-  ATTRIBUTE X_INTERFACE_INFO OF attenuatoron: SIGNAL IS "xilinx.com:signal:data:1.0 attenuatoron DATA";
-  ATTRIBUTE X_INTERFACE_INFO OF dummy: SIGNAL IS "xilinx.com:signal:data:1.0 dummy DATA";
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
   ATTRIBUTE X_INTERFACE_INFO OF rs232datapresent: SIGNAL IS "xilinx.com:signal:data:1.0 rs232datapresent DATA";
   ATTRIBUTE X_INTERFACE_INFO OF signallevel: SIGNAL IS "xilinx.com:signal:data:1.0 signallevel DATA";
@@ -200,6 +200,8 @@ ARCHITECTURE PS_PL_n3_te0722_0_1_arch OF PS_PL_n3_te0722_0_1 IS
 BEGIN
   U0 : n3_te0722
     PORT MAP (
+      attenuatoron => attenuatoron,
+      dummy => dummy,
       ptt => ptt,
       rs232_from_bt => rs232_from_bt,
       rs232rx => rs232rx,
@@ -210,8 +212,6 @@ BEGIN
       touchon => touchon,
       touchselect => touchselect,
       touchup => touchup,
-      attenuatoron => attenuatoron,
-      dummy => dummy,
       clk => clk,
       rs232datapresent => rs232datapresent,
       signallevel => signallevel,

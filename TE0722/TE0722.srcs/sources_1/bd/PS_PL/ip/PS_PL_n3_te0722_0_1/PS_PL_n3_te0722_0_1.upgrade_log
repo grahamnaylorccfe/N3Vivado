@@ -1,6 +1,37 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Sat Mar 19 14:47:44 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.23 (Rev. 88813840) to AssociationNicola:SysGen:n3_te0722:1.24 (Rev. 89299520)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'PS_PL_n3_te0722_0_1'. These changes may impact your design.
+
+
+-upgraded port order differs after port 'attenuatoron'
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
 | Date         : Sun Mar 13 22:37:20 2016
 | Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
 | Command      : upgrade_ip

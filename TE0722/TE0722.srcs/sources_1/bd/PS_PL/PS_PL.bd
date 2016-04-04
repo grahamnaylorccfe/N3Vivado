@@ -1190,7 +1190,7 @@
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>n3_te0722_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="SysGen" spirit:name="n3_te0722" spirit:vendor="AssociationNicola" spirit:version="1.23"/>
+        <spirit:componentRef spirit:library="SysGen" spirit:name="n3_te0722" spirit:vendor="AssociationNicola" spirit:version="1.24"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">PS_PL_n3_te0722_0_1</spirit:configurableElementValue>
         </spirit:configurableElementValues>

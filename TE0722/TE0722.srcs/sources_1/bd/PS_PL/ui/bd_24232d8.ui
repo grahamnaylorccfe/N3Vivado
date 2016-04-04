@@ -8,7 +8,7 @@ preplace portBus classd_lina -pg 1 -y 210 -defaultsOSRD
 preplace portBus classd_linb -pg 1 -y 230 -defaultsOSRD
 preplace portBus touchselect -pg 1 -y 370 -defaultsOSRD
 preplace portBus rs232rx -pg 1 -y 250 -defaultsOSRD
-preplace portBus ptt -pg 1 -y 210 -defaultsOSRD
+preplace portBus ptt -pg 1 -y 200 -defaultsOSRD
 preplace portBus ledb -pg 1 -y 330 -defaultsOSRD
 preplace portBus conv -pg 1 -y 150 -defaultsOSRD
 preplace portBus adc_gain -pg 1 -y 110 -defaultsOSRD
@@ -16,6 +16,7 @@ preplace portBus psuclk -pg 1 -y 580 -defaultsOSRD
 preplace portBus lcdctrl -pg 1 -y 290 -defaultsOSRD
 preplace portBus pwmaudio -pg 1 -y 390 -defaultsOSRD
 preplace portBus rs232tx -pg 1 -y 430 -defaultsOSRD
+preplace portBus attenuatoron -pg 1 -y 410 -defaultsOSRD
 preplace portBus ledr -pg 1 -y 370 -defaultsOSRD
 preplace portBus classd_hina -pg 1 -y 170 -defaultsOSRD
 preplace portBus sdoa -pg 1 -y 270 -defaultsOSRD
@@ -31,53 +32,56 @@ preplace portBus touchdown -pg 1 -y 330 -defaultsOSRD
 preplace portBus sdob -pg 1 -y 290 -defaultsOSRD
 preplace portBus ledg -pg 1 -y 350 -defaultsOSRD
 preplace portBus adc_cal -pg 1 -y 90 -defaultsOSRD
+preplace portBus dummy -pg 1 -y 430 -defaultsOSRD
 preplace portBus touchup -pg 1 -y 390 -defaultsOSRD
 preplace portBus std_bt -pg 1 -y 310 -defaultsOSRD
 preplace portBus touchon -pg 1 -y 350 -defaultsOSRD
-preplace portBus rs232_from_bt -pg 1 -y 230 -defaultsOSRD
+preplace portBus rs232_from_bt -pg 1 -y 220 -defaultsOSRD
 preplace portBus lcddata -pg 1 -y 310 -defaultsOSRD
 preplace inst n3_te0722_0 -pg 1 -lvl 3 -y 320 -defaultsOSRD
 preplace inst clk_wiz_0 -pg 1 -lvl 2 -y 160 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 1 -y 160 -defaultsOSRD
-preplace netloc n3_te0722_0_sclk_bt 1 3 1 1200
-preplace netloc n3_te0722_0_conv 1 3 1 1220
+preplace netloc dummy_1 1 0 3 NJ 430 NJ 430 740
+preplace netloc n3_te0722_0_sclk_bt 1 3 1 1360
+preplace netloc n3_te0722_0_conv 1 3 1 1380
 preplace netloc n3_te0722_0_adc_cal 1 3 1 N
-preplace netloc n3_te0722_0_match_z 1 3 1 1100
-preplace netloc sdob_1 1 0 3 NJ 290 NJ 290 660
-preplace netloc n3_te0722_0_classd_lina 1 3 1 1190
-preplace netloc n3_te0722_0_classd_linb 1 3 1 1180
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 480
-preplace netloc n3_te0722_0_rst_bb 1 3 1 1180
-preplace netloc n3_te0722_0_lcddata 1 3 1 1140
-preplace netloc touchup_1 1 0 3 NJ 390 NJ 390 690
-preplace netloc touchdown_1 1 0 3 NJ 330 NJ 330 690
-preplace netloc n3_te0722_0_srd_bt 1 3 1 1220
-preplace netloc n3_te0722_0_sck 1 3 1 1190
-preplace netloc n3_te0722_0_lcdcontrast 1 3 1 1160
-preplace netloc n3_te0722_0_classd_hina 1 3 1 1210
-preplace netloc n3_te0722_0_pwmaudio 1 3 1 1120
-preplace netloc std_bt_1 1 0 3 NJ 310 NJ 310 690
-preplace netloc ptt_1 1 0 3 NJ 230 NJ 230 650
-preplace netloc n3_te0722_0_rs232_to_bt 1 3 1 1140
-preplace netloc n3_te0722_0_ledb 1 3 1 1130
-preplace netloc n3_te0722_0_classd_hinb 1 3 1 1200
-preplace netloc clk_wiz_0_clk_out1 1 2 1 680
-preplace netloc n3_te0722_0_lcdctrl 1 3 1 1150
-preplace netloc touchselect_1 1 0 3 NJ 370 NJ 370 690
-preplace netloc n3_te0722_0_sfs_bt 1 3 1 1210
-preplace netloc n3_te0722_0_psuclk 1 3 1 1090
-preplace netloc processing_system7_0_FCLK_CLK0 1 1 1 480
-preplace netloc touchon_1 1 0 3 NJ 350 NJ 350 690
-preplace netloc rs232_from_bt_1 1 0 3 NJ 240 NJ 240 660
-preplace netloc n3_te0722_0_rs232tx 1 3 1 1160
-preplace netloc n3_te0722_0_ledr 1 3 1 1110
-preplace netloc n3_te0722_0_keepon 1 3 1 1170
+preplace netloc n3_te0722_0_match_z 1 3 1 1260
+preplace netloc sdob_1 1 0 3 NJ 480 NJ 480 800
+preplace netloc n3_te0722_0_classd_lina 1 3 1 1350
+preplace netloc n3_te0722_0_classd_linb 1 3 1 1340
+preplace netloc attenuatoron_1 1 0 3 NJ 410 NJ 410 730
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 560
+preplace netloc n3_te0722_0_rst_bb 1 3 1 1340
+preplace netloc n3_te0722_0_lcddata 1 3 1 1300
+preplace netloc touchup_1 1 0 3 NJ 530 NJ 530 850
+preplace netloc touchdown_1 1 0 3 NJ 500 NJ 500 820
+preplace netloc n3_te0722_0_srd_bt 1 3 1 1380
+preplace netloc n3_te0722_0_sck 1 3 1 1350
+preplace netloc n3_te0722_0_lcdcontrast 1 3 1 1320
+preplace netloc n3_te0722_0_classd_hina 1 3 1 1370
+preplace netloc n3_te0722_0_pwmaudio 1 3 1 1280
+preplace netloc std_bt_1 1 0 3 NJ 490 NJ 490 810
+preplace netloc ptt_1 1 0 3 NJ 440 NJ 440 750
+preplace netloc n3_te0722_0_rs232_to_bt 1 3 1 1300
+preplace netloc n3_te0722_0_ledb 1 3 1 1290
+preplace netloc n3_te0722_0_classd_hinb 1 3 1 1360
+preplace netloc clk_wiz_0_clk_out1 1 2 1 790
+preplace netloc n3_te0722_0_lcdctrl 1 3 1 1310
+preplace netloc touchselect_1 1 0 3 NJ 520 NJ 520 840
+preplace netloc n3_te0722_0_sfs_bt 1 3 1 1370
+preplace netloc n3_te0722_0_psuclk 1 3 1 1250
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 1 560
+preplace netloc touchon_1 1 0 3 NJ 510 NJ 510 830
+preplace netloc rs232_from_bt_1 1 0 3 NJ 450 NJ 450 760
+preplace netloc n3_te0722_0_rs232tx 1 3 1 1320
+preplace netloc n3_te0722_0_ledr 1 3 1 1270
+preplace netloc n3_te0722_0_keepon 1 3 1 1330
 preplace netloc n3_te0722_0_adc_gain 1 3 1 N
-preplace netloc sdoa_1 1 0 3 NJ 270 NJ 270 660
-preplace netloc rs232rx_1 1 0 3 NJ 250 NJ 250 670
-preplace netloc n3_te0722_0_tx_low 1 3 1 1160
-preplace netloc n3_te0722_0_ledg 1 3 1 1120
-levelinfo -pg 1 170 340 570 890 1240
+preplace netloc sdoa_1 1 0 3 NJ 470 NJ 470 780
+preplace netloc rs232rx_1 1 0 3 NJ 460 NJ 460 770
+preplace netloc n3_te0722_0_tx_low 1 3 1 1320
+preplace netloc n3_te0722_0_ledg 1 3 1 1280
+levelinfo -pg 1 170 420 650 1050 1400
 ",
 }
 0
