@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: AssociationNicola:SysGen:n3_te0722:1.24
--- IP Revision: 89299520
+-- IP VLNV: AssociationNicola:SysGen:n3_te0722:1.25
+-- IP Revision: 90924353
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;

@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date             : Sat Mar 19 17:54:32 2016
+| Date             : Sat Apr  9 18:02:20 2016
 | Host             : graham-Latitude-E5500 running 64-bit unknown
 | Command          : report_power -file PS_PL_wrapper_power_routed.rpt -pb PS_PL_wrapper_power_summary_routed.pb
 | Design           : PS_PL_wrapper
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.888 |
-| Dynamic (W)              | 0.776 |
+| Total On-Chip Power (W)  | 0.916 |
+| Dynamic (W)              | 0.804 |
 | Device Static (W)        | 0.112 |
 | Effective TJA (C/W)      | 11.5  |
-| Max Ambient (C)          | 74.8  |
-| Junction Temperature (C) | 35.2  |
+| Max Ambient (C)          | 74.4  |
+| Junction Temperature (C) | 35.6  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,23 +49,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.005 |        6 |       --- |             --- |
+| Clocks                   |     0.006 |        6 |       --- |             --- |
 | Slice Logic              |     0.008 |     6997 |       --- |             --- |
-|   LUT as Logic           |     0.006 |     1797 |     17600 |           10.21 |
+|   LUT as Logic           |     0.006 |     1795 |     17600 |           10.19 |
 |   LUT as Distributed RAM |    <0.001 |      240 |      6000 |            4.00 |
 |   CARRY4                 |    <0.001 |      303 |      4400 |            6.88 |
 |   Register               |    <0.001 |     2708 |     35200 |            7.69 |
 |   F7/F8 Muxes            |    <0.001 |      163 |     17600 |            0.92 |
 |   LUT as Shift Register  |    <0.001 |       86 |      6000 |            1.43 |
 |   Others                 |     0.000 |     1125 |       --- |             --- |
-| Signals                  |     0.009 |     4181 |       --- |             --- |
+| Signals                  |     0.009 |     4179 |       --- |             --- |
 | Block RAM                |     0.011 |     12.5 |        60 |           20.83 |
-| MMCM                     |     0.102 |        1 |         2 |           50.00 |
+| MMCM                     |     0.129 |        1 |         2 |           50.00 |
 | DSPs                     |     0.001 |        3 |        80 |            3.75 |
 | I/O                      |     0.006 |       49 |        54 |           90.74 |
 | PS7                      |     0.635 |        1 |       --- |             --- |
 | Static Power             |     0.112 |          |           |                 |
-| Total                    |     0.888 |          |           |                 |
+| Total                    |     0.916 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,8 +75,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.039 |       0.033 |      0.005 |
-| Vccaux    |       1.800 |     0.068 |       0.057 |      0.011 |
+| Vccint    |       1.000 |     0.039 |       0.034 |      0.005 |
+| Vccaux    |       1.800 |     0.083 |       0.071 |      0.011 |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -140,8 +140,8 @@ Table of Contents
 +----------------------------+----------------------------------------------------------+-----------------+
 | clk_fpga_0                 | PS_PL_i/processing_system7_0/inst/FCLK_CLK0              |            20.0 |
 | clk_fpga_0                 | PS_PL_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0] |            20.0 |
-| clk_out1_PS_PL_clk_wiz_0_1 | PS_PL_i/clk_wiz_0/inst/clk_out1_PS_PL_clk_wiz_0_1        |            20.6 |
-| clkfbout_PS_PL_clk_wiz_0_1 | PS_PL_i/clk_wiz_0/inst/clkfbout_PS_PL_clk_wiz_0_1        |            40.0 |
+| clk_out1_PS_PL_clk_wiz_0_1 | PS_PL_i/clk_wiz_0/inst/clk_out1_PS_PL_clk_wiz_0_1        |            20.3 |
+| clkfbout_PS_PL_clk_wiz_0_1 | PS_PL_i/clk_wiz_0/inst/clkfbout_PS_PL_clk_wiz_0_1        |            20.0 |
 +----------------------------+----------------------------------------------------------+-----------------+
 
 
@@ -154,13 +154,13 @@ Table of Contents
 +-------------------------------------------------------------------+-----------+
 | Name                                                              | Power (W) |
 +-------------------------------------------------------------------+-----------+
-| PS_PL_wrapper                                                     |     0.776 |
-|   PS_PL_i                                                         |     0.771 |
-|     clk_wiz_0                                                     |     0.102 |
-|       inst                                                        |     0.102 |
-|     n3_te0722_0                                                   |     0.033 |
-|       U0                                                          |     0.033 |
-|         n3_te0722_struct                                          |     0.033 |
+| PS_PL_wrapper                                                     |     0.804 |
+|   PS_PL_i                                                         |     0.798 |
+|     clk_wiz_0                                                     |     0.129 |
+|       inst                                                        |     0.129 |
+|     n3_te0722_0                                                   |     0.034 |
+|       U0                                                          |     0.034 |
+|         n3_te0722_struct                                          |     0.034 |
 |           adcread                                                 |    <0.001 |
 |             subsystem1                                            |    <0.001 |
 |               delay1                                              |    <0.001 |

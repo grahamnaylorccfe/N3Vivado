@@ -39,17 +39,15 @@ set_property PACKAGE_PIN N14 [get_ports {adc_gain[2]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {adc_gain[2]}]
 set_property PACKAGE_PIN M11 [get_ports {adc_gain[3]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {adc_gain[3]}]
-set_property PACKAGE_PIN N11 [get_ports {attenuatoron[0]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {attenuatoron[0]}]
+set_property PACKAGE_PIN N11 [get_ports {unused_input1[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {unused_input1[0]}]
 
-#Set faulty pin as input in case it connects
-set_property PACKAGE_PIN M12 [get_ports {dummy[0]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {dummy[0]}]
+#USB5_5
+set_property PACKAGE_PIN L13 [get_ports {unused_input2[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {unused_input2[0]}]
 
-#Original setting
-#set_property PACKAGE_PIN M12 [get_ports conv[0]]
-#redirect in duff proto to USBB_5
-set_property PACKAGE_PIN L13 [get_ports {conv[0]}]
+#Original setting - changed back for production
+set_property PACKAGE_PIN M12 [get_ports conv[0]]
 set_property IOSTANDARD LVCMOS33 [get_ports {conv[0]}]
 set_property PACKAGE_PIN N7 [get_ports {classd_hina[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {classd_hina[0]}]

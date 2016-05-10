@@ -729,7 +729,7 @@
         <spirit:parameters/>
       </spirit:busInterface>
       <spirit:busInterface>
-        <spirit:name>DATA.ATTENUATORON</spirit:name>
+        <spirit:name>DATA.UNUSED_INPUT1</spirit:name>
         <spirit:displayName>Data</spirit:displayName>
         <spirit:description>Data</spirit:description>
         <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
@@ -741,7 +741,7 @@
               <spirit:name>DATA</spirit:name>
             </spirit:logicalPort>
             <spirit:physicalPort>
-              <spirit:name>attenuatoron</spirit:name>
+              <spirit:name>unused_input1</spirit:name>
             </spirit:physicalPort>
           </spirit:portMap>
         </spirit:portMaps>
@@ -753,7 +753,7 @@
         </spirit:parameters>
       </spirit:busInterface>
       <spirit:busInterface>
-        <spirit:name>DATA.DUMMY</spirit:name>
+        <spirit:name>DATA.UNUSED_INPUT2</spirit:name>
         <spirit:displayName>Data</spirit:displayName>
         <spirit:description>Data</spirit:description>
         <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
@@ -765,7 +765,7 @@
               <spirit:name>DATA</spirit:name>
             </spirit:logicalPort>
             <spirit:physicalPort>
-              <spirit:name>dummy</spirit:name>
+              <spirit:name>unused_input2</spirit:name>
             </spirit:physicalPort>
           </spirit:portMap>
         </spirit:portMaps>
@@ -1137,7 +1137,7 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>attenuatoron</spirit:name>
+          <spirit:name>unused_input1</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
             <spirit:vector>
@@ -1147,7 +1147,7 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>dummy</spirit:name>
+          <spirit:name>unused_input2</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
             <spirit:vector>
@@ -1182,15 +1182,15 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">PS_PL_clk_wiz_0_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PRIM_IN_FREQ">50</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CLKIN1_JITTER_PS">200.0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_REQUESTED_OUT_FREQ">48.517</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_REQUESTED_OUT_FREQ">49.152</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="RESET_TYPE">ACTIVE_LOW</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_JITTER">355.349</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_PHASE_ERROR">294.178</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_JITTER">177.254</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_PHASE_ERROR">162.020</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>n3_te0722_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="SysGen" spirit:name="n3_te0722" spirit:vendor="AssociationNicola" spirit:version="1.24"/>
+        <spirit:componentRef spirit:library="SysGen" spirit:name="n3_te0722" spirit:vendor="AssociationNicola" spirit:version="1.25"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">PS_PL_n3_te0722_0_1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
@@ -1389,12 +1389,12 @@
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>attenuatoron_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="attenuatoron"/>
+        <spirit:externalPortReference spirit:portRef="unused_input1"/>
         <spirit:internalPortReference spirit:componentRef="n3_te0722_0" spirit:portRef="attenuatoron"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>dummy_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="dummy"/>
+        <spirit:externalPortReference spirit:portRef="unused_input2"/>
         <spirit:internalPortReference spirit:componentRef="n3_te0722_0" spirit:portRef="dummy"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
