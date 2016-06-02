@@ -3,20 +3,20 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity n3_te0722_monostable1_x7 is
+entity n3_te0722_monostable1_x10 is
   port (
     in1 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out1 : out std_logic_vector( 1-1 downto 0 )
   );
-end n3_te0722_monostable1_x7;
-architecture structural of n3_te0722_monostable1_x7 is 
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+end n3_te0722_monostable1_x10;
+architecture structural of n3_te0722_monostable1_x10 is 
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal clk_net : std_logic;
   signal convert1_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   out1 <= logical_y_net;
@@ -156,7 +156,7 @@ begin
   convert1_dout_net <= trig;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  monostable1_x0 : entity xil_defaultlib.n3_te0722_monostable1_x7 
+  monostable1_x0 : entity xil_defaultlib.n3_te0722_monostable1_x10 
   port map (
     in1 => convert1_dout_net,
     clk_1 => clk_net,
@@ -638,15 +638,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity n3_te0722_monostable1_x8 is
+entity n3_te0722_monostable1_x11 is
   port (
     in1 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out1 : out std_logic_vector( 1-1 downto 0 )
   );
-end n3_te0722_monostable1_x8;
-architecture structural of n3_te0722_monostable1_x8 is 
+end n3_te0722_monostable1_x11;
+architecture structural of n3_te0722_monostable1_x11 is 
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
@@ -726,7 +726,7 @@ begin
   register1_q_net <= audiovolume;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  monostable1_x0 : entity xil_defaultlib.n3_te0722_monostable1_x8 
+  monostable1_x0 : entity xil_defaultlib.n3_te0722_monostable1_x11 
   port map (
     in1 => slice2_y_net,
     clk_1 => clk_net,
@@ -1599,8 +1599,8 @@ architecture structural of n3_te0722_outputregister_x2 is
   signal register1_q_net_x6 : std_logic_vector( 8-1 downto 0 );
   signal slice2_y_net : std_logic_vector( 2-1 downto 0 );
   signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal slice5_y_net : std_logic_vector( 1-1 downto 0 );
   signal convert2_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal slice5_y_net : std_logic_vector( 1-1 downto 0 );
   signal convert5_dout_net : std_logic_vector( 1-1 downto 0 );
   signal slice4_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
@@ -1868,7 +1868,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity n3_te0722_subsystem1_x3 is
+entity n3_te0722_subsystem1_x7 is
   port (
     portid : in std_logic_vector( 8-1 downto 0 );
     rs : in std_logic;
@@ -1876,16 +1876,16 @@ entity n3_te0722_subsystem1_x3 is
     ce_1 : in std_logic;
     read_buffer : out std_logic_vector( 1-1 downto 0 )
   );
-end n3_te0722_subsystem1_x3;
-architecture structural of n3_te0722_subsystem1_x3 is 
+end n3_te0722_subsystem1_x7;
+architecture structural of n3_te0722_subsystem1_x7 is 
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal assert3_dout_net : std_logic_vector( 8-1 downto 0 );
   signal picoblaze6_read_strobe_net : std_logic;
   signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
   signal register_q_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
   signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
   signal slice_y_net : std_logic_vector( 1-1 downto 0 );
@@ -2177,7 +2177,7 @@ begin
     rst_bt => slice1_y_net_x0,
     writeram => convert1_dout_net_x0
   );
-  subsystem1 : entity xil_defaultlib.n3_te0722_subsystem1_x3 
+  subsystem1 : entity xil_defaultlib.n3_te0722_subsystem1_x7 
   port map (
     portid => assert3_dout_net,
     rs => picoblaze6_read_strobe_net,
@@ -2722,6 +2722,64 @@ begin
     y => logical_y_net
   );
 end structural;
+-- Generated from Simulink block N3_TE0722/ConstantDetect/Monostable1
+library IEEE;
+use IEEE.std_logic_1164.all;
+library xil_defaultlib;
+use xil_defaultlib.conv_pkg.all;
+entity n3_te0722_monostable1_x7 is
+  port (
+    in1 : in std_logic_vector( 1-1 downto 0 );
+    clk_1 : in std_logic;
+    ce_1 : in std_logic;
+    out1 : out std_logic_vector( 1-1 downto 0 )
+  );
+end n3_te0722_monostable1_x7;
+architecture structural of n3_te0722_monostable1_x7 is 
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal std_bt_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+begin
+  out1 <= logical_y_net;
+  std_bt_net <= in1;
+  clk_net <= clk_1;
+  ce_net <= ce_1;
+  delay1 : entity xil_defaultlib.n3_te0722_xldelay 
+  generic map (
+    latency => 1,
+    reg_retiming => 0,
+    reset => 0,
+    width => 1
+  )
+  port map (
+    en => '1',
+    rst => '1',
+    d => std_bt_net,
+    clk => clk_net,
+    ce => ce_net,
+    q => delay1_q_net
+  );
+  inverter : entity xil_defaultlib.sysgen_inverter_46fa804b43 
+  port map (
+    clr => '0',
+    ip => delay1_q_net,
+    clk => clk_net,
+    ce => ce_net,
+    op => inverter_op_net
+  );
+  logical : entity xil_defaultlib.sysgen_logical_5efc86122c 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    d0 => std_bt_net,
+    d1 => inverter_op_net,
+    y => logical_y_net
+  );
+end structural;
 -- Generated from Simulink block N3_TE0722/ConstantDetect
 library IEEE;
 use IEEE.std_logic_1164.all;
@@ -2729,7 +2787,7 @@ library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
 entity n3_te0722_constantdetect is
   port (
-    signal_x0 : in std_logic_vector( 8-1 downto 0 );
+    signal_x0 : in std_logic_vector( 1-1 downto 0 );
     strobe : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
@@ -2738,30 +2796,37 @@ entity n3_te0722_constantdetect is
 end n3_te0722_constantdetect;
 architecture structural of n3_te0722_constantdetect is 
   signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal slice7_y_net : std_logic_vector( 8-1 downto 0 );
+  signal std_bt_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal logical_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net_x2 : std_logic_vector( 1-1 downto 0 );
   signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal constant1_op_net : std_logic_vector( 4-1 downto 0 );
+  signal constant2_op_net : std_logic_vector( 4-1 downto 0 );
   signal slice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal convert1_dout_net : std_logic_vector( 1-1 downto 0 );
   signal counter_op_net : std_logic_vector( 3-1 downto 0 );
   signal counter1_op_net : std_logic_vector( 4-1 downto 0 );
   signal logical_y_net_x1 : std_logic_vector( 1-1 downto 0 );
-  signal delay_q_net : std_logic_vector( 8-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 8-1 downto 0 );
-  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
-  signal register_q_net : std_logic_vector( 4-1 downto 0 );
+  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   isconstant <= relational1_op_net;
-  slice7_y_net <= signal_x0;
+  std_bt_net <= signal_x0;
   logical_y_net <= strobe;
   clk_net <= clk_1;
   ce_net <= ce_1;
   monostable : entity xil_defaultlib.n3_te0722_monostable_x4 
   port map (
     in1 => convert_dout_net,
+    clk_1 => clk_net,
+    ce_1 => ce_net,
+    out1 => logical_y_net_x2
+  );
+  monostable1_x0 : entity xil_defaultlib.n3_te0722_monostable1_x7 
+  port map (
+    in1 => std_bt_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     out1 => logical_y_net_x0
@@ -2772,6 +2837,13 @@ begin
     ce => '0',
     clr => '0',
     op => constant1_op_net
+  );
+  constant2 : entity xil_defaultlib.sysgen_constant_ad3f681494 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    op => constant2_op_net
   );
   convert : entity xil_defaultlib.n3_te0722_xlconvert 
   generic map (
@@ -2793,6 +2865,27 @@ begin
     clk => clk_net,
     ce => ce_net,
     dout => convert_dout_net
+  );
+  convert1 : entity xil_defaultlib.n3_te0722_xlconvert 
+  generic map (
+    bool_conversion => 1,
+    din_arith => 1,
+    din_bin_pt => 0,
+    din_width => 1,
+    dout_arith => 1,
+    dout_bin_pt => 0,
+    dout_width => 1,
+    latency => 0,
+    overflow => xlWrap,
+    quantization => xlTruncate
+  )
+  port map (
+    clr => '0',
+    en => "1",
+    din => logical_y_net_x0,
+    clk => clk_net,
+    ce => ce_net,
+    dout => convert1_dout_net
   );
   counter : entity xil_defaultlib.n3_te0722_xlcounter_free 
   generic map (
@@ -2816,81 +2909,38 @@ begin
   )
   port map (
     clr => '0',
-    rst => logical_y_net_x0,
+    rst => convert1_dout_net,
     en => logical_y_net_x1,
     clk => clk_net,
     ce => ce_net,
     op => counter1_op_net
   );
-  delay : entity xil_defaultlib.n3_te0722_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 8
-  )
+  logical : entity xil_defaultlib.sysgen_logical_87597985ef 
   port map (
-    rst => '1',
-    d => slice7_y_net,
-    en => logical_y_net(0),
-    clk => clk_net,
-    ce => ce_net,
-    q => delay_q_net
-  );
-  delay1 : entity xil_defaultlib.n3_te0722_xldelay 
-  generic map (
-    latency => 1,
-    reg_retiming => 0,
-    reset => 0,
-    width => 8
-  )
-  port map (
-    rst => '1',
-    d => delay_q_net,
-    en => logical_y_net(0),
-    clk => clk_net,
-    ce => ce_net,
-    q => delay1_q_net
-  );
-  logical : entity xil_defaultlib.sysgen_logical_6d614def79 
-  port map (
-    clk => '0',
-    ce => '0',
     clr => '0',
-    d0 => relational_op_net,
-    d1 => logical_y_net,
+    d0 => logical_y_net_x2,
+    d1 => relational2_op_net,
+    clk => clk_net,
+    ce => ce_net,
     y => logical_y_net_x1
-  );
-  register_x0 : entity xil_defaultlib.n3_te0722_xlregister 
-  generic map (
-    d_width => 4,
-    init_value => b"0000"
-  )
-  port map (
-    rst => "0",
-    d => counter1_op_net,
-    en => logical_y_net_x0,
-    clk => clk_net,
-    ce => ce_net,
-    q => register_q_net
-  );
-  relational : entity xil_defaultlib.sysgen_relational_9c920752e3 
-  port map (
-    clr => '0',
-    a => delay_q_net,
-    b => delay1_q_net,
-    clk => clk_net,
-    ce => ce_net,
-    op => relational_op_net
   );
   relational1 : entity xil_defaultlib.sysgen_relational_f3ee461a5b 
   port map (
     clr => '0',
     a => constant1_op_net,
-    b => register_q_net,
+    b => counter1_op_net,
     clk => clk_net,
     ce => ce_net,
     op => relational1_op_net
+  );
+  relational2 : entity xil_defaultlib.sysgen_relational_bf26ecf5d4 
+  port map (
+    clr => '0',
+    a => constant2_op_net,
+    b => counter1_op_net,
+    clk => clk_net,
+    ce => ce_net,
+    op => relational2_op_net
   );
   slice : entity xil_defaultlib.n3_te0722_xlslice 
   generic map (
@@ -2921,14 +2971,14 @@ end n3_te0722_dac_xapp154_1;
 architecture structural of n3_te0722_dac_xapp154_1 is 
   signal register1_q_net : std_logic_vector( 1-1 downto 0 );
   signal concat_y_net : std_logic_vector( 14-1 downto 0 );
-  signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal concat_y_net_x0 : std_logic_vector( 2-1 downto 0 );
   signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
   signal concat1_y_net : std_logic_vector( 16-1 downto 0 );
   signal constant2_op_net : std_logic_vector( 14-1 downto 0 );
-  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant_op_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal delta_adder_s_net : std_logic_vector( 16-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal sigma_adder_s_net : std_logic_vector( 16-1 downto 0 );
@@ -2936,7 +2986,7 @@ architecture structural of n3_te0722_dac_xapp154_1 is
 begin
   dac_out <= register1_q_net;
   concat_y_net <= dac_in;
-  inverter2_op_net <= disable_audio;
+  constant_op_net <= disable_audio;
   clk_net <= clk_1;
   ce_net <= ce_1;
   concat : entity xil_defaultlib.sysgen_concat_128e6a17f9 
@@ -2962,7 +3012,7 @@ begin
     clk => '0',
     ce => '0',
     clr => '0',
-    op => constant_op_net
+    op => constant_op_net_x0
   );
   constant2 : entity xil_defaultlib.sysgen_constant_17f0f938a0 
   port map (
@@ -2983,10 +3033,10 @@ begin
   );
   inverter : entity xil_defaultlib.sysgen_inverter_f0db54e765 
   port map (
+    clk => '1',
+    ce => '1',
     clr => '0',
-    ip => inverter2_op_net,
-    clk => clk_net,
-    ce => ce_net,
+    ip => constant_op_net,
     op => inverter_op_net
   );
   register1 : entity xil_defaultlib.n3_te0722_xlregister 
@@ -2997,7 +3047,7 @@ begin
   port map (
     en => "1",
     d => slice1_y_net,
-    rst => inverter2_op_net,
+    rst => constant_op_net,
     clk => clk_net,
     ce => ce_net,
     q => register1_q_net
@@ -3030,7 +3080,7 @@ begin
   port map (
     en => "1",
     d => sigma_adder_s_net,
-    rst => constant_op_net,
+    rst => constant_op_net_x0,
     clk => clk_net,
     ce => ce_net,
     q => r1_q_net
@@ -3348,15 +3398,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity n3_te0722_monostable1_x6 is
+entity n3_te0722_monostable1_x8 is
   port (
     in1 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out1 : out std_logic_vector( 1-1 downto 0 )
   );
-end n3_te0722_monostable1_x6;
-architecture structural of n3_te0722_monostable1_x6 is 
+end n3_te0722_monostable1_x8;
+architecture structural of n3_te0722_monostable1_x8 is 
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal relational6_op_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -4280,15 +4330,15 @@ entity n3_te0722_subsystem1_x4 is
   );
 end n3_te0722_subsystem1_x4;
 architecture structural of n3_te0722_subsystem1_x4 is 
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal portaddress_op_net : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net : std_logic_vector( 8-1 downto 0 );
   signal picoblaze6_out_port_net : std_logic_vector( 8-1 downto 0 );
   signal picoblaze6_port_id_net : std_logic_vector( 8-1 downto 0 );
   signal convert3_dout_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal portaddress_op_net : std_logic_vector( 8-1 downto 0 );
 begin
   latcheddata <= register1_q_net;
   picoblaze6_out_port_net <= data;
@@ -5067,6 +5117,7 @@ entity n3_te0722_subsystem24 is
   );
 end n3_te0722_subsystem24;
 architecture structural of n3_te0722_subsystem24 is 
+  signal portaddress_op_net : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net : std_logic_vector( 8-1 downto 0 );
   signal picoblaze6_out_port_net : std_logic_vector( 8-1 downto 0 );
   signal picoblaze6_port_id_net : std_logic_vector( 8-1 downto 0 );
@@ -5075,7 +5126,6 @@ architecture structural of n3_te0722_subsystem24 is
   signal ce_net : std_logic;
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal portaddress_op_net : std_logic_vector( 8-1 downto 0 );
 begin
   latcheddata <= register1_q_net;
   picoblaze6_out_port_net <= data;
@@ -5138,15 +5188,15 @@ entity n3_te0722_subsystem25 is
   );
 end n3_te0722_subsystem25;
 architecture structural of n3_te0722_subsystem25 is 
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal portaddress_op_net : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net : std_logic_vector( 8-1 downto 0 );
   signal picoblaze6_out_port_net : std_logic_vector( 8-1 downto 0 );
   signal picoblaze6_port_id_net : std_logic_vector( 8-1 downto 0 );
   signal convert3_dout_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal portaddress_op_net : std_logic_vector( 8-1 downto 0 );
 begin
   latcheddata <= register1_q_net;
   picoblaze6_out_port_net <= data;
@@ -5235,6 +5285,148 @@ begin
     y => logical_y_net
   );
   portaddress : entity xil_defaultlib.sysgen_constant_dfeab17888 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    op => portaddress_op_net
+  );
+  register1 : entity xil_defaultlib.n3_te0722_xlregister 
+  generic map (
+    d_width => 8,
+    init_value => b"00000000"
+  )
+  port map (
+    rst => "0",
+    d => picoblaze6_out_port_net,
+    en => logical_y_net,
+    clk => clk_net,
+    ce => ce_net,
+    q => register1_q_net
+  );
+  relational1 : entity xil_defaultlib.sysgen_relational_ab80b7051b 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    a => picoblaze6_port_id_net,
+    b => portaddress_op_net,
+    op => relational1_op_net
+  );
+end structural;
+-- Generated from Simulink block N3_TE0722/DSProcessor1/OutputRegister/Subsystem27
+library IEEE;
+use IEEE.std_logic_1164.all;
+library xil_defaultlib;
+use xil_defaultlib.conv_pkg.all;
+entity n3_te0722_subsystem27 is
+  port (
+    data : in std_logic_vector( 8-1 downto 0 );
+    portid : in std_logic_vector( 8-1 downto 0 );
+    write : in std_logic_vector( 1-1 downto 0 );
+    clk_1 : in std_logic;
+    ce_1 : in std_logic;
+    latcheddata : out std_logic_vector( 8-1 downto 0 )
+  );
+end n3_te0722_subsystem27;
+architecture structural of n3_te0722_subsystem27 is 
+  signal register1_q_net : std_logic_vector( 8-1 downto 0 );
+  signal picoblaze6_out_port_net : std_logic_vector( 8-1 downto 0 );
+  signal picoblaze6_port_id_net : std_logic_vector( 8-1 downto 0 );
+  signal convert3_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal portaddress_op_net : std_logic_vector( 8-1 downto 0 );
+begin
+  latcheddata <= register1_q_net;
+  picoblaze6_out_port_net <= data;
+  picoblaze6_port_id_net <= portid;
+  convert3_dout_net <= write;
+  clk_net <= clk_1;
+  ce_net <= ce_1;
+  logical : entity xil_defaultlib.sysgen_logical_6d614def79 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    d0 => relational1_op_net,
+    d1 => convert3_dout_net,
+    y => logical_y_net
+  );
+  portaddress : entity xil_defaultlib.sysgen_constant_d04aba2673 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    op => portaddress_op_net
+  );
+  register1 : entity xil_defaultlib.n3_te0722_xlregister 
+  generic map (
+    d_width => 8,
+    init_value => b"00000000"
+  )
+  port map (
+    rst => "0",
+    d => picoblaze6_out_port_net,
+    en => logical_y_net,
+    clk => clk_net,
+    ce => ce_net,
+    q => register1_q_net
+  );
+  relational1 : entity xil_defaultlib.sysgen_relational_ab80b7051b 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    a => picoblaze6_port_id_net,
+    b => portaddress_op_net,
+    op => relational1_op_net
+  );
+end structural;
+-- Generated from Simulink block N3_TE0722/DSProcessor1/OutputRegister/Subsystem28
+library IEEE;
+use IEEE.std_logic_1164.all;
+library xil_defaultlib;
+use xil_defaultlib.conv_pkg.all;
+entity n3_te0722_subsystem28 is
+  port (
+    data : in std_logic_vector( 8-1 downto 0 );
+    portid : in std_logic_vector( 8-1 downto 0 );
+    write : in std_logic_vector( 1-1 downto 0 );
+    clk_1 : in std_logic;
+    ce_1 : in std_logic;
+    latcheddata : out std_logic_vector( 8-1 downto 0 )
+  );
+end n3_te0722_subsystem28;
+architecture structural of n3_te0722_subsystem28 is 
+  signal register1_q_net : std_logic_vector( 8-1 downto 0 );
+  signal picoblaze6_out_port_net : std_logic_vector( 8-1 downto 0 );
+  signal picoblaze6_port_id_net : std_logic_vector( 8-1 downto 0 );
+  signal convert3_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal portaddress_op_net : std_logic_vector( 8-1 downto 0 );
+begin
+  latcheddata <= register1_q_net;
+  picoblaze6_out_port_net <= data;
+  picoblaze6_port_id_net <= portid;
+  convert3_dout_net <= write;
+  clk_net <= clk_1;
+  ce_net <= ce_1;
+  logical : entity xil_defaultlib.sysgen_logical_6d614def79 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    d0 => relational1_op_net,
+    d1 => convert3_dout_net,
+    y => logical_y_net
+  );
+  portaddress : entity xil_defaultlib.sysgen_constant_c700d6573a 
   port map (
     clk => '0',
     ce => '0',
@@ -5790,6 +5982,7 @@ entity n3_te0722_outputregister_x1 is
     txphase : out std_logic_vector( 16-1 downto 0 );
     newvalue : out std_logic_vector( 1-1 downto 0 );
     agcvalue : out std_logic_vector( 4-1 downto 0 );
+    audioout : out std_logic_vector( 16-1 downto 0 );
     starttonea : out std_logic_vector( 8-1 downto 0 );
     starttonealong : out std_logic_vector( 8-1 downto 0 );
     starttoneb : out std_logic_vector( 8-1 downto 0 );
@@ -5801,13 +5994,13 @@ entity n3_te0722_outputregister_x1 is
   );
 end n3_te0722_outputregister_x1;
 architecture structural of n3_te0722_outputregister_x1 is 
-  signal register1_q_net_x18 : std_logic_vector( 16-1 downto 0 );
-  signal register1_q_net_x13 : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net_x19 : std_logic_vector( 16-1 downto 0 );
+  signal register1_q_net_x14 : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net_x8 : std_logic_vector( 8-1 downto 0 );
   signal concat1_y_net : std_logic_vector( 16-1 downto 0 );
   signal concat2_y_net : std_logic_vector( 16-1 downto 0 );
   signal concat4_y_net : std_logic_vector( 16-1 downto 0 );
-  signal register1_q_net_x24 : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net_x26 : std_logic_vector( 8-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net_x1 : std_logic_vector( 1-1 downto 0 );
   signal concat5_y_net : std_logic_vector( 10-1 downto 0 );
@@ -5818,36 +6011,39 @@ architecture structural of n3_te0722_outputregister_x1 is
   signal picoblaze6_port_id_net : std_logic_vector( 8-1 downto 0 );
   signal convert3_dout_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal slice8_y_net : std_logic_vector( 4-1 downto 0 );
-  signal convert2_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 16-1 downto 0 );
+  signal convert2_dout_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal slice10_y_net : std_logic_vector( 8-1 downto 0 );
   signal slice9_y_net : std_logic_vector( 8-1 downto 0 );
   signal slice12_y_net : std_logic_vector( 8-1 downto 0 );
   signal slice13_y_net : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net_x4 : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net_x0 : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net_x2 : std_logic_vector( 8-1 downto 0 );
-  signal register1_q_net_x3 : std_logic_vector( 8-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal register1_q_net_x16 : std_logic_vector( 16-1 downto 0 );
   signal register1_q_net_x17 : std_logic_vector( 16-1 downto 0 );
-  signal register1_q_net_x19 : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net_x18 : std_logic_vector( 16-1 downto 0 );
+  signal register1_q_net_x20 : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net_x30 : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net_x29 : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net_x28 : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net_x27 : std_logic_vector( 8-1 downto 0 );
-  signal register1_q_net_x26 : std_logic_vector( 8-1 downto 0 );
-  signal register1_q_net_x25 : std_logic_vector( 8-1 downto 0 );
   signal logical_y_net_x3 : std_logic_vector( 1-1 downto 0 );
+  signal register1_q_net_x24 : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net_x23 : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net_x22 : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net_x21 : std_logic_vector( 8-1 downto 0 );
-  signal register1_q_net_x20 : std_logic_vector( 8-1 downto 0 );
-  signal register1_q_net_x9 : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net_x3 : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net_x1 : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net_x10 : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net_x11 : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net_x12 : std_logic_vector( 8-1 downto 0 );
-  signal register1_q_net_x14 : std_logic_vector( 8-1 downto 0 );
-  signal logical_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal register1_q_net_x13 : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net_x15 : std_logic_vector( 8-1 downto 0 );
+  signal logical_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal register1_q_net_x16 : std_logic_vector( 8-1 downto 0 );
   signal concat3_y_net : std_logic_vector( 16-1 downto 0 );
   signal slice6_y_net : std_logic_vector( 2-1 downto 0 );
   signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
@@ -5858,13 +6054,13 @@ architecture structural of n3_te0722_outputregister_x1 is
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
 begin
-  audio_out <= register1_q_net_x18;
-  amp <= register1_q_net_x13;
+  audio_out <= register1_q_net_x19;
+  amp <= register1_q_net_x14;
   cmd2user <= register1_q_net_x8;
   coeff <= concat1_y_net;
   signal_x0 <= concat2_y_net;
   data2archive <= concat4_y_net;
-  phaseincrement <= register1_q_net_x24;
+  phaseincrement <= register1_q_net_x26;
   newcmd <= logical_y_net;
   ack_fifo <= logical_y_net_x1;
   ramaddress <= concat5_y_net;
@@ -5875,32 +6071,33 @@ begin
   picoblaze6_port_id_net <= portid;
   convert3_dout_net_x0 <= write;
   agcvalue <= slice8_y_net;
-  convert2_dout_net <= square8khz;
+  audioout <= concat_y_net;
+  convert2_dout_net_x0 <= square8khz;
   starttonea <= slice10_y_net;
   starttonealong <= slice9_y_net;
   starttoneb <= slice12_y_net;
   starttoneblong <= slice13_y_net;
-  stoptonea <= register1_q_net;
-  stoptonealong <= register1_q_net_x0;
-  stoptoneb <= register1_q_net_x2;
-  stoptoneblong <= register1_q_net_x3;
+  stoptonea <= register1_q_net_x4;
+  stoptonealong <= register1_q_net;
+  stoptoneb <= register1_q_net_x0;
+  stoptoneblong <= register1_q_net_x2;
   clk_net <= clk_1;
   ce_net <= ce_1;
   levelmonitor : entity xil_defaultlib.n3_te0722_levelmonitor_x0 
   port map (
     in1 => concat4_y_net,
-    en => convert2_dout_net,
-    clk_1 => clk_net,
-    ce_1 => ce_net,
-    signallevel => register1_q_net_x16
-  );
-  levelmonitor1 : entity xil_defaultlib.n3_te0722_levelmonitor1_x0 
-  port map (
-    in1 => register1_q_net_x13,
-    en => convert2_dout_net,
+    en => convert2_dout_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
     signallevel => register1_q_net_x17
+  );
+  levelmonitor1 : entity xil_defaultlib.n3_te0722_levelmonitor1_x0 
+  port map (
+    in1 => register1_q_net_x14,
+    en => convert2_dout_net_x0,
+    clk_1 => clk_net,
+    ce_1 => ce_net,
+    signallevel => register1_q_net_x18
   );
   subsystem : entity xil_defaultlib.n3_te0722_subsystem_x1 
   port map (
@@ -5909,7 +6106,7 @@ begin
     write => convert3_dout_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    latcheddata => register1_q_net_x19
+    latcheddata => register1_q_net_x20
   );
   subsystem1 : entity xil_defaultlib.n3_te0722_subsystem1_x4 
   port map (
@@ -5918,7 +6115,7 @@ begin
     write => convert3_dout_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    latcheddata => register1_q_net_x28
+    latcheddata => register1_q_net_x30
   );
   subsystem10_x0 : entity xil_defaultlib.n3_te0722_subsystem10_x0 
   port map (
@@ -5927,7 +6124,7 @@ begin
     write => convert3_dout_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    latcheddata => register1_q_net_x27
+    latcheddata => register1_q_net_x29
   );
   subsystem11_x0 : entity xil_defaultlib.n3_te0722_subsystem11_x0 
   port map (
@@ -5936,7 +6133,7 @@ begin
     write => convert3_dout_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    latcheddata => register1_q_net_x26
+    latcheddata => register1_q_net_x28
   );
   subsystem12 : entity xil_defaultlib.n3_te0722_subsystem12_x1 
   port map (
@@ -5945,7 +6142,7 @@ begin
     write => convert3_dout_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    latcheddata => register1_q_net_x25,
+    latcheddata => register1_q_net_x27,
     ack_fifo => logical_y_net_x3
   );
   subsystem13 : entity xil_defaultlib.n3_te0722_subsystem13_x1 
@@ -5955,7 +6152,7 @@ begin
     write => convert3_dout_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    latcheddata => register1_q_net_x24,
+    latcheddata => register1_q_net_x26,
     newvalue => logical_y_net_x2
   );
   subsystem15 : entity xil_defaultlib.n3_te0722_subsystem15_x0 
@@ -5965,7 +6162,7 @@ begin
     write => convert3_dout_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    latcheddata => register1_q_net_x22
+    latcheddata => register1_q_net_x24
   );
   subsystem16 : entity xil_defaultlib.n3_te0722_subsystem16_x0 
   port map (
@@ -5974,7 +6171,7 @@ begin
     write => convert3_dout_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    latcheddata => register1_q_net_x21
+    latcheddata => register1_q_net_x23
   );
   subsystem17 : entity xil_defaultlib.n3_te0722_subsystem17_x0 
   port map (
@@ -5983,7 +6180,7 @@ begin
     write => convert3_dout_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    latcheddata => register1_q_net_x20
+    latcheddata => register1_q_net_x22
   );
   subsystem18_x0 : entity xil_defaultlib.n3_te0722_subsystem18 
   port map (
@@ -5992,7 +6189,7 @@ begin
     write => convert3_dout_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    latcheddata => register1_q_net_x9
+    latcheddata => register1_q_net_x21
   );
   subsystem2 : entity xil_defaultlib.n3_te0722_subsystem2_x3 
   port map (
@@ -6011,7 +6208,7 @@ begin
     write => convert3_dout_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    latcheddata => register1_q_net
+    latcheddata => register1_q_net_x4
   );
   subsystem24 : entity xil_defaultlib.n3_te0722_subsystem24 
   port map (
@@ -6020,7 +6217,7 @@ begin
     write => convert3_dout_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    latcheddata => register1_q_net_x0
+    latcheddata => register1_q_net
   );
   subsystem25 : entity xil_defaultlib.n3_te0722_subsystem25 
   port map (
@@ -6029,7 +6226,7 @@ begin
     write => convert3_dout_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    latcheddata => register1_q_net_x2
+    latcheddata => register1_q_net_x0
   );
   subsystem26 : entity xil_defaultlib.n3_te0722_subsystem26 
   port map (
@@ -6038,9 +6235,18 @@ begin
     write => convert3_dout_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
+    latcheddata => register1_q_net_x2
+  );
+  subsystem27 : entity xil_defaultlib.n3_te0722_subsystem27 
+  port map (
+    data => picoblaze6_out_port_net,
+    portid => picoblaze6_port_id_net,
+    write => convert3_dout_net_x0,
+    clk_1 => clk_net,
+    ce_1 => ce_net,
     latcheddata => register1_q_net_x3
   );
-  subsystem3 : entity xil_defaultlib.n3_te0722_subsystem3_x2 
+  subsystem28 : entity xil_defaultlib.n3_te0722_subsystem28 
   port map (
     data => picoblaze6_out_port_net,
     portid => picoblaze6_port_id_net,
@@ -6049,7 +6255,7 @@ begin
     ce_1 => ce_net,
     latcheddata => register1_q_net_x1
   );
-  subsystem4 : entity xil_defaultlib.n3_te0722_subsystem4_x3 
+  subsystem3 : entity xil_defaultlib.n3_te0722_subsystem3_x2 
   port map (
     data => picoblaze6_out_port_net,
     portid => picoblaze6_port_id_net,
@@ -6058,7 +6264,7 @@ begin
     ce_1 => ce_net,
     latcheddata => register1_q_net_x10
   );
-  subsystem5_x0 : entity xil_defaultlib.n3_te0722_subsystem5_x1 
+  subsystem4 : entity xil_defaultlib.n3_te0722_subsystem4_x3 
   port map (
     data => picoblaze6_out_port_net,
     portid => picoblaze6_port_id_net,
@@ -6067,7 +6273,7 @@ begin
     ce_1 => ce_net,
     latcheddata => register1_q_net_x11
   );
-  subsystem6 : entity xil_defaultlib.n3_te0722_subsystem6_x1 
+  subsystem5_x0 : entity xil_defaultlib.n3_te0722_subsystem5_x1 
   port map (
     data => picoblaze6_out_port_net,
     portid => picoblaze6_port_id_net,
@@ -6076,7 +6282,7 @@ begin
     ce_1 => ce_net,
     latcheddata => register1_q_net_x12
   );
-  subsystem7 : entity xil_defaultlib.n3_te0722_subsystem7_x2 
+  subsystem6 : entity xil_defaultlib.n3_te0722_subsystem6_x1 
   port map (
     data => picoblaze6_out_port_net,
     portid => picoblaze6_port_id_net,
@@ -6085,6 +6291,15 @@ begin
     ce_1 => ce_net,
     latcheddata => register1_q_net_x13
   );
+  subsystem7 : entity xil_defaultlib.n3_te0722_subsystem7_x2 
+  port map (
+    data => picoblaze6_out_port_net,
+    portid => picoblaze6_port_id_net,
+    write => convert3_dout_net_x0,
+    clk_1 => clk_net,
+    ce_1 => ce_net,
+    latcheddata => register1_q_net_x14
+  );
   subsystem8 : entity xil_defaultlib.n3_te0722_subsystem8_x1 
   port map (
     data => picoblaze6_out_port_net,
@@ -6092,7 +6307,7 @@ begin
     write => convert3_dout_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    latcheddata => register1_q_net_x14,
+    latcheddata => register1_q_net_x15,
     w => logical_y_net_x0
   );
   subsystem9 : entity xil_defaultlib.n3_te0722_subsystem9_x1 
@@ -6102,15 +6317,24 @@ begin
     write => convert3_dout_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    latcheddata => register1_q_net_x15
+    latcheddata => register1_q_net_x16
+  );
+  concat : entity xil_defaultlib.sysgen_concat_764c65145d 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    in0 => register1_q_net_x3,
+    in1 => register1_q_net_x1,
+    y => concat_y_net
   );
   concat1 : entity xil_defaultlib.sysgen_concat_764c65145d 
   port map (
     clk => '0',
     ce => '0',
     clr => '0',
-    in0 => register1_q_net_x1,
-    in1 => register1_q_net_x10,
+    in0 => register1_q_net_x10,
+    in1 => register1_q_net_x11,
     y => concat1_y_net
   );
   concat2 : entity xil_defaultlib.sysgen_concat_764c65145d 
@@ -6118,8 +6342,8 @@ begin
     clk => '0',
     ce => '0',
     clr => '0',
-    in0 => register1_q_net_x11,
-    in1 => register1_q_net_x12,
+    in0 => register1_q_net_x12,
+    in1 => register1_q_net_x13,
     y => concat2_y_net
   );
   concat3 : entity xil_defaultlib.sysgen_concat_764c65145d 
@@ -6127,8 +6351,8 @@ begin
     clk => '0',
     ce => '0',
     clr => '0',
-    in0 => register1_q_net_x19,
-    in1 => register1_q_net_x28,
+    in0 => register1_q_net_x20,
+    in1 => register1_q_net_x30,
     y => concat3_y_net
   );
   concat4 : entity xil_defaultlib.sysgen_concat_764c65145d 
@@ -6136,8 +6360,8 @@ begin
     clk => '0',
     ce => '0',
     clr => '0',
-    in0 => register1_q_net_x27,
-    in1 => register1_q_net_x26,
+    in0 => register1_q_net_x29,
+    in1 => register1_q_net_x28,
     y => concat4_y_net
   );
   concat5 : entity xil_defaultlib.sysgen_concat_5f99f9b565 
@@ -6146,7 +6370,7 @@ begin
     ce => '0',
     clr => '0',
     in0 => slice6_y_net,
-    in1 => register1_q_net_x15,
+    in1 => register1_q_net_x16,
     y => concat5_y_net
   );
   concat7 : entity xil_defaultlib.sysgen_concat_764c65145d 
@@ -6154,8 +6378,8 @@ begin
     clk => '0',
     ce => '0',
     clr => '0',
-    in0 => register1_q_net_x22,
-    in1 => register1_q_net_x21,
+    in0 => register1_q_net_x24,
+    in1 => register1_q_net_x23,
     y => concat7_y_net
   );
   convert : entity xil_defaultlib.n3_te0722_xlconvert 
@@ -6264,7 +6488,7 @@ begin
     en => convert_dout_net,
     clk => clk_net,
     ce => ce_net,
-    q => register1_q_net_x18
+    q => register1_q_net_x19
   );
   slice : entity xil_defaultlib.n3_te0722_xlslice 
   generic map (
@@ -6274,7 +6498,7 @@ begin
     y_width => 1
   )
   port map (
-    x => register1_q_net_x20,
+    x => register1_q_net_x22,
     y => slice_y_net
   );
   slice10 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -6285,7 +6509,7 @@ begin
     y_width => 8
   )
   port map (
-    x => register1_q_net_x16,
+    x => register1_q_net_x17,
     y => slice10_y_net
   );
   slice12 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -6296,7 +6520,7 @@ begin
     y_width => 8
   )
   port map (
-    x => register1_q_net_x17,
+    x => register1_q_net_x18,
     y => slice12_y_net
   );
   slice13 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -6307,7 +6531,7 @@ begin
     y_width => 8
   )
   port map (
-    x => register1_q_net_x17,
+    x => register1_q_net_x18,
     y => slice13_y_net
   );
   slice4 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -6318,7 +6542,7 @@ begin
     y_width => 1
   )
   port map (
-    x => register1_q_net_x25,
+    x => register1_q_net_x27,
     y => slice4_y_net
   );
   slice6 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -6329,7 +6553,7 @@ begin
     y_width => 2
   )
   port map (
-    x => register1_q_net_x14,
+    x => register1_q_net_x15,
     y => slice6_y_net
   );
   slice7 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -6340,7 +6564,7 @@ begin
     y_width => 1
   )
   port map (
-    x => register1_q_net_x14,
+    x => register1_q_net_x15,
     y => slice7_y_net
   );
   slice8 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -6351,7 +6575,7 @@ begin
     y_width => 4
   )
   port map (
-    x => register1_q_net_x9,
+    x => register1_q_net_x21,
     y => slice8_y_net
   );
   slice9 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -6362,7 +6586,7 @@ begin
     y_width => 8
   )
   port map (
-    x => register1_q_net_x16,
+    x => register1_q_net_x17,
     y => slice9_y_net
   );
 end structural;
@@ -6391,7 +6615,7 @@ entity n3_te0722_dsprocessor1 is
     writedsp_ram : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
-    audioout : out std_logic_vector( 16-1 downto 0 );
+    audioout_x0 : out std_logic_vector( 16-1 downto 0 );
     amp : out std_logic_vector( 8-1 downto 0 );
     cmdtouser : out std_logic_vector( 8-1 downto 0 );
     data2archive : out std_logic_vector( 16-1 downto 0 );
@@ -6400,6 +6624,7 @@ entity n3_te0722_dsprocessor1 is
     tx_phase : out std_logic_vector( 16-1 downto 0 );
     newvalue : out std_logic_vector( 1-1 downto 0 );
     agcvalue : out std_logic_vector( 4-1 downto 0 );
+    audioout : out std_logic_vector( 16-1 downto 0 );
     dspramrdbk : out std_logic_vector( 16-1 downto 0 );
     starttonea : out std_logic_vector( 8-1 downto 0 );
     starttonealong : out std_logic_vector( 8-1 downto 0 );
@@ -6426,11 +6651,12 @@ architecture structural of n3_te0722_dsprocessor1 is
   signal concat_y_net_x1 : std_logic_vector( 18-1 downto 0 );
   signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
   signal register1_q_net : std_logic_vector( 8-1 downto 0 );
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal relational5_op_net : std_logic_vector( 1-1 downto 0 );
   signal slice_y_net : std_logic_vector( 1-1 downto 0 );
   signal reinterpret_output_port_net_x0 : std_logic_vector( 16-1 downto 0 );
   signal slice8_y_net : std_logic_vector( 4-1 downto 0 );
+  signal concat_y_net_x2 : std_logic_vector( 16-1 downto 0 );
   signal fifo_full_net_x0 : std_logic;
   signal dual_port_ram1_doutb_net : std_logic_vector( 16-1 downto 0 );
   signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
@@ -6457,8 +6683,8 @@ architecture structural of n3_te0722_dsprocessor1 is
   signal slice1_y_net : std_logic_vector( 24-1 downto 0 );
   signal dual_port_ram1_douta_net : std_logic_vector( 16-1 downto 0 );
   signal concat_y_net : std_logic_vector( 8-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net_x2 : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal concat1_y_net_x0 : std_logic_vector( 16-1 downto 0 );
   signal concat2_y_net : std_logic_vector( 16-1 downto 0 );
   signal concat5_y_net : std_logic_vector( 10-1 downto 0 );
@@ -6469,7 +6695,7 @@ architecture structural of n3_te0722_dsprocessor1 is
   signal assert1_dout_net : std_logic_vector( 1-1 downto 0 );
   signal picoblaze6_bram_enable_net : std_logic_vector( 1-1 downto 0 );
   signal assert4_dout_net : std_logic_vector( 8-1 downto 0 );
-  signal constant1_op_net : std_logic_vector( 6-1 downto 0 );
+  signal constant1_op_net : std_logic_vector( 5-1 downto 0 );
   signal constant4_op_net : std_logic_vector( 1-1 downto 0 );
   signal constant5_op_net : std_logic_vector( 18-1 downto 0 );
   signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
@@ -6490,7 +6716,7 @@ architecture structural of n3_te0722_dsprocessor1 is
   signal picoblaze6_read_strobe_net : std_logic;
   signal picoblaze6_interrupt_ack_net : std_logic;
 begin
-  audioout <= register1_q_net_x0;
+  audioout_x0 <= register1_q_net_x0;
   amp <= register1_q_net_x8;
   cmdtouser <= register1_q_net_x3;
   data2archive <= concat4_y_net_x0;
@@ -6503,12 +6729,13 @@ begin
   concat_y_net_x1 <= dataram;
   relational3_op_net <= writeram;
   register1_q_net <= cmd;
-  logical_y_net <= newcmd;
+  logical_y_net_x0 <= newcmd;
   relational5_op_net <= rst;
   slice_y_net <= strobe;
   reinterpret_output_port_net_x0 <= btauidioin;
   agcvalue <= slice8_y_net;
   concat1_y_net <= address;
+  audioout <= concat_y_net_x2;
   fifo_full_net_x0 <= dsp2userfifofull;
   dspramrdbk <= dual_port_ram1_doutb_net;
   relational1_op_net <= nobtsignal;
@@ -6530,7 +6757,7 @@ begin
   buffer_x0 : entity xil_defaultlib.n3_te0722_buffer_x0 
   port map (
     cmd => register1_q_net,
-    newcmd => logical_y_net,
+    newcmd => logical_y_net_x0,
     ackfifo => logical_y_net_x1,
     clk_1 => clk_net,
     ce_1 => ce_net,
@@ -6551,19 +6778,19 @@ begin
     ce_1 => ce_net,
     out1 => mux_y_net
   );
-  monostable1_x0 : entity xil_defaultlib.n3_te0722_monostable1_x6 
+  monostable1_x0 : entity xil_defaultlib.n3_te0722_monostable1_x8 
   port map (
     in1 => relational6_op_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    out1 => logical_y_net_x2
+    out1 => logical_y_net
   );
   monostable2 : entity xil_defaultlib.n3_te0722_monostable2_x3 
   port map (
     in1 => slice_y_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    out1 => logical_y_net_x0
+    out1 => logical_y_net_x2
   );
   outputregister : entity xil_defaultlib.n3_te0722_outputregister_x1 
   port map (
@@ -6587,6 +6814,7 @@ begin
     txphase => concat7_y_net,
     newvalue => logical_y_net_x3,
     agcvalue => slice8_y_net,
+    audioout => concat_y_net_x2,
     starttonea => slice10_y_net,
     starttonealong => slice9_y_net,
     starttoneb => slice12_y_net,
@@ -6614,17 +6842,18 @@ begin
     din => picoblaze6_port_id_net,
     dout => assert4_dout_net
   );
-  concat : entity xil_defaultlib.sysgen_concat_8d735268bf 
+  concat : entity xil_defaultlib.sysgen_concat_fd7e038e4e 
   port map (
     clk => '0',
     ce => '0',
     clr => '0',
     in0 => constant1_op_net,
-    in1 => relational1_op_net,
-    in2(0) => fifo_full_net_x0,
+    in1 => slice11_y_net,
+    in2 => relational1_op_net,
+    in3(0) => fifo_full_net_x0,
     y => concat_y_net
   );
-  constant1 : entity xil_defaultlib.sysgen_constant_94d190a970 
+  constant1 : entity xil_defaultlib.sysgen_constant_74f3954822 
   port map (
     clk => '0',
     ce => '0',
@@ -6766,7 +6995,7 @@ begin
   port map (
     clr => '0',
     en => "1",
-    din => logical_y_net_x0,
+    din => logical_y_net_x2,
     clk => clk_net,
     ce => ce_net,
     dout => convert5_dout_net
@@ -6853,7 +7082,7 @@ begin
     wea => convert7_dout_net,
     addrb => slice4_y_net,
     dinb => concat4_y_net,
-    web => logical_y_net_x2,
+    web => logical_y_net,
     a_clk => clk_net,
     a_ce => ce_net,
     b_clk => clk_net,
@@ -7149,15 +7378,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity n3_te0722_monostable1_x10 is
+entity n3_te0722_monostable1_x12 is
   port (
     in1 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out1 : out std_logic_vector( 1-1 downto 0 )
   );
-end n3_te0722_monostable1_x10;
-architecture structural of n3_te0722_monostable1_x10 is 
+end n3_te0722_monostable1_x12;
+architecture structural of n3_te0722_monostable1_x12 is 
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -7278,7 +7507,7 @@ begin
     ce_1 => ce_net,
     out1 => logical_y_net
   );
-  monostable1_x0 : entity xil_defaultlib.n3_te0722_monostable1_x10 
+  monostable1_x0 : entity xil_defaultlib.n3_te0722_monostable1_x12 
   port map (
     in1 => inverter2_op_net,
     clk_1 => clk_net,
@@ -7712,8 +7941,8 @@ architecture structural of n3_te0722_agcandfilter1 is
   signal concat7_y_net : std_logic_vector( 16-1 downto 0 );
   signal slice12_y_net : std_logic_vector( 15-1 downto 0 );
   signal constant5_op_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal reinterpret1_output_port_net : std_logic_vector( 16-1 downto 0 );
   signal mux1_y_net : std_logic_vector( 16-1 downto 0 );
@@ -8394,7 +8623,7 @@ begin
     addr_width => 5,
     c_address_width => 5,
     c_width => 10,
-    core_name0 => "n3_te0722_dist_mem_gen_v8_0_0",
+    core_name0 => "n3_te0722_dist_mem_gen_v8_0_1",
     latency => 1
   )
   port map (
@@ -8660,7 +8889,7 @@ begin
     addr_width => 3,
     c_address_width => 4,
     c_width => 8,
-    core_name0 => "n3_te0722_dist_mem_gen_v8_0_1",
+    core_name0 => "n3_te0722_dist_mem_gen_v8_0_2",
     latency => 1
   )
   port map (
@@ -8845,9 +9074,9 @@ architecture structural of n3_te0722_3lineto8way_x0 is
   signal counter1_op_net : std_logic_vector( 3-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal bitbasher_b2_net : std_logic_vector( 1-1 downto 0 );
   signal bitbasher_b0_net : std_logic_vector( 1-1 downto 0 );
   signal bitbasher_b1_net : std_logic_vector( 1-1 downto 0 );
+  signal bitbasher_b2_net : std_logic_vector( 1-1 downto 0 );
   signal rom_data_net : std_logic_vector( 8-1 downto 0 );
   signal bitbasher1_b3_net : std_logic_vector( 1-1 downto 0 );
   signal bitbasher1_b4_net : std_logic_vector( 1-1 downto 0 );
@@ -9068,7 +9297,7 @@ begin
     addr_width => 3,
     c_address_width => 4,
     c_width => 8,
-    core_name0 => "n3_te0722_dist_mem_gen_v8_0_1",
+    core_name0 => "n3_te0722_dist_mem_gen_v8_0_2",
     latency => 1
   )
   port map (
@@ -9961,19 +10190,6 @@ entity n3_te0722_demodulationssb1 is
   );
 end n3_te0722_demodulationssb1;
 architecture structural of n3_te0722_demodulationssb1 is 
-  signal convert_dout_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal lut_data_net : std_logic_vector( 18-1 downto 0 );
-  signal reinterpret_output_port_net : std_logic_vector( 16-1 downto 0 );
-  signal register_q_net_x0 : std_logic_vector( 18-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 18-1 downto 0 );
-  signal register_q_net : std_logic_vector( 18-1 downto 0 );
-  signal slice_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal adcvalue_q_net : std_logic_vector( 16-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal slice8_y_net : std_logic_vector( 4-1 downto 0 );
-  signal reinterpret_output_port_net_x0 : std_logic_vector( 16-1 downto 0 );
   signal counter_op_net : std_logic_vector( 6-1 downto 0 );
   signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net_x0 : std_logic_vector( 1-1 downto 0 );
@@ -10012,7 +10228,20 @@ architecture structural of n3_te0722_demodulationssb1 is
   signal slice_y_net : std_logic_vector( 8-1 downto 0 );
   signal concat2_y_net_x0 : std_logic_vector( 10-1 downto 0 );
   signal m1_y_net : std_logic_vector( 9-1 downto 0 );
+  signal convert_dout_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal delay_q_net : std_logic_vector( 1-1 downto 0 );
+  signal delay1_q_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal lut_data_net : std_logic_vector( 18-1 downto 0 );
   signal m2_y_net : std_logic_vector( 18-1 downto 0 );
+  signal reinterpret_output_port_net : std_logic_vector( 16-1 downto 0 );
+  signal register_q_net_x0 : std_logic_vector( 18-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 18-1 downto 0 );
+  signal register_q_net : std_logic_vector( 18-1 downto 0 );
+  signal slice_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal adcvalue_q_net : std_logic_vector( 16-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal slice8_y_net : std_logic_vector( 4-1 downto 0 );
+  signal reinterpret_output_port_net_x0 : std_logic_vector( 16-1 downto 0 );
 begin
   demodsignal <= register_q_net;
   demodsqstrobe <= slice_y_net_x0;
@@ -10608,15 +10837,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity n3_te0722_monostable1_x11 is
+entity n3_te0722_monostable1_x5 is
   port (
     in1 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out1 : out std_logic_vector( 1-1 downto 0 )
   );
-end n3_te0722_monostable1_x11;
-architecture structural of n3_te0722_monostable1_x11 is 
+end n3_te0722_monostable1_x5;
+architecture structural of n3_te0722_monostable1_x5 is 
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal relational8_op_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -10724,7 +10953,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity n3_te0722_subsystem1_x7 is
+entity n3_te0722_subsystem1_x0 is
   port (
     data : in std_logic_vector( 8-1 downto 0 );
     portid : in std_logic_vector( 8-1 downto 0 );
@@ -10734,8 +10963,8 @@ entity n3_te0722_subsystem1_x7 is
     latcheddata : out std_logic_vector( 8-1 downto 0 );
     strobe : out std_logic_vector( 1-1 downto 0 )
   );
-end n3_te0722_subsystem1_x7;
-architecture structural of n3_te0722_subsystem1_x7 is 
+end n3_te0722_subsystem1_x0;
+architecture structural of n3_te0722_subsystem1_x0 is 
   signal register1_q_net : std_logic_vector( 8-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal picoblaze6_out_port_net : std_logic_vector( 8-1 downto 0 );
@@ -11785,8 +12014,8 @@ architecture structural of n3_te0722_outputregister is
   signal register1_q_net_x3 : std_logic_vector( 8-1 downto 0 );
   signal slice1_y_net : std_logic_vector( 2-1 downto 0 );
   signal slice2_y_net : std_logic_vector( 1-1 downto 0 );
-  signal convert5_dout_net : std_logic_vector( 1-1 downto 0 );
   signal slice4_y_net : std_logic_vector( 1-1 downto 0 );
+  signal convert5_dout_net : std_logic_vector( 1-1 downto 0 );
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
 begin
   cmd2user <= register1_q_net_x5;
@@ -11807,7 +12036,7 @@ begin
   lcdcontrast <= slice17_y_net;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  subsystem1 : entity xil_defaultlib.n3_te0722_subsystem1_x7 
+  subsystem1 : entity xil_defaultlib.n3_te0722_subsystem1_x0 
   port map (
     data => picoblaze6_out_port_net,
     portid => picoblaze6_port_id_net,
@@ -12273,7 +12502,7 @@ begin
     ce_1 => ce_net,
     out1 => logical_y_net_x1
   );
-  monostable1_x0 : entity xil_defaultlib.n3_te0722_monostable1_x11 
+  monostable1_x0 : entity xil_defaultlib.n3_te0722_monostable1_x5 
   port map (
     in1 => relational8_op_net,
     clk_1 => clk_net,
@@ -16350,15 +16579,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity n3_te0722_monostable1_x5 is
+entity n3_te0722_monostable1_x3 is
   port (
     in1 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out1 : out std_logic_vector( 1-1 downto 0 )
   );
-end n3_te0722_monostable1_x5;
-architecture structural of n3_te0722_monostable1_x5 is 
+end n3_te0722_monostable1_x3;
+architecture structural of n3_te0722_monostable1_x3 is 
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal register2_q_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -16466,7 +16695,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity n3_te0722_subsystem1_x0 is
+entity n3_te0722_subsystem1_x2 is
   port (
     sdoa : in std_logic_vector( 1-1 downto 0 );
     sck : in std_logic_vector( 1-1 downto 0 );
@@ -16475,8 +16704,8 @@ entity n3_te0722_subsystem1_x0 is
     ce_1 : in std_logic;
     adcvaluea : out std_logic_vector( 16-1 downto 0 )
   );
-end n3_te0722_subsystem1_x0;
-architecture structural of n3_te0722_subsystem1_x0 is 
+end n3_te0722_subsystem1_x2;
+architecture structural of n3_te0722_subsystem1_x2 is 
   signal reinterpret_output_port_net : std_logic_vector( 16-1 downto 0 );
   signal std_bt_net : std_logic_vector( 1-1 downto 0 );
   signal convert1_dout_net : std_logic_vector( 1-1 downto 0 );
@@ -16497,7 +16726,7 @@ begin
   register2_q_net <= conv;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  monostable1_x0 : entity xil_defaultlib.n3_te0722_monostable1_x5 
+  monostable1_x0 : entity xil_defaultlib.n3_te0722_monostable1_x3 
   port map (
     in1 => register2_q_net,
     clk_1 => clk_net,
@@ -16612,7 +16841,7 @@ begin
     ce_1 => ce_net,
     out1 => logical_y_net
   );
-  subsystem1 : entity xil_defaultlib.n3_te0722_subsystem1_x0 
+  subsystem1 : entity xil_defaultlib.n3_te0722_subsystem1_x2 
   port map (
     sdoa => std_bt_net,
     sck => convert1_dout_net,
@@ -16820,15 +17049,6 @@ entity n3_te0722_subsystem2_x1 is
   );
 end n3_te0722_subsystem2_x1;
 architecture structural of n3_te0722_subsystem2_x1 is 
-  signal constant1_op_net : std_logic_vector( 7-1 downto 0 );
-  signal constant2_op_net : std_logic_vector( 16-1 downto 0 );
-  signal logical_y_net_x1 : std_logic_vector( 1-1 downto 0 );
-  signal slice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal convert3_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal counter1_op_net : std_logic_vector( 7-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
-  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
   signal delay_q_net : std_logic_vector( 16-1 downto 0 );
   signal adcvalue_q_net : std_logic_vector( 16-1 downto 0 );
   signal mux1_y_net : std_logic_vector( 16-1 downto 0 );
@@ -16847,6 +17067,15 @@ architecture structural of n3_te0722_subsystem2_x1 is
   signal convert1_dout_net : std_logic_vector( 1-1 downto 0 );
   signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
   signal constant_op_net : std_logic_vector( 7-1 downto 0 );
+  signal constant1_op_net : std_logic_vector( 7-1 downto 0 );
+  signal constant2_op_net : std_logic_vector( 16-1 downto 0 );
+  signal logical_y_net_x1 : std_logic_vector( 1-1 downto 0 );
+  signal slice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal convert3_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal counter1_op_net : std_logic_vector( 7-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational_op_net : std_logic_vector( 1-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   archive <= delay_q_net;
   cleanedup <= adcvalue_q_net;
@@ -17164,15 +17393,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity n3_te0722_monostable1_x4 is
+entity n3_te0722_monostable1_x6 is
   port (
     in1 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out1 : out std_logic_vector( 1-1 downto 0 )
   );
-end n3_te0722_monostable1_x4;
-architecture structural of n3_te0722_monostable1_x4 is 
+end n3_te0722_monostable1_x6;
+architecture structural of n3_te0722_monostable1_x6 is 
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal convert1_dout_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -17222,15 +17451,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity n3_te0722_monostable1_x3 is
+entity n3_te0722_monostable1_x4 is
   port (
     in1 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out1 : out std_logic_vector( 1-1 downto 0 )
   );
-end n3_te0722_monostable1_x3;
-architecture structural of n3_te0722_monostable1_x3 is 
+end n3_te0722_monostable1_x4;
+architecture structural of n3_te0722_monostable1_x4 is 
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -17309,7 +17538,7 @@ begin
   slice3_y_net <= square128khz;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  monostable1_x0 : entity xil_defaultlib.n3_te0722_monostable1_x3 
+  monostable1_x0 : entity xil_defaultlib.n3_te0722_monostable1_x4 
   port map (
     in1 => slice3_y_net,
     clk_1 => clk_net,
@@ -17419,7 +17648,7 @@ architecture structural of n3_te0722_subsystem4_x1 is
   signal slice2_y_net : std_logic_vector( 1-1 downto 0 );
   signal convert1_dout_net : std_logic_vector( 1-1 downto 0 );
   signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal reinterpret_output_port_net : std_logic_vector( 16-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 16-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
@@ -17428,17 +17657,17 @@ architecture structural of n3_te0722_subsystem4_x1 is
   signal logical_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
   signal relational_op_net : std_logic_vector( 1-1 downto 0 );
-  signal concat_y_net : std_logic_vector( 16-1 downto 0 );
+  signal concat_y_net_x0 : std_logic_vector( 16-1 downto 0 );
   signal slice_y_net : std_logic_vector( 15-1 downto 0 );
   signal mux_y_net : std_logic_vector( 16-1 downto 0 );
   signal register_q_net : std_logic_vector( 16-1 downto 0 );
-  signal reinterpret_output_port_net_x0 : std_logic_vector( 16-1 downto 0 );
+  signal reinterpret_output_port_net : std_logic_vector( 16-1 downto 0 );
   signal register1_q_net : std_logic_vector( 16-1 downto 0 );
 begin
   pcmout <= slice2_y_net;
   x128khz <= convert1_dout_net;
   sfs <= relational1_op_net;
-  reinterpret_output_port_net <= audioin;
+  concat_y_net <= audioin;
   slice3_y_net <= square128khz;
   clk_net <= clk_1;
   ce_net <= ce_1;
@@ -17449,7 +17678,7 @@ begin
     ce_1 => ce_net,
     out1 => logical_y_net
   );
-  monostable1_x0 : entity xil_defaultlib.n3_te0722_monostable1_x4 
+  monostable1_x0 : entity xil_defaultlib.n3_te0722_monostable1_x6 
   port map (
     in1 => convert1_dout_net,
     clk_1 => clk_net,
@@ -17472,7 +17701,7 @@ begin
     clr => '0',
     in0 => slice_y_net,
     in1 => slice2_y_net,
-    y => concat_y_net
+    y => concat_y_net_x0
   );
   convert1 : entity xil_defaultlib.n3_te0722_xlconvert 
   generic map (
@@ -17522,7 +17751,7 @@ begin
     ce => '0',
     clr => '0',
     sel => logical_y_net,
-    d0 => concat_y_net,
+    d0 => concat_y_net_x0,
     d1 => register_q_net,
     y => mux_y_net
   );
@@ -17533,7 +17762,7 @@ begin
   )
   port map (
     rst => "0",
-    d => reinterpret_output_port_net_x0,
+    d => reinterpret_output_port_net,
     en => logical_y_net,
     clk => clk_net,
     ce => ce_net,
@@ -17552,13 +17781,13 @@ begin
     ce => ce_net,
     q => register1_q_net
   );
-  reinterpret : entity xil_defaultlib.sysgen_reinterpret_bcbbbe49b9 
+  reinterpret : entity xil_defaultlib.sysgen_reinterpret_e7e407517d 
   port map (
     clk => '0',
     ce => '0',
     clr => '0',
-    input_port => reinterpret_output_port_net,
-    output_port => reinterpret_output_port_net_x0
+    input_port => concat_y_net,
+    output_port => reinterpret_output_port_net
   );
   slice : entity xil_defaultlib.n3_te0722_xlslice 
   generic map (
@@ -18190,7 +18419,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity n3_te0722_subsystem1_x2 is
+entity n3_te0722_subsystem1_x3 is
   port (
     data : in std_logic_vector( 8-1 downto 0 );
     portid : in std_logic_vector( 8-1 downto 0 );
@@ -18200,8 +18429,8 @@ entity n3_te0722_subsystem1_x2 is
     latcheddata : out std_logic_vector( 8-1 downto 0 );
     memwrite : out std_logic_vector( 1-1 downto 0 )
   );
-end n3_te0722_subsystem1_x2;
-architecture structural of n3_te0722_subsystem1_x2 is 
+end n3_te0722_subsystem1_x3;
+architecture structural of n3_te0722_subsystem1_x3 is 
   signal register1_q_net : std_logic_vector( 8-1 downto 0 );
   signal logical_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal picoblaze1_out_port_net : std_logic_vector( 8-1 downto 0 );
@@ -18345,7 +18574,7 @@ begin
   register1 : entity xil_defaultlib.n3_te0722_xlregister 
   generic map (
     d_width => 8,
-    init_value => b"10001101"
+    init_value => b"10010101"
   )
   port map (
     rst => "0",
@@ -19707,6 +19936,11 @@ entity n3_te0722_outputregister_x0 is
   );
 end n3_te0722_outputregister_x0;
 architecture structural of n3_te0722_outputregister_x0 is 
+  signal portaddress6_op_net : std_logic_vector( 4-1 downto 0 );
+  signal portaddress7_op_net : std_logic_vector( 4-1 downto 0 );
+  signal portaddress8_op_net : std_logic_vector( 4-1 downto 0 );
+  signal slice7_y_net : std_logic_vector( 4-1 downto 0 );
+  signal relational9_op_net : std_logic_vector( 1-1 downto 0 );
   signal register1_q_net_x13 : std_logic_vector( 8-1 downto 0 );
   signal logical_y_net_x5 : std_logic_vector( 1-1 downto 0 );
   signal register1_q_net_x14 : std_logic_vector( 8-1 downto 0 );
@@ -19784,11 +20018,6 @@ architecture structural of n3_te0722_outputregister_x0 is
   signal portaddress3_op_net : std_logic_vector( 4-1 downto 0 );
   signal portaddress4_op_net : std_logic_vector( 4-1 downto 0 );
   signal portaddress5_op_net : std_logic_vector( 4-1 downto 0 );
-  signal portaddress6_op_net : std_logic_vector( 4-1 downto 0 );
-  signal portaddress7_op_net : std_logic_vector( 4-1 downto 0 );
-  signal portaddress8_op_net : std_logic_vector( 4-1 downto 0 );
-  signal slice7_y_net : std_logic_vector( 4-1 downto 0 );
-  signal relational9_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   picocmd <= register1_q_net_x13;
   newcmd <= logical_y_net_x5;
@@ -19838,7 +20067,7 @@ begin
     latcheddata => register1_q_net_x13,
     strobe => logical_y_net_x5
   );
-  subsystem1 : entity xil_defaultlib.n3_te0722_subsystem1_x2 
+  subsystem1 : entity xil_defaultlib.n3_te0722_subsystem1_x3 
   port map (
     data => picoblaze1_out_port_net,
     portid => picoblaze1_port_id_net,
@@ -20733,7 +20962,7 @@ architecture structural of n3_te0722_user_interface is
   signal slice_y_net_x0 : std_logic_vector( 4-1 downto 0 );
   signal slice18_y_net : std_logic_vector( 1-1 downto 0 );
   signal archiveram_doutb_net : std_logic_vector( 16-1 downto 0 );
-  signal adcvalue1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal couta2_q_net : std_logic_vector( 1-1 downto 0 );
   signal register1_q_net_x0 : std_logic_vector( 8-1 downto 0 );
   signal logical_y_net_x1 : std_logic_vector( 1-1 downto 0 );
   signal concat_y_net_x3 : std_logic_vector( 8-1 downto 0 );
@@ -20777,11 +21006,11 @@ architecture structural of n3_te0722_user_interface is
   signal logical_y_net_x7 : std_logic_vector( 1-1 downto 0 );
   signal concat_y_net_x1 : std_logic_vector( 8-1 downto 0 );
   signal logical2_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net_x6 : std_logic_vector( 1-1 downto 0 );
   signal assert4_dout_net : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net_x10 : std_logic_vector( 8-1 downto 0 );
   signal logical_y_net_x5 : std_logic_vector( 1-1 downto 0 );
   signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net_x6 : std_logic_vector( 1-1 downto 0 );
   signal register1_q_net_x3 : std_logic_vector( 8-1 downto 0 );
   signal picoblaze1_out_port_net : std_logic_vector( 8-1 downto 0 );
   signal picoblaze1_port_id_net : std_logic_vector( 8-1 downto 0 );
@@ -20836,7 +21065,7 @@ begin
   adcgain <= slice_y_net_x0;
   cal <= slice18_y_net;
   archiveram_doutb_net <= archiveddata;
-  adcvalue1_q_net <= rs232_rx;
+  couta2_q_net <= rs232_rx;
   register1_q_net_x0 <= cmdfromdsp;
   logical_y_net_x1 <= newcmdfromdsp;
   concat_y_net_x3 <= adcsignallevel;
@@ -21317,7 +21546,7 @@ begin
   );
   uart_rx : entity xil_defaultlib.uart_rx6 
   port map (
-    serial_in => adcvalue1_q_net(0),
+    serial_in => couta2_q_net(0),
     en_16_x_baud => logical_y_net_x0(0),
     buffer_read => logical_y_net_x6(0),
     buffer_reset => constant2_op_net,
@@ -21423,11 +21652,11 @@ architecture structural of n3_te0722_struct is
   signal touchup_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal register1_q_net_x0 : std_logic_vector( 16-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 16-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal register3_q_net : std_logic_vector( 16-1 downto 0 );
   signal convert1_dout_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net_x2 : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net_x1 : std_logic_vector( 1-1 downto 0 );
   signal relational_op_net : std_logic_vector( 1-1 downto 0 );
   signal register1_q_net_x1 : std_logic_vector( 8-1 downto 0 );
   signal concat3_y_net : std_logic_vector( 16-1 downto 0 );
@@ -21437,40 +21666,40 @@ architecture structural of n3_te0722_struct is
   signal constant6_op_net : std_logic_vector( 1-1 downto 0 );
   signal concat1_y_net : std_logic_vector( 12-1 downto 0 );
   signal fifo_full_net_x1 : std_logic;
-  signal register1_q_net_x5 : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net_x4 : std_logic_vector( 8-1 downto 0 );
   signal dual_port_ram1_doutb_net : std_logic_vector( 16-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net_x8 : std_logic_vector( 8-1 downto 0 );
   signal logical_y_net_x6 : std_logic_vector( 1-1 downto 0 );
   signal concat_y_net_x0 : std_logic_vector( 18-1 downto 0 );
-  signal logical_y_net_x4 : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net_x3 : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal concat4_y_net : std_logic_vector( 16-1 downto 0 );
   signal relational5_op_net : std_logic_vector( 1-1 downto 0 );
   signal fifo_full_net : std_logic;
   signal relational7_op_net : std_logic_vector( 1-1 downto 0 );
   signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal reinterpret_output_port_net_x1 : std_logic_vector( 16-1 downto 0 );
   signal reinterpret_output_port_net_x2 : std_logic_vector( 16-1 downto 0 );
+  signal reinterpret_output_port_net_x1 : std_logic_vector( 16-1 downto 0 );
   signal relational1_op_net_x2 : std_logic_vector( 1-1 downto 0 );
-  signal slice7_y_net : std_logic_vector( 8-1 downto 0 );
   signal logical_y_net_x11 : std_logic_vector( 1-1 downto 0 );
   signal concat_y_net : std_logic_vector( 14-1 downto 0 );
-  signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant_op_net : std_logic_vector( 1-1 downto 0 );
   signal delay_q_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal register1_q_net_x20 : std_logic_vector( 16-1 downto 0 );
+  signal register1_q_net_x14 : std_logic_vector( 16-1 downto 0 );
   signal register1_q_net_x12 : std_logic_vector( 8-1 downto 0 );
-  signal register1_q_net_x17 : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net_x18 : std_logic_vector( 8-1 downto 0 );
   signal concat4_y_net_x1 : std_logic_vector( 16-1 downto 0 );
-  signal register1_q_net_x19 : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net_x20 : std_logic_vector( 8-1 downto 0 );
   signal logical_y_net_x17 : std_logic_vector( 1-1 downto 0 );
   signal concat7_y_net : std_logic_vector( 16-1 downto 0 );
   signal logical_y_net_x18 : std_logic_vector( 1-1 downto 0 );
-  signal register_q_net : std_logic_vector( 18-1 downto 0 );
+  signal register_q_net_x0 : std_logic_vector( 18-1 downto 0 );
   signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
-  signal register1_q_net_x2 : std_logic_vector( 8-1 downto 0 );
-  signal logical_y_net_x3 : std_logic_vector( 1-1 downto 0 );
+  signal register1_q_net_x0 : std_logic_vector( 8-1 downto 0 );
+  signal logical_y_net_x2 : std_logic_vector( 1-1 downto 0 );
   signal reinterpret_output_port_net_x0 : std_logic_vector( 16-1 downto 0 );
   signal slice8_y_net_x0 : std_logic_vector( 4-1 downto 0 );
+  signal concat_y_net_x3 : std_logic_vector( 16-1 downto 0 );
   signal fifo_full_net_x0 : std_logic;
   signal dual_port_ram1_doutb_net_x1 : std_logic_vector( 16-1 downto 0 );
   signal convert2_dout_net : std_logic_vector( 1-1 downto 0 );
@@ -21478,14 +21707,14 @@ architecture structural of n3_te0722_struct is
   signal slice9_y_net_x1 : std_logic_vector( 8-1 downto 0 );
   signal slice12_y_net_x0 : std_logic_vector( 8-1 downto 0 );
   signal slice13_y_net : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net_x17 : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net_x16 : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net_x15 : std_logic_vector( 8-1 downto 0 );
-  signal register1_q_net_x14 : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net_x13 : std_logic_vector( 8-1 downto 0 );
   signal slice11_y_net : std_logic_vector( 1-1 downto 0 );
   signal fifo_full_net_x4 : std_logic;
   signal relational6_op_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net_x12 : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net_x10 : std_logic_vector( 1-1 downto 0 );
   signal adcvalue_q_net : std_logic_vector( 16-1 downto 0 );
   signal delay1_q_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal counter_op_net : std_logic_vector( 6-1 downto 0 );
@@ -21501,13 +21730,13 @@ architecture structural of n3_te0722_struct is
   signal fifo_full_net_x2 : std_logic;
   signal dual_port_ram1_doutb_net_x0 : std_logic_vector( 16-1 downto 0 );
   signal register1_q_net_x11 : std_logic_vector( 8-1 downto 0 );
-  signal register1_q_net_x6 : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net_x5 : std_logic_vector( 8-1 downto 0 );
   signal slice17_y_net : std_logic_vector( 6-1 downto 0 );
   signal logical_y_net_x7 : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net_x5 : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net_x4 : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net_x9 : std_logic_vector( 1-1 downto 0 );
   signal addsub_s_net : std_logic_vector( 16-1 downto 0 );
-  signal register1_q_net_x3 : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net_x2 : std_logic_vector( 8-1 downto 0 );
   signal fifo_full_net_x3 : std_logic;
   signal relational8_op_net : std_logic_vector( 1-1 downto 0 );
   signal relational4_op_net : std_logic_vector( 1-1 downto 0 );
@@ -21517,24 +21746,27 @@ architecture structural of n3_te0722_struct is
   signal logical_y_net_x15 : std_logic_vector( 1-1 downto 0 );
   signal convert3_dout_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net_x13 : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net_x10 : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net_x12 : std_logic_vector( 1-1 downto 0 );
   signal convert3_dout_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal convert4_dout_net : std_logic_vector( 1-1 downto 0 );
   signal reinterpret_output_port_net : std_logic_vector( 16-1 downto 0 );
   signal delay_q_net : std_logic_vector( 16-1 downto 0 );
   signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net_x1 : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net_x5 : std_logic_vector( 1-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal register1_q_net_x8 : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net_x7 : std_logic_vector( 8-1 downto 0 );
   signal black_box_serial_out_net : std_logic;
   signal archiveram_doutb_net : std_logic_vector( 16-1 downto 0 );
-  signal adcvalue1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal couta2_q_net : std_logic_vector( 1-1 downto 0 );
   signal slice20_y_net : std_logic_vector( 1-1 downto 0 );
-  signal register1_q_net_x7 : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net_x6 : std_logic_vector( 8-1 downto 0 );
   signal concat3_y_net_x0 : std_logic_vector( 8-1 downto 0 );
   signal slice9_y_net : std_logic_vector( 1-1 downto 0 );
   signal notrips_q_net : std_logic_vector( 8-1 downto 0 );
   signal slice9_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal adcvalue1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal convert7_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter3_op_net : std_logic_vector( 1-1 downto 0 );
   signal archiveram_douta_net : std_logic_vector( 16-1 downto 0 );
   signal counter_op_net_x0 : std_logic_vector( 12-1 downto 0 );
   signal mux2_y_net : std_logic_vector( 16-1 downto 0 );
@@ -21560,6 +21792,7 @@ architecture structural of n3_te0722_struct is
   signal counter3_op_net : std_logic_vector( 2-1 downto 0 );
   signal counter4_op_net : std_logic_vector( 4-1 downto 0 );
   signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal register_q_net : std_logic_vector( 1-1 downto 0 );
   signal slice6_y_net : std_logic_vector( 2-1 downto 0 );
   signal reinterpret1_output_port_net : std_logic_vector( 16-1 downto 0 );
 begin
@@ -21614,7 +21847,7 @@ begin
     ce_1 => ce_net,
     sck => delay4_q_net,
     conv => delay3_q_net,
-    adc_data_a => register1_q_net_x0,
+    adc_data_a => register1_q_net,
     data_ready => delay1_q_net,
     adc_data_b => register3_q_net
   );
@@ -21623,7 +21856,7 @@ begin
     audiovolume => register1_q_net_x1,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    trig512 => logical_y_net_x2,
+    trig512 => logical_y_net_x1,
     dim => relational_op_net,
     clk1mhz => relational1_op_net_x0
   );
@@ -21633,10 +21866,10 @@ begin
     rts => constant6_op_net,
     address => concat1_y_net,
     bt2userfifofull => fifo_full_net_x1,
-    btcmd => register1_q_net_x5,
+    btcmd => register1_q_net_x4,
     baudrate16 => logical_y_net_x6,
     instruction => concat_y_net_x0,
-    newbtcmd => logical_y_net_x4,
+    newbtcmd => logical_y_net_x3,
     ramdata => concat4_y_net,
     rstpico => relational5_op_net,
     writebt_ram => relational7_op_net,
@@ -21648,23 +21881,23 @@ begin
     serialtx_2btchip => black_box2_serial_out_net,
     rst_bt => slice1_y_net_x0,
     btramrdbk => dual_port_ram1_doutb_net,
-    btcmd2user => register1_q_net,
+    btcmd2user => register1_q_net_x8,
     newbtcmd2user => logical_y_net,
     user2btfifofull => fifo_full_net
   );
   bit_corrector : entity xil_defaultlib.n3_te0722_bit_corrector 
   port map (
-    in1 => register1_q_net_x0,
-    out1 => reinterpret_output_port_net_x1
+    in1 => register1_q_net,
+    out1 => reinterpret_output_port_net_x2
   );
   bit_corrector1 : entity xil_defaultlib.n3_te0722_bit_corrector1 
   port map (
     in1 => register3_q_net,
-    out1 => reinterpret_output_port_net_x2
+    out1 => reinterpret_output_port_net_x1
   );
   constantdetect : entity xil_defaultlib.n3_te0722_constantdetect 
   port map (
-    signal_x0 => slice7_y_net,
+    signal_x0 => std_bt_net,
     strobe => logical_y_net_x11,
     clk_1 => clk_net,
     ce_1 => ce_net,
@@ -21673,19 +21906,19 @@ begin
   dac_xapp154_1 : entity xil_defaultlib.n3_te0722_dac_xapp154_1 
   port map (
     dac_in => concat_y_net,
-    disable_audio => inverter2_op_net,
+    disable_audio => constant_op_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     dac_out => register1_q_net_x21
   );
   dsprocessor1 : entity xil_defaultlib.n3_te0722_dsprocessor1 
   port map (
-    filterredsignal => register_q_net,
+    filterredsignal => register_q_net_x0,
     addrram => concat1_y_net,
     dataram => concat_y_net_x0,
     writeram => relational3_op_net,
-    cmd => register1_q_net_x2,
-    newcmd => logical_y_net_x3,
+    cmd => register1_q_net_x0,
+    newcmd => logical_y_net_x2,
     rst => relational5_op_net,
     strobe => slice_y_net_x1,
     btauidioin => reinterpret_output_port_net_x0,
@@ -21698,30 +21931,31 @@ begin
     writedsp_ram => relational6_op_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    audioout => register1_q_net_x20,
+    audioout_x0 => register1_q_net_x14,
     amp => register1_q_net_x12,
-    cmdtouser => register1_q_net_x17,
+    cmdtouser => register1_q_net_x18,
     data2archive => concat4_y_net_x1,
-    phaseincrement_8bits => register1_q_net_x19,
+    phaseincrement_8bits => register1_q_net_x20,
     newcmdtouser => logical_y_net_x17,
     tx_phase => concat7_y_net,
     newvalue => logical_y_net_x18,
     agcvalue => slice8_y_net_x0,
+    audioout => concat_y_net_x3,
     dspramrdbk => dual_port_ram1_doutb_net_x1,
     starttonea => slice10_y_net,
     starttonealong => slice9_y_net_x1,
     starttoneb => slice12_y_net_x0,
     starttoneblong => slice13_y_net,
-    stoptonea => register1_q_net_x16,
-    stoptonealong => register1_q_net_x15,
-    stoptoneb => register1_q_net_x14,
+    stoptonea => register1_q_net_x17,
+    stoptonealong => register1_q_net_x16,
+    stoptoneb => register1_q_net_x15,
     stoptoneblong => register1_q_net_x13,
     user2dspfifofull => fifo_full_net_x4
   );
   delay16ms : entity xil_defaultlib.n3_te0722_delay16ms 
   port map (
     in1 => slice11_y_net,
-    pulse8khz => logical_y_net_x12,
+    pulse8khz => logical_y_net_x10,
     clk_1 => clk_net,
     ce_1 => ce_net,
     out1 => delay_q_net_x0
@@ -21737,10 +21971,10 @@ begin
     tx_high => slice11_y_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    demodsignal => register_q_net,
+    demodsignal => register_q_net_x0,
     demodsqstrobe => slice_y_net_x1,
     counter6khz => counter_op_net,
-    pulse8khz => logical_y_net_x12
+    pulse8khz => logical_y_net_x10
   );
   keypadinterface : entity xil_defaultlib.n3_te0722_keypadinterface 
   port map (
@@ -21751,19 +21985,19 @@ begin
     demodpeak => register2_q_net,
     instruction => concat_y_net_x0,
     kp2userfifofull => fifo_full_net_x2,
-    keypadcmd => register1_q_net_x6,
-    newkeypadcmd => logical_y_net_x5,
+    keypadcmd => register1_q_net_x5,
+    newkeypadcmd => logical_y_net_x4,
     ramdata => concat4_y_net,
     rstpico => relational5_op_net,
     starttonea => slice10_y_net,
     starttonealong => slice9_y_net_x1,
     starttoneb => slice12_y_net_x0,
     starttoneblong => slice13_y_net,
-    stoptonea => register1_q_net_x16,
-    stoptonealong => register1_q_net_x15,
-    stoptoneb => register1_q_net_x14,
+    stoptonea => register1_q_net_x17,
+    stoptonealong => register1_q_net_x16,
+    stoptoneb => register1_q_net_x15,
     stoptoneblong => register1_q_net_x13,
-    txtone => register1_q_net_x3,
+    txtone => register1_q_net_x2,
     writekp_ram => relational8_op_net,
     writeprogkeypadpico => relational4_op_net,
     clk_1 => clk_net,
@@ -21835,7 +22069,7 @@ begin
     in1 => convert3_dout_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    out1 => logical_y_net_x10
+    out1 => logical_y_net_x12
   );
   monostable4 : entity xil_defaultlib.n3_te0722_monostable4 
   port map (
@@ -21850,7 +22084,7 @@ begin
     carrierfreq => addsub_s_net,
     tx_enable => delay_q_net_x0,
     txphase => concat7_y_net,
-    phaseincrement => register1_q_net_x19,
+    phaseincrement => register1_q_net_x20,
     newphasevalue => logical_y_net_x18,
     clk_1 => clk_net,
     ce_1 => ce_net,
@@ -21885,11 +22119,11 @@ begin
     ce_1 => ce_net,
     archive => delay_q_net,
     cleanedup => adcvalue_q_net,
-    lorantrig => logical_y_net_x1
+    lorantrig => logical_y_net_x5
   );
   subsystem4 : entity xil_defaultlib.n3_te0722_subsystem4_x1 
   port map (
-    audioin => reinterpret_output_port_net,
+    audioin => concat_y_net_x3,
     square128khz => slice3_y_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
@@ -21900,12 +22134,12 @@ begin
   user_interface : entity xil_defaultlib.n3_te0722_user_interface 
   port map (
     archiveddata => archiveram_doutb_net,
-    rs232_rx => adcvalue1_q_net,
-    cmdfromdsp => register1_q_net_x17,
+    rs232_rx => couta2_q_net,
+    cmdfromdsp => register1_q_net_x18,
     newcmdfromdsp => logical_y_net_x17,
     adcsignallevel => concat_y_net_x1,
     btramrdbk => dual_port_ram1_doutb_net,
-    btcmd2user => register1_q_net,
+    btcmd2user => register1_q_net_x8,
     dspramrdbk => dual_port_ram1_doutb_net_x1,
     dummy => concat3_y_net_x0,
     kpramrdbk => dual_port_ram1_doutb_net_x0,
@@ -21921,28 +22155,28 @@ begin
     w_bram2 => relational3_op_net,
     addressb => concat1_y_net,
     instruction => concat_y_net_x0,
-    picocmd => register1_q_net_x2,
-    newcmd => logical_y_net_x3,
+    picocmd => register1_q_net_x0,
+    newcmd => logical_y_net_x2,
     enable_archive => convert3_dout_net,
-    select_source => register1_q_net_x8,
+    select_source => register1_q_net_x7,
     tx_high => slice11_y_net,
     rs232tx => black_box_serial_out_net,
     rstout => relational5_op_net,
-    txtone => register1_q_net_x3,
+    txtone => register1_q_net_x2,
     adcgain => slice_y_net_x0,
     cal => slice18_y_net,
     adcselect => slice20_y_net,
-    attenuator => register1_q_net_x7,
+    attenuator => register1_q_net_x6,
     audiovolume => register1_q_net_x1,
     bt2userfifofull => fifo_full_net_x1,
-    btcmd => register1_q_net_x5,
+    btcmd => register1_q_net_x4,
     baudrate16 => logical_y_net_x6,
     dsp2userfifofull => fifo_full_net_x0,
     kp2userfifofull => fifo_full_net_x2,
-    keypadcmd => register1_q_net_x6,
+    keypadcmd => register1_q_net_x5,
     loranblankselect => slice9_y_net,
-    newbtcmd => logical_y_net_x4,
-    newkeypadcmd => logical_y_net_x5,
+    newbtcmd => logical_y_net_x3,
+    newkeypadcmd => logical_y_net_x4,
     ramdata => concat4_y_net,
     rs232datapresent => uart_rx_buffer_data_present_net,
     setuartmux => slice9_y_net_x0,
@@ -21958,9 +22192,9 @@ begin
     init_value => b"0"
   )
   port map (
-    en => "1",
     rst => "0",
     d => rs232rx_net,
+    en => convert7_dout_net,
     clk => clk_net,
     ce => ce_net,
     q => adcvalue1_q_net
@@ -21971,9 +22205,9 @@ begin
     init_value => b"0"
   )
   port map (
-    en => "1",
     rst => "0",
     d => rs232_from_bt_net,
+    en => inverter3_op_net,
     clk => clk_net,
     ce => ce_net,
     q => adcvalue2_q_net
@@ -22045,6 +22279,13 @@ begin
     in2 => concat_y_net_x2,
     in3 => concat_y_net_x2,
     y => concat3_y_net_x0
+  );
+  constant_x0 : entity xil_defaultlib.sysgen_constant_4213f9e42a 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    op => constant_op_net
   );
   constant1 : entity xil_defaultlib.sysgen_constant_7a01d6c188 
   port map (
@@ -22118,7 +22359,7 @@ begin
   port map (
     clr => '0',
     en => "1",
-    din => logical_y_net_x2,
+    din => logical_y_net_x1,
     clk => clk_net,
     ce => ce_net,
     dout => convert1_dout_net_x0
@@ -22228,6 +22469,27 @@ begin
     ce => ce_net,
     dout => convert6_dout_net
   );
+  convert7 : entity xil_defaultlib.n3_te0722_xlconvert 
+  generic map (
+    bool_conversion => 1,
+    din_arith => 1,
+    din_bin_pt => 0,
+    din_width => 1,
+    dout_arith => 1,
+    dout_bin_pt => 0,
+    dout_width => 1,
+    latency => 0,
+    overflow => xlWrap,
+    quantization => xlTruncate
+  )
+  port map (
+    clr => '0',
+    en => "1",
+    din => slice9_y_net_x0,
+    clk => clk_net,
+    ce => ce_net,
+    dout => convert7_dout_net
+  );
   counter : entity xil_defaultlib.n3_te0722_xlcounter_free 
   generic map (
     core_name0 => "n3_te0722_c_counter_binary_v12_0_0",
@@ -22264,8 +22526,8 @@ begin
   )
   port map (
     clr => '0',
-    rst => logical_y_net_x10,
-    en => logical_y_net_x1,
+    rst => logical_y_net_x12,
+    en => logical_y_net_x5,
     clk => clk_net,
     ce => ce_net,
     op => counter2_op_net
@@ -22311,6 +22573,19 @@ begin
     ce => ce_net,
     q => couta1_q_net
   );
+  couta2 : entity xil_defaultlib.n3_te0722_xlregister 
+  generic map (
+    d_width => 1,
+    init_value => b"0"
+  )
+  port map (
+    rst => "0",
+    d => rs232rx_net,
+    en => inverter3_op_net,
+    clk => clk_net,
+    ce => ce_net,
+    q => couta2_q_net
+  );
   delay1 : entity xil_defaultlib.n3_te0722_xldelay 
   generic map (
     latency => 2,
@@ -22334,13 +22609,13 @@ begin
     ce => ce_net,
     op => inverter1_op_net
   );
-  inverter2 : entity xil_defaultlib.sysgen_inverter_f0db54e765 
+  inverter3 : entity xil_defaultlib.sysgen_inverter_f0db54e765 
   port map (
     clr => '0',
-    ip => relational1_op_net_x2,
+    ip => convert7_dout_net,
     clk => clk_net,
     ce => ce_net,
-    op => inverter2_op_net
+    op => inverter3_op_net
   );
   inverter4 : entity xil_defaultlib.sysgen_inverter_46fa804b43 
   port map (
@@ -22400,7 +22675,7 @@ begin
     clr => '0',
     sel => slice9_y_net_x0,
     d0(0) => black_box_serial_out_net,
-    d1 => adcvalue2_q_net,
+    d1 => register_q_net,
     clk => clk_net,
     ce => ce_net,
     y => mux_y_net_x0
@@ -22409,8 +22684,8 @@ begin
   port map (
     clr => '0',
     sel => slice20_y_net,
-    d0 => reinterpret_output_port_net_x1,
-    d1 => reinterpret_output_port_net_x2,
+    d0 => reinterpret_output_port_net_x2,
+    d1 => reinterpret_output_port_net_x1,
     clk => clk_net,
     ce => ce_net,
     y => mux1_y_net_x0
@@ -22457,17 +22732,30 @@ begin
   port map (
     rst => "0",
     d => counter2_op_net,
-    en => logical_y_net_x10,
+    en => logical_y_net_x12,
     clk => clk_net,
     ce => ce_net,
     q => notrips_q_net
+  );
+  register_x0 : entity xil_defaultlib.n3_te0722_xlregister 
+  generic map (
+    d_width => 1,
+    init_value => b"0"
+  )
+  port map (
+    rst => "0",
+    d => rs232_from_bt_net,
+    en => convert7_dout_net,
+    clk => clk_net,
+    ce => ce_net,
+    q => register_q_net
   );
   reinterpret : entity xil_defaultlib.sysgen_reinterpret_6b595eda9a 
   port map (
     clk => '0',
     ce => '0',
     clr => '0',
-    input_port => register1_q_net_x20,
+    input_port => register1_q_net_x14,
     output_port => reinterpret_output_port_net
   );
   reinterpret1 : entity xil_defaultlib.sysgen_reinterpret_bcbbbe49b9 
@@ -22550,19 +22838,8 @@ begin
     y_width => 2
   )
   port map (
-    x => register1_q_net_x8,
+    x => register1_q_net_x7,
     y => slice6_y_net
-  );
-  slice7 : entity xil_defaultlib.n3_te0722_xlslice 
-  generic map (
-    new_lsb => 0,
-    new_msb => 7,
-    x_width => 16,
-    y_width => 8
-  )
-  port map (
-    x => reinterpret_output_port_net_x0,
-    y => slice7_y_net
   );
   slice8 : entity xil_defaultlib.n3_te0722_xlslice 
   generic map (
@@ -22572,7 +22849,7 @@ begin
     y_width => 1
   )
   port map (
-    x => register1_q_net_x7,
+    x => register1_q_net_x6,
     y => slice8_y_net
   );
   touch1 : entity xil_defaultlib.n3_te0722_xlregister 
@@ -22709,7 +22986,7 @@ entity n3_te0722 is
 end n3_te0722;
 architecture structural of n3_te0722 is 
   attribute core_generation_info : string;
-  attribute core_generation_info of structural : architecture is "n3_te0722,sysgen_core_2014_4,{,compilation=IP Catalog,block_icon_display=Default,family=zynq,part=xc7z010,speed=-1,package=clg225,synthesis_language=vhdl,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,clock_loc=,testbench=0,interface_doc=1,ce_clr=0,clock_period=30,system_simulink_period=2.03451e-08,simulation_time=0.0001,accum=14,addsub=31,assert=10,bitbasher=9,blackbox2=8,cmult=1,concat=60,constant=144,convert=110,counter=23,delay=105,dpram=9,fifo=6,inv=60,logical=166,mult=3,mux=21,register=128,reinterpret=22,relational=100,slice=175,sprom=4,}";
+  attribute core_generation_info of structural : architecture is "n3_te0722,sysgen_core_2014_4,{,compilation=IP Catalog,block_icon_display=Default,family=zynq,part=xc7z010,speed=-1,package=clg225,synthesis_language=vhdl,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,clock_loc=,testbench=0,interface_doc=1,ce_clr=0,clock_period=30,system_simulink_period=2.03451e-08,simulation_time=0.0001,accum=14,addsub=31,assert=10,bitbasher=9,blackbox2=8,cmult=1,concat=61,constant=148,convert=112,counter=24,delay=104,dpram=9,fifo=6,inv=62,logical=169,mult=3,mux=21,register=131,reinterpret=22,relational=102,slice=174,sprom=5,}";
   signal clk_1_net : std_logic;
   signal ce_1_net : std_logic;
 begin

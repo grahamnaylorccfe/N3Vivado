@@ -11698,7 +11698,7 @@
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>GENtimestamp</spirit:name>
-						<spirit:value>Thu Jan 14 16:27:22 UTC 2016</spirit:value>
+						<spirit:value>Tue May 10 20:21:23 UTC 2016</spirit:value>
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>StaleAtRelink</spirit:name>
@@ -11724,7 +11724,7 @@
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>GENtimestamp</spirit:name>
-						<spirit:value>Thu Jan 14 16:28:00 UTC 2016</spirit:value>
+						<spirit:value>Tue May 10 20:22:08 UTC 2016</spirit:value>
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>StaleAtRelink</spirit:name>
@@ -11751,7 +11751,7 @@
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>GENtimestamp</spirit:name>
-						<spirit:value>Thu Jan 14 16:28:00 UTC 2016</spirit:value>
+						<spirit:value>Tue May 10 20:22:09 UTC 2016</spirit:value>
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>StaleAtRelink</spirit:name>
@@ -11798,7 +11798,7 @@
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>GENtimestamp</spirit:name>
-						<spirit:value>Thu Jan 14 16:28:02 UTC 2016</spirit:value>
+						<spirit:value>Tue May 10 20:22:10 UTC 2016</spirit:value>
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>StaleAtRelink</spirit:name>
@@ -11850,7 +11850,7 @@
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>GENtimestamp</spirit:name>
-						<spirit:value>Thu Jan 14 16:28:13 UTC 2016</spirit:value>
+						<spirit:value>Tue May 10 20:22:10 UTC 2016</spirit:value>
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>StaleAtRelink</spirit:name>
@@ -30733,7 +30733,6 @@
 			<spirit:name>choices_274</spirit:name>
 			<spirit:enumeration spirit:text="&lt;Select>">&lt;Select></spirit:enumeration>
 			<spirit:enumeration spirit:text="Share reset pin">Share reset pin</spirit:enumeration>
-			<spirit:enumeration spirit:text="Separate reset pins">Separate reset pins</spirit:enumeration>
 		</spirit:choice>
 		<spirit:choice>
 			<spirit:name>choices_275</spirit:name>
@@ -36395,7 +36394,7 @@
 			<spirit:vendorExtensions>
 				<xilinx:parameterInfo>
 					<xilinx:enablement>
-						<xilinx:isEnabled>false</xilinx:isEnabled>
+						<xilinx:isEnabled>true</xilinx:isEnabled>
 					</xilinx:enablement>
 				</xilinx:parameterInfo>
 			</spirit:vendorExtensions>

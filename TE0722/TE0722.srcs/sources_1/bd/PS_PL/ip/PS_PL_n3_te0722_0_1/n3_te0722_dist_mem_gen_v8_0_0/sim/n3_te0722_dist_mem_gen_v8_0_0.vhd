@@ -58,10 +58,10 @@ USE dist_mem_gen_v8_0.dist_mem_gen_v8_0;
 
 ENTITY n3_te0722_dist_mem_gen_v8_0_0 IS
   PORT (
-    a : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+    a : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     clk : IN STD_LOGIC;
     qspo_ce : IN STD_LOGIC;
-    qspo : OUT STD_LOGIC_VECTOR(9 DOWNTO 0)
+    qspo : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
   );
 END n3_te0722_dist_mem_gen_v8_0_0;
 
@@ -105,9 +105,9 @@ ARCHITECTURE n3_te0722_dist_mem_gen_v8_0_0_arch OF n3_te0722_dist_mem_gen_v8_0_0
       C_PARSER_TYPE : INTEGER
     );
     PORT (
-      a : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
-      d : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-      dpra : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+      a : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+      d : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+      dpra : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       clk : IN STD_LOGIC;
       we : IN STD_LOGIC;
       i_ce : IN STD_LOGIC;
@@ -118,19 +118,19 @@ ARCHITECTURE n3_te0722_dist_mem_gen_v8_0_0_arch OF n3_te0722_dist_mem_gen_v8_0_0
       qdpo_rst : IN STD_LOGIC;
       qspo_srst : IN STD_LOGIC;
       qdpo_srst : IN STD_LOGIC;
-      spo : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
-      dpo : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
-      qspo : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
-      qdpo : OUT STD_LOGIC_VECTOR(9 DOWNTO 0)
+      spo : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+      dpo : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+      qspo : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+      qdpo : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
     );
   END COMPONENT dist_mem_gen_v8_0;
 BEGIN
   U0 : dist_mem_gen_v8_0
     GENERIC MAP (
       C_FAMILY => "zynq",
-      C_ADDR_WIDTH => 5,
+      C_ADDR_WIDTH => 4,
       C_DEFAULT_DATA => "0",
-      C_DEPTH => 32,
+      C_DEPTH => 16,
       C_HAS_CLK => 1,
       C_HAS_D => 0,
       C_HAS_DPO => 0,
@@ -157,13 +157,13 @@ BEGIN
       C_REG_A_D_INPUTS => 0,
       C_REG_DPRA_INPUT => 0,
       C_SYNC_ENABLE => 1,
-      C_WIDTH => 10,
+      C_WIDTH => 16,
       C_PARSER_TYPE => 1
     )
     PORT MAP (
       a => a,
-      d => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 10)),
-      dpra => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 5)),
+      d => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 16)),
+      dpra => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 4)),
       clk => clk,
       we => '0',
       i_ce => '1',

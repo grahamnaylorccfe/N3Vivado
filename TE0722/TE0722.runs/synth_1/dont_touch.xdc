@@ -138,6 +138,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==n3_te0722_dist_
 # IP: bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_dist_mem_gen_v8_0_1/n3_te0722_dist_mem_gen_v8_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==n3_te0722_dist_mem_gen_v8_0_1 || ORIG_REF_NAME==n3_te0722_dist_mem_gen_v8_0_1}]
 
+# IP: bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_dist_mem_gen_v8_0_2/n3_te0722_dist_mem_gen_v8_0_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==n3_te0722_dist_mem_gen_v8_0_2 || ORIG_REF_NAME==n3_te0722_dist_mem_gen_v8_0_2}]
+
 # IP: bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_fifo_generator_v12_0_0/n3_te0722_fifo_generator_v12_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==n3_te0722_fifo_generator_v12_0_0 || ORIG_REF_NAME==n3_te0722_fifo_generator_v12_0_0}]
 
@@ -216,6 +219,8 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_dist_mem_gen_v8_0_1/n3_te0722_dist_mem_gen_v8_0_1_ooc.xdc
 
+# XDC: bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_dist_mem_gen_v8_0_2/n3_te0722_dist_mem_gen_v8_0_2_ooc.xdc
+
 # XDC: bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_fifo_generator_v12_0_0/n3_te0722_fifo_generator_v12_0_0/n3_te0722_fifo_generator_v12_0_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==n3_te0722_fifo_generator_v12_0_0 || ORIG_REF_NAME==n3_te0722_fifo_generator_v12_0_0}] {/U0 }]/U0 ]]
 
@@ -227,10 +232,10 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_mult_gen_v12_0_2/n3_te0722_mult_gen_v12_0_2_ooc.xdc
 
-# XDC: ipshared/AssociationNicola/n3_te0722_v1_25/e185a55d/constrs/n3_te0722_clock.xdc
+# XDC: ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/constrs/n3_te0722_clock.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==PS_PL_n3_te0722_0_1 || ORIG_REF_NAME==PS_PL_n3_te0722_0_1}] {/U0 }]/U0 ]]
 
-# XDC: ipshared/AssociationNicola/n3_te0722_v1_25/e185a55d/constrs/n3_te0722.xdc
+# XDC: ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/constrs/n3_te0722.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==PS_PL_n3_te0722_0_1 || ORIG_REF_NAME==PS_PL_n3_te0722_0_1}] {/U0 }]/U0 ]]
 
 # XDC: bd/PS_PL/ip/PS_PL_clk_wiz_0_1/PS_PL_clk_wiz_0_1_board.xdc

@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date             : Sat Apr  9 18:02:20 2016
-| Host             : graham-Latitude-E5500 running 64-bit unknown
+| Date             : Wed May 25 21:59:00 2016
+| Host             : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
 | Command          : report_power -file PS_PL_wrapper_power_routed.rpt -pb PS_PL_wrapper_power_summary_routed.pb
 | Design           : PS_PL_wrapper
 | Device           : xc7z010clg225-1
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.916 |
-| Dynamic (W)              | 0.804 |
+| Total On-Chip Power (W)  | 0.918 |
+| Dynamic (W)              | 0.805 |
 | Device Static (W)        | 0.112 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 74.4  |
@@ -49,23 +49,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.006 |        6 |       --- |             --- |
-| Slice Logic              |     0.008 |     6997 |       --- |             --- |
-|   LUT as Logic           |     0.006 |     1795 |     17600 |           10.19 |
+| Clocks                   |     0.005 |        6 |       --- |             --- |
+| Slice Logic              |     0.008 |     6996 |       --- |             --- |
+|   LUT as Logic           |     0.006 |     1797 |     17600 |           10.21 |
 |   LUT as Distributed RAM |    <0.001 |      240 |      6000 |            4.00 |
 |   CARRY4                 |    <0.001 |      303 |      4400 |            6.88 |
-|   Register               |    <0.001 |     2708 |     35200 |            7.69 |
-|   F7/F8 Muxes            |    <0.001 |      163 |     17600 |            0.92 |
-|   LUT as Shift Register  |    <0.001 |       86 |      6000 |            1.43 |
-|   Others                 |     0.000 |     1125 |       --- |             --- |
-| Signals                  |     0.009 |     4179 |       --- |             --- |
+|   Register               |    <0.001 |     2704 |     35200 |            7.68 |
+|   F7/F8 Muxes            |    <0.001 |      162 |     17600 |            0.92 |
+|   LUT as Shift Register  |    <0.001 |       85 |      6000 |            1.41 |
+|   Others                 |     0.000 |     1130 |       --- |             --- |
+| Signals                  |     0.009 |     4176 |       --- |             --- |
 | Block RAM                |     0.011 |     12.5 |        60 |           20.83 |
 | MMCM                     |     0.129 |        1 |         2 |           50.00 |
 | DSPs                     |     0.001 |        3 |        80 |            3.75 |
-| I/O                      |     0.006 |       49 |        54 |           90.74 |
+| I/O                      |     0.007 |       49 |        54 |           90.74 |
 | PS7                      |     0.635 |        1 |       --- |             --- |
 | Static Power             |     0.112 |          |           |                 |
-| Total                    |     0.916 |          |           |                 |
+| Total                    |     0.918 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,7 +76,7 @@ Table of Contents
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.039 |       0.034 |      0.005 |
-| Vccaux    |       1.800 |     0.083 |       0.071 |      0.011 |
+| Vccaux    |       1.800 |     0.083 |       0.072 |      0.011 |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -154,7 +154,7 @@ Table of Contents
 +-------------------------------------------------------------------+-----------+
 | Name                                                              | Power (W) |
 +-------------------------------------------------------------------+-----------+
-| PS_PL_wrapper                                                     |     0.804 |
+| PS_PL_wrapper                                                     |     0.805 |
 |   PS_PL_i                                                         |     0.798 |
 |     clk_wiz_0                                                     |     0.129 |
 |       inst                                                        |     0.129 |
@@ -418,21 +418,17 @@ Table of Contents
 |                         no_pipelining.the_addsub                  |    <0.001 |
 |                           i_lut6.i_lut6_addsub                    |    <0.001 |
 |                             i_q.i_simple.qreg                     |    <0.001 |
-|             delay                                                 |    <0.001 |
-|               srl_delay.synth_reg_srl_inst                        |    <0.001 |
-|                 partial_one.last_srl17e                           |    <0.001 |
-|             delay1                                                |    <0.001 |
-|               srl_delay.synth_reg_srl_inst                        |    <0.001 |
-|                 partial_one.last_srl17e                           |    <0.001 |
+|             logical                                               |    <0.001 |
 |             monostable                                            |    <0.001 |
 |               delay1                                              |    <0.001 |
 |                 srl_delay.synth_reg_srl_inst                      |    <0.001 |
 |                   partial_one.last_srl17e                         |    <0.001 |
-|             register_x0                                           |    <0.001 |
-|               synth_reg_inst                                      |    <0.001 |
-|                 latency_gt_0.fd_array[1].reg_comp                 |    <0.001 |
-|             relational                                            |    <0.001 |
+|             monostable1_x0                                        |    <0.001 |
+|               delay1                                              |    <0.001 |
+|                 srl_delay.synth_reg_srl_inst                      |    <0.001 |
+|                   partial_one.last_srl17e                         |    <0.001 |
 |             relational1                                           |    <0.001 |
+|             relational2                                           |    <0.001 |
 |           counter                                                 |    <0.001 |
 |             comp0.core_instance0                                  |    <0.001 |
 |               U0                                                  |    <0.001 |
@@ -479,6 +475,9 @@ Table of Contents
 |                         i_lut6.i_lut6_addsub                      |    <0.001 |
 |                           i_q.i_simple.qreg                       |    <0.001 |
 |           couta1                                                  |    <0.001 |
+|             synth_reg_inst                                        |    <0.001 |
+|               latency_gt_0.fd_array[1].reg_comp                   |    <0.001 |
+|           couta2                                                  |    <0.001 |
 |             synth_reg_inst                                        |    <0.001 |
 |               latency_gt_0.fd_array[1].reg_comp                   |    <0.001 |
 |           dac_xapp154_1                                           |    <0.001 |
@@ -605,7 +604,7 @@ Table of Contents
 |               relational                                          |    <0.001 |
 |             ctrlsequencer                                         |    <0.001 |
 |               ctrlbitsequence                                     |    <0.001 |
-|                 comp0.core_instance0                              |    <0.001 |
+|                 comp1.core_instance1                              |    <0.001 |
 |                   U0                                              |    <0.001 |
 |                     synth_options.dist_mem_inst                   |    <0.001 |
 |                       gen_rom.rom_inst                            |    <0.001 |
@@ -663,14 +662,14 @@ Table of Contents
 |               trigdistrib                                         |    <0.001 |
 |                 x3lineto8way                                      |    <0.001 |
 |                   rom                                             |    <0.001 |
-|                     comp1.core_instance1                          |    <0.001 |
+|                     comp2.core_instance2                          |    <0.001 |
 |                       U0                                          |    <0.001 |
 |                         synth_options.dist_mem_inst               |    <0.001 |
 |                           gen_rom.rom_inst                        |    <0.001 |
 |               trigdistrib1                                        |    <0.001 |
 |                 x3lineto8way                                      |    <0.001 |
 |                   rom                                             |    <0.001 |
-|                     comp1.core_instance1                          |    <0.001 |
+|                     comp2.core_instance2                          |    <0.001 |
 |                       U0                                          |    <0.001 |
 |                         synth_options.dist_mem_inst               |    <0.001 |
 |                           gen_rom.rom_inst                        |    <0.001 |
@@ -945,6 +944,14 @@ Table of Contents
 |                   synth_reg_inst                                  |    <0.001 |
 |                     latency_gt_0.fd_array[1].reg_comp             |    <0.001 |
 |               subsystem26                                         |    <0.001 |
+|                 register1                                         |    <0.001 |
+|                   synth_reg_inst                                  |    <0.001 |
+|                     latency_gt_0.fd_array[1].reg_comp             |    <0.001 |
+|               subsystem27                                         |    <0.001 |
+|                 register1                                         |    <0.001 |
+|                   synth_reg_inst                                  |    <0.001 |
+|                     latency_gt_0.fd_array[1].reg_comp             |    <0.001 |
+|               subsystem28                                         |    <0.001 |
 |                 register1                                         |    <0.001 |
 |                   synth_reg_inst                                  |    <0.001 |
 |                     latency_gt_0.fd_array[1].reg_comp             |    <0.001 |
@@ -1504,6 +1511,9 @@ Table of Contents
 |           mux3                                                    |    <0.001 |
 |           mux4                                                    |    <0.001 |
 |           notrips                                                 |    <0.001 |
+|             synth_reg_inst                                        |    <0.001 |
+|               latency_gt_0.fd_array[1].reg_comp                   |    <0.001 |
+|           register_x0                                             |    <0.001 |
 |             synth_reg_inst                                        |    <0.001 |
 |               latency_gt_0.fd_array[1].reg_comp                   |    <0.001 |
 |           relational1                                             |    <0.001 |
