@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date             : Wed May 25 21:59:00 2016
-| Host             : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Date             : Sat Jul  2 18:02:01 2016
+| Host             : graham-Latitude-E5500 running 64-bit unknown
 | Command          : report_power -file PS_PL_wrapper_power_routed.rpt -pb PS_PL_wrapper_power_summary_routed.pb
 | Design           : PS_PL_wrapper
 | Device           : xc7z010clg225-1
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.918 |
+| Total On-Chip Power (W)  | 0.917 |
 | Dynamic (W)              | 0.805 |
 | Device Static (W)        | 0.112 |
 | Effective TJA (C/W)      | 11.5  |
@@ -50,22 +50,22 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.005 |        6 |       --- |             --- |
-| Slice Logic              |     0.008 |     6996 |       --- |             --- |
-|   LUT as Logic           |     0.006 |     1797 |     17600 |           10.21 |
+| Slice Logic              |     0.007 |     7065 |       --- |             --- |
+|   LUT as Logic           |     0.006 |     1828 |     17600 |           10.38 |
 |   LUT as Distributed RAM |    <0.001 |      240 |      6000 |            4.00 |
 |   CARRY4                 |    <0.001 |      303 |      4400 |            6.88 |
-|   Register               |    <0.001 |     2704 |     35200 |            7.68 |
-|   F7/F8 Muxes            |    <0.001 |      162 |     17600 |            0.92 |
-|   LUT as Shift Register  |    <0.001 |       85 |      6000 |            1.41 |
+|   Register               |    <0.001 |     2713 |     35200 |            7.70 |
+|   F7/F8 Muxes            |    <0.001 |      196 |     17600 |            1.11 |
+|   LUT as Shift Register  |    <0.001 |       86 |      6000 |            1.43 |
 |   Others                 |     0.000 |     1130 |       --- |             --- |
-| Signals                  |     0.009 |     4176 |       --- |             --- |
+| Signals                  |     0.008 |     4167 |       --- |             --- |
 | Block RAM                |     0.011 |     12.5 |        60 |           20.83 |
 | MMCM                     |     0.129 |        1 |         2 |           50.00 |
 | DSPs                     |     0.001 |        3 |        80 |            3.75 |
 | I/O                      |     0.007 |       49 |        54 |           90.74 |
 | PS7                      |     0.635 |        1 |       --- |             --- |
 | Static Power             |     0.112 |          |           |                 |
-| Total                    |     0.918 |          |           |                 |
+| Total                    |     0.917 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.039 |       0.034 |      0.005 |
+| Vccint    |       1.000 |     0.039 |       0.033 |      0.005 |
 | Vccaux    |       1.800 |     0.083 |       0.072 |      0.011 |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -158,9 +158,9 @@ Table of Contents
 |   PS_PL_i                                                         |     0.798 |
 |     clk_wiz_0                                                     |     0.129 |
 |       inst                                                        |     0.129 |
-|     n3_te0722_0                                                   |     0.034 |
-|       U0                                                          |     0.034 |
-|         n3_te0722_struct                                          |     0.034 |
+|     n3_te0722_0                                                   |     0.033 |
+|       U0                                                          |     0.033 |
+|         n3_te0722_struct                                          |     0.033 |
 |           adcread                                                 |    <0.001 |
 |             subsystem1                                            |    <0.001 |
 |               delay1                                              |    <0.001 |
@@ -512,7 +512,7 @@ Table of Contents
 |                     i_baseblox.i_baseblox_addsub                  |    <0.001 |
 |                       no_pipelining.the_addsub                    |    <0.001 |
 |                         i_lut6.i_lut6_addsub                      |    <0.001 |
-|             agcandfilter1                                         |     0.002 |
+|             agcandfilter1                                         |     0.003 |
 |               filter1                                             |     0.002 |
 |                 accumulator                                       |    <0.001 |
 |                 addsub                                            |    <0.001 |
@@ -614,7 +614,7 @@ Table of Contents
 |             delay1                                                |    <0.001 |
 |               srl_delay.synth_reg_srl_inst                        |    <0.001 |
 |                 partial_one.last_srl17e                           |    <0.001 |
-|             filterstreamintegration                               |     0.002 |
+|             filterstreamintegration                               |     0.001 |
 |               accumulator1                                        |    <0.001 |
 |               accumulator2                                        |    <0.001 |
 |               accumulator3                                        |    <0.001 |
@@ -1035,7 +1035,7 @@ Table of Contents
 |               t_state_lut                                         |    <0.001 |
 |               upper_reg_banks                                     |    <0.001 |
 |               use_zero_flag_lut                                   |    <0.001 |
-|           keypadinterface                                         |     0.005 |
+|           keypadinterface                                         |     0.004 |
 |             addsub                                                |    <0.001 |
 |               comp4.core_instance4                                |    <0.001 |
 |                 U0                                                |    <0.001 |
@@ -1155,7 +1155,7 @@ Table of Contents
 |                 register1                                         |    <0.001 |
 |                   synth_reg_inst                                  |    <0.001 |
 |                     latency_gt_0.fd_array[1].reg_comp             |    <0.001 |
-|             picoblaze6                                            |     0.002 |
+|             picoblaze6                                            |     0.001 |
 |               address_loop[0].output_data.pc_vector_mux_lut       |    <0.001 |
 |               address_loop[10].output_data.pc_vector_mux_lut      |    <0.001 |
 |               address_loop[2].output_data.pc_vector_mux_lut       |    <0.001 |

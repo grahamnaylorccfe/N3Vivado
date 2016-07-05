@@ -12,9 +12,9 @@ entity n3_te0722_monostable1_x10 is
   );
 end n3_te0722_monostable1_x10;
 architecture structural of n3_te0722_monostable1_x10 is 
+  signal clk_net : std_logic;
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal ce_net : std_logic;
-  signal clk_net : std_logic;
   signal convert1_dout_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
@@ -1883,8 +1883,8 @@ architecture structural of n3_te0722_subsystem1_x7 is
   signal picoblaze6_read_strobe_net : std_logic;
   signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal register_q_net : std_logic_vector( 1-1 downto 0 );
   signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal register_q_net : std_logic_vector( 1-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
   signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
@@ -7449,7 +7449,7 @@ end n3_te0722_filter1;
 architecture structural of n3_te0722_filter1 is 
   signal register_q_net : std_logic_vector( 18-1 downto 0 );
   signal logical_y_net_x2 : std_logic_vector( 1-1 downto 0 );
-  signal m3_y_net : std_logic_vector( 16-1 downto 0 );
+  signal reinterpret1_output_port_net : std_logic_vector( 16-1 downto 0 );
   signal slice11_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
@@ -7488,7 +7488,7 @@ architecture structural of n3_te0722_filter1 is
 begin
   output <= register_q_net;
   logical_y_net_x2 <= strobe;
-  m3_y_net <= input;
+  reinterpret1_output_port_net <= input;
   slice11_y_net <= tx_high;
   clk_net <= clk_1;
   ce_net <= ce_1;
@@ -7739,7 +7739,7 @@ begin
     rsta => "0",
     rstb => "0",
     addra => concat_y_net,
-    dina => m3_y_net,
+    dina => reinterpret1_output_port_net,
     wea => logical_y_net_x1,
     addrb => concat1_y_net,
     dinb => constant3_op_net,
@@ -7922,7 +7922,11 @@ architecture structural of n3_te0722_agcandfilter1 is
   signal slice11_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal m3_y_net : std_logic_vector( 16-1 downto 0 );
+  signal reinterpret1_output_port_net : std_logic_vector( 16-1 downto 0 );
+  signal concat1_y_net : std_logic_vector( 25-1 downto 0 );
+  signal slice17_y_net : std_logic_vector( 1-1 downto 0 );
+  signal reinterpret3_output_port_net : std_logic_vector( 16-1 downto 0 );
+  signal constant1_op_net : std_logic_vector( 4-1 downto 0 );
   signal concat2_y_net : std_logic_vector( 16-1 downto 0 );
   signal slice7_y_net : std_logic_vector( 10-1 downto 0 );
   signal constant10_op_net : std_logic_vector( 6-1 downto 0 );
@@ -7944,7 +7948,8 @@ architecture structural of n3_te0722_agcandfilter1 is
   signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal reinterpret1_output_port_net : std_logic_vector( 16-1 downto 0 );
+  signal m3_y_net : std_logic_vector( 25-1 downto 0 );
+  signal reinterpret2_output_port_net : std_logic_vector( 25-1 downto 0 );
   signal mux1_y_net : std_logic_vector( 16-1 downto 0 );
   signal slice13_y_net : std_logic_vector( 16-1 downto 0 );
   signal slice14_y_net : std_logic_vector( 16-1 downto 0 );
@@ -7969,11 +7974,25 @@ begin
   filter1 : entity xil_defaultlib.n3_te0722_filter1 
   port map (
     strobe => logical_y_net,
-    input => m3_y_net,
+    input => reinterpret1_output_port_net,
     tx_high => slice11_y_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     output => register_q_net
+  );
+  concat1 : entity xil_defaultlib.sysgen_concat_2a64446733 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    in0 => slice17_y_net,
+    in1 => slice17_y_net,
+    in2 => slice17_y_net,
+    in3 => slice17_y_net,
+    in4 => slice17_y_net,
+    in5 => reinterpret3_output_port_net,
+    in6 => constant1_op_net,
+    y => concat1_y_net
   );
   concat2 : entity xil_defaultlib.sysgen_concat_3f75b0a13d 
   port map (
@@ -8028,6 +8047,13 @@ begin
     in0 => slice12_y_net,
     in1 => constant5_op_net,
     y => concat7_y_net
+  );
+  constant1 : entity xil_defaultlib.sysgen_constant_f01db21bff 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    op => constant1_op_net
   );
   constant10 : entity xil_defaultlib.sysgen_constant_94d190a970 
   port map (
@@ -8109,12 +8135,12 @@ begin
     ce => ce_net,
     y => logical_y_net_x0
   );
-  m3 : entity xil_defaultlib.sysgen_mux_34e60fdd7a 
+  m3 : entity xil_defaultlib.sysgen_mux_e3ecefe927 
   port map (
     clr => '0',
     sel => logical_y_net_x0,
-    d0 => reinterpret_output_port_net,
-    d1 => reinterpret1_output_port_net,
+    d0 => concat1_y_net,
+    d1 => reinterpret2_output_port_net,
     clk => clk_net,
     ce => ce_net,
     y => m3_y_net
@@ -8151,6 +8177,22 @@ begin
     input_port => mux1_y_net,
     output_port => reinterpret1_output_port_net
   );
+  reinterpret2 : entity xil_defaultlib.sysgen_reinterpret_cd0272d30a 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    input_port => addsub_s_net,
+    output_port => reinterpret2_output_port_net
+  );
+  reinterpret3 : entity xil_defaultlib.sysgen_reinterpret_bcbbbe49b9 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    input_port => reinterpret_output_port_net,
+    output_port => reinterpret3_output_port_net
+  );
   slice1 : entity xil_defaultlib.n3_te0722_xlslice 
   generic map (
     new_lsb => 8,
@@ -8159,7 +8201,7 @@ begin
     y_width => 16
   )
   port map (
-    x => addsub_s_net,
+    x => m3_y_net,
     y => slice1_y_net
   );
   slice10 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -8170,7 +8212,7 @@ begin
     y_width => 13
   )
   port map (
-    x => addsub_s_net,
+    x => m3_y_net,
     y => slice10_y_net
   );
   slice11 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -8181,7 +8223,7 @@ begin
     y_width => 14
   )
   port map (
-    x => addsub_s_net,
+    x => m3_y_net,
     y => slice11_y_net_x0
   );
   slice12 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -8192,7 +8234,7 @@ begin
     y_width => 15
   )
   port map (
-    x => addsub_s_net,
+    x => m3_y_net,
     y => slice12_y_net
   );
   slice13 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -8203,7 +8245,7 @@ begin
     y_width => 16
   )
   port map (
-    x => addsub_s_net,
+    x => m3_y_net,
     y => slice13_y_net
   );
   slice14 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -8214,7 +8256,7 @@ begin
     y_width => 16
   )
   port map (
-    x => addsub_s_net,
+    x => m3_y_net,
     y => slice14_y_net
   );
   slice15 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -8225,7 +8267,7 @@ begin
     y_width => 16
   )
   port map (
-    x => addsub_s_net,
+    x => m3_y_net,
     y => slice15_y_net
   );
   slice16 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -8236,8 +8278,19 @@ begin
     y_width => 16
   )
   port map (
-    x => addsub_s_net,
+    x => m3_y_net,
     y => slice16_y_net
+  );
+  slice17 : entity xil_defaultlib.n3_te0722_xlslice 
+  generic map (
+    new_lsb => 15,
+    new_msb => 15,
+    x_width => 16,
+    y_width => 1
+  )
+  port map (
+    x => reinterpret3_output_port_net,
+    y => slice17_y_net
   );
   slice2 : entity xil_defaultlib.n3_te0722_xlslice 
   generic map (
@@ -8247,7 +8300,7 @@ begin
     y_width => 16
   )
   port map (
-    x => addsub_s_net,
+    x => m3_y_net,
     y => slice2_y_net
   );
   slice3 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -8258,7 +8311,7 @@ begin
     y_width => 16
   )
   port map (
-    x => addsub_s_net,
+    x => m3_y_net,
     y => slice3_y_net
   );
   slice4 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -8269,7 +8322,7 @@ begin
     y_width => 16
   )
   port map (
-    x => addsub_s_net,
+    x => m3_y_net,
     y => slice4_y_net
   );
   slice5 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -8280,7 +8333,7 @@ begin
     y_width => 16
   )
   port map (
-    x => addsub_s_net,
+    x => m3_y_net,
     y => slice5_y_net
   );
   slice6 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -8291,7 +8344,7 @@ begin
     y_width => 16
   )
   port map (
-    x => addsub_s_net,
+    x => m3_y_net,
     y => slice6_y_net
   );
   slice7 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -8302,7 +8355,7 @@ begin
     y_width => 10
   )
   port map (
-    x => addsub_s_net,
+    x => m3_y_net,
     y => slice7_y_net
   );
   slice8 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -8313,7 +8366,7 @@ begin
     y_width => 11
   )
   port map (
-    x => addsub_s_net,
+    x => m3_y_net,
     y => slice8_y_net
   );
   slice9 : entity xil_defaultlib.n3_te0722_xlslice 
@@ -8324,7 +8377,7 @@ begin
     y_width => 12
   )
   port map (
-    x => addsub_s_net,
+    x => m3_y_net,
     y => slice9_y_net
   );
 end structural;
@@ -10190,6 +10243,12 @@ entity n3_te0722_demodulationssb1 is
   );
 end n3_te0722_demodulationssb1;
 architecture structural of n3_te0722_demodulationssb1 is 
+  signal register_q_net : std_logic_vector( 18-1 downto 0 );
+  signal slice_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal adcvalue_q_net : std_logic_vector( 16-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal slice8_y_net : std_logic_vector( 4-1 downto 0 );
+  signal reinterpret_output_port_net_x0 : std_logic_vector( 16-1 downto 0 );
   signal counter_op_net : std_logic_vector( 6-1 downto 0 );
   signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net_x0 : std_logic_vector( 1-1 downto 0 );
@@ -10236,12 +10295,6 @@ architecture structural of n3_te0722_demodulationssb1 is
   signal reinterpret_output_port_net : std_logic_vector( 16-1 downto 0 );
   signal register_q_net_x0 : std_logic_vector( 18-1 downto 0 );
   signal register1_q_net : std_logic_vector( 18-1 downto 0 );
-  signal register_q_net : std_logic_vector( 18-1 downto 0 );
-  signal slice_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal adcvalue_q_net : std_logic_vector( 16-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal slice8_y_net : std_logic_vector( 4-1 downto 0 );
-  signal reinterpret_output_port_net_x0 : std_logic_vector( 16-1 downto 0 );
 begin
   demodsignal <= register_q_net;
   demodsqstrobe <= slice_y_net_x0;
@@ -18062,8 +18115,8 @@ entity n3_te0722_buffer1 is
   );
 end n3_te0722_buffer1;
 architecture structural of n3_te0722_buffer1 is 
-  signal concat_y_net : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net : std_logic_vector( 8-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 8-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal fifo_full_net : std_logic;
@@ -18182,8 +18235,8 @@ entity n3_te0722_buffer2 is
   );
 end n3_te0722_buffer2;
 architecture structural of n3_te0722_buffer2 is 
-  signal concat_y_net : std_logic_vector( 8-1 downto 0 );
   signal register1_q_net : std_logic_vector( 8-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 8-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal logical2_y_net : std_logic_vector( 1-1 downto 0 );
   signal fifo_full_net : std_logic;
@@ -19549,15 +19602,15 @@ entity n3_te0722_subsystem5_x0 is
   );
 end n3_te0722_subsystem5_x0;
 architecture structural of n3_te0722_subsystem5_x0 is 
-  signal register1_q_net : std_logic_vector( 8-1 downto 0 );
-  signal picoblaze1_out_port_net : std_logic_vector( 8-1 downto 0 );
-  signal picoblaze1_port_id_net : std_logic_vector( 8-1 downto 0 );
-  signal convert1_dout_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
   signal portaddress_op_net : std_logic_vector( 8-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 8-1 downto 0 );
+  signal picoblaze1_out_port_net : std_logic_vector( 8-1 downto 0 );
+  signal picoblaze1_port_id_net : std_logic_vector( 8-1 downto 0 );
+  signal convert1_dout_net : std_logic_vector( 1-1 downto 0 );
 begin
   latcheddata <= register1_q_net;
   picoblaze1_out_port_net <= data;
@@ -19936,11 +19989,6 @@ entity n3_te0722_outputregister_x0 is
   );
 end n3_te0722_outputregister_x0;
 architecture structural of n3_te0722_outputregister_x0 is 
-  signal portaddress6_op_net : std_logic_vector( 4-1 downto 0 );
-  signal portaddress7_op_net : std_logic_vector( 4-1 downto 0 );
-  signal portaddress8_op_net : std_logic_vector( 4-1 downto 0 );
-  signal slice7_y_net : std_logic_vector( 4-1 downto 0 );
-  signal relational9_op_net : std_logic_vector( 1-1 downto 0 );
   signal register1_q_net_x13 : std_logic_vector( 8-1 downto 0 );
   signal logical_y_net_x5 : std_logic_vector( 1-1 downto 0 );
   signal register1_q_net_x14 : std_logic_vector( 8-1 downto 0 );
@@ -20018,6 +20066,11 @@ architecture structural of n3_te0722_outputregister_x0 is
   signal portaddress3_op_net : std_logic_vector( 4-1 downto 0 );
   signal portaddress4_op_net : std_logic_vector( 4-1 downto 0 );
   signal portaddress5_op_net : std_logic_vector( 4-1 downto 0 );
+  signal portaddress6_op_net : std_logic_vector( 4-1 downto 0 );
+  signal portaddress7_op_net : std_logic_vector( 4-1 downto 0 );
+  signal portaddress8_op_net : std_logic_vector( 4-1 downto 0 );
+  signal slice7_y_net : std_logic_vector( 4-1 downto 0 );
+  signal relational9_op_net : std_logic_vector( 1-1 downto 0 );
 begin
   picocmd <= register1_q_net_x13;
   newcmd <= logical_y_net_x5;
@@ -20769,6 +20822,8 @@ entity n3_te0722_subsystem1_x1 is
   );
 end n3_te0722_subsystem1_x1;
 architecture structural of n3_te0722_subsystem1_x1 is 
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal assert4_dout_net : std_logic_vector( 8-1 downto 0 );
   signal assert6_dout_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
@@ -20779,8 +20834,6 @@ architecture structural of n3_te0722_subsystem1_x1 is
   signal slice1_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice2_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal assert4_dout_net : std_logic_vector( 8-1 downto 0 );
 begin
   read_buffer <= logical_y_net;
   assert4_dout_net <= portid;
@@ -20948,6 +21001,8 @@ entity n3_te0722_user_interface is
   );
 end n3_te0722_user_interface;
 architecture structural of n3_te0722_user_interface is 
+  signal uart_rx_buffer_half_full_net : std_logic;
+  signal uart_rx_buffer_full_net : std_logic;
   signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
   signal concat1_y_net : std_logic_vector( 12-1 downto 0 );
   signal concat_y_net_x4 : std_logic_vector( 18-1 downto 0 );
@@ -21048,8 +21103,6 @@ architecture structural of n3_te0722_user_interface is
   signal slice8_y_net : std_logic_vector( 8-1 downto 0 );
   signal picoblaze1_k_write_strobe_net : std_logic;
   signal picoblaze1_interrupt_ack_net : std_logic;
-  signal uart_rx_buffer_half_full_net : std_logic;
-  signal uart_rx_buffer_full_net : std_logic;
 begin
   w_bram2 <= relational3_op_net;
   addressb <= concat1_y_net;
@@ -21610,7 +21663,6 @@ entity n3_te0722_struct is
   );
 end n3_te0722_struct;
 architecture structural of n3_te0722_struct is 
-  signal uart_rx_buffer_data_present_net : std_logic;
   signal concat_y_net_x1 : std_logic_vector( 8-1 downto 0 );
   signal slice18_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice_y_net_x0 : std_logic_vector( 4-1 downto 0 );
@@ -21795,6 +21847,7 @@ architecture structural of n3_te0722_struct is
   signal register_q_net : std_logic_vector( 1-1 downto 0 );
   signal slice6_y_net : std_logic_vector( 2-1 downto 0 );
   signal reinterpret1_output_port_net : std_logic_vector( 16-1 downto 0 );
+  signal uart_rx_buffer_data_present_net : std_logic;
 begin
   rs232datapresent <= uart_rx_buffer_data_present_net;
   signallevel <= concat_y_net_x1;
@@ -22986,7 +23039,7 @@ entity n3_te0722 is
 end n3_te0722;
 architecture structural of n3_te0722 is 
   attribute core_generation_info : string;
-  attribute core_generation_info of structural : architecture is "n3_te0722,sysgen_core_2014_4,{,compilation=IP Catalog,block_icon_display=Default,family=zynq,part=xc7z010,speed=-1,package=clg225,synthesis_language=vhdl,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,clock_loc=,testbench=0,interface_doc=1,ce_clr=0,clock_period=30,system_simulink_period=2.03451e-08,simulation_time=0.0001,accum=14,addsub=31,assert=10,bitbasher=9,blackbox2=8,cmult=1,concat=61,constant=148,convert=112,counter=24,delay=104,dpram=9,fifo=6,inv=62,logical=169,mult=3,mux=21,register=131,reinterpret=22,relational=102,slice=174,sprom=5,}";
+  attribute core_generation_info of structural : architecture is "n3_te0722,sysgen_core_2014_4,{,compilation=IP Catalog,block_icon_display=Default,family=zynq,part=xc7z010,speed=-1,package=clg225,synthesis_language=vhdl,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,clock_loc=,testbench=0,interface_doc=1,ce_clr=0,clock_period=30,system_simulink_period=2.03451e-08,simulation_time=0.0001,accum=14,addsub=31,assert=10,bitbasher=9,blackbox2=8,cmult=1,concat=62,constant=149,convert=112,counter=24,delay=104,dpram=9,fifo=6,inv=62,logical=169,mult=3,mux=21,register=131,reinterpret=24,relational=102,slice=175,sprom=5,}";
   signal clk_1_net : std_logic;
   signal ce_1_net : std_logic;
 begin

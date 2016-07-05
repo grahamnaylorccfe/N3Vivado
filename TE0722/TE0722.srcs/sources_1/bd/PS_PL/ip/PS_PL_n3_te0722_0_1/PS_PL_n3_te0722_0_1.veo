@@ -46,8 +46,8 @@
 // 
 // DO NOT MODIFY THIS FILE.
 
-// IP VLNV: AssociationNicola:SysGen:n3_te0722:1.29
-// IP Revision: 95111180
+// IP VLNV: AssociationNicola:SysGen:n3_te0722:1.31
+// IP Revision: 98385436
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections

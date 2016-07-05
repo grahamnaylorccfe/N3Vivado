@@ -1203,7 +1203,7 @@
 				<spirit:parameters>
 					<spirit:parameter>
 						<spirit:name>customizationCRC</spirit:name>
-						<spirit:value>ad681d78</spirit:value>
+						<spirit:value>478a5496</spirit:value>
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>customizationCRCversion</spirit:name>
@@ -1211,7 +1211,7 @@
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>GENtimestamp</spirit:name>
-						<spirit:value>Wed May 25 19:05:28 UTC 2016</spirit:value>
+						<spirit:value>Sat Jul 02 16:29:52 UTC 2016</spirit:value>
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>StaleAtRelink</spirit:name>
@@ -1230,7 +1230,7 @@
 				<spirit:parameters>
 					<spirit:parameter>
 						<spirit:name>customizationCRC</spirit:name>
-						<spirit:value>ad681d78</spirit:value>
+						<spirit:value>478a5496</spirit:value>
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>customizationCRCversion</spirit:name>
@@ -1238,7 +1238,7 @@
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>GENtimestamp</spirit:name>
-						<spirit:value>Wed May 25 19:05:28 UTC 2016</spirit:value>
+						<spirit:value>Sat Jul 02 16:29:52 UTC 2016</spirit:value>
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>StaleAtRelink</spirit:name>
@@ -1257,7 +1257,7 @@
 				<spirit:parameters>
 					<spirit:parameter>
 						<spirit:name>customizationCRC</spirit:name>
-						<spirit:value>ad681d78</spirit:value>
+						<spirit:value>478a5496</spirit:value>
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>customizationCRCversion</spirit:name>
@@ -1265,7 +1265,7 @@
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>GENtimestamp</spirit:name>
-						<spirit:value>Wed May 25 19:05:28 UTC 2016</spirit:value>
+						<spirit:value>Sat Jul 02 16:29:52 UTC 2016</spirit:value>
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>StaleAtRelink</spirit:name>
@@ -1284,7 +1284,7 @@
 				<spirit:parameters>
 					<spirit:parameter>
 						<spirit:name>customizationCRC</spirit:name>
-						<spirit:value>de651f95</spirit:value>
+						<spirit:value>f3b9755f</spirit:value>
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>customizationCRCversion</spirit:name>
@@ -1292,7 +1292,7 @@
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>GENtimestamp</spirit:name>
-						<spirit:value>Wed May 25 19:05:28 UTC 2016</spirit:value>
+						<spirit:value>Sat Jul 02 16:29:52 UTC 2016</spirit:value>
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>StaleAtRelink</spirit:name>
@@ -1311,7 +1311,7 @@
 				<spirit:parameters>
 					<spirit:parameter>
 						<spirit:name>customizationCRC</spirit:name>
-						<spirit:value>de651f95</spirit:value>
+						<spirit:value>f3b9755f</spirit:value>
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>customizationCRCversion</spirit:name>
@@ -1319,7 +1319,7 @@
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>GENtimestamp</spirit:name>
-						<spirit:value>Wed May 25 19:05:28 UTC 2016</spirit:value>
+						<spirit:value>Sat Jul 02 16:29:53 UTC 2016</spirit:value>
 					</spirit:parameter>
 					<spirit:parameter>
 						<spirit:name>StaleAtRelink</spirit:name>
@@ -2584,11 +2584,11 @@
 				<spirit:userFileType>xci</spirit:userFileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/constrs/n3_te0722_clock.xdc</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/constrs/n3_te0722_clock.xdc</spirit:name>
 				<spirit:userFileType>xdc</spirit:userFileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/constrs/n3_te0722.xdc</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/constrs/n3_te0722.xdc</spirit:name>
 				<spirit:userFileType>xdc</spirit:userFileType>
 			</spirit:file>
 			<spirit:file>
@@ -2644,47 +2644,47 @@
 				<spirit:userFileType>coe</spirit:userFileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/hdl/conv_pkg.vhd</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/hdl/conv_pkg.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 				<spirit:logicalName>xil_defaultlib</spirit:logicalName>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/hdl/synth_reg.vhd</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/hdl/synth_reg.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 				<spirit:logicalName>xil_defaultlib</spirit:logicalName>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/hdl/synth_reg_w_init.vhd</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/hdl/synth_reg_w_init.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 				<spirit:logicalName>xil_defaultlib</spirit:logicalName>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/hdl/srl17e.vhd</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/hdl/srl17e.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 				<spirit:logicalName>xil_defaultlib</spirit:logicalName>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/hdl/synth_reg_reg.vhd</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/hdl/synth_reg_reg.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 				<spirit:logicalName>xil_defaultlib</spirit:logicalName>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/hdl/single_reg_w_init.vhd</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/hdl/single_reg_w_init.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 				<spirit:logicalName>xil_defaultlib</spirit:logicalName>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/hdl/xlclockdriver_rd.vhd</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/hdl/xlclockdriver_rd.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 				<spirit:logicalName>xil_defaultlib</spirit:logicalName>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/hdl/n3_te0722_entity_declarations.vhd</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/hdl/n3_te0722_entity_declarations.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 				<spirit:logicalName>xil_defaultlib</spirit:logicalName>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/hdl/n3_te0722.vhd</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/hdl/n3_te0722.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 				<spirit:logicalName>xil_defaultlib</spirit:logicalName>
 			</spirit:file>
@@ -2940,47 +2940,47 @@
 				<spirit:userFileType>coe</spirit:userFileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/hdl/conv_pkg.vhd</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/hdl/conv_pkg.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 				<spirit:logicalName>xil_defaultlib</spirit:logicalName>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/hdl/synth_reg.vhd</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/hdl/synth_reg.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 				<spirit:logicalName>xil_defaultlib</spirit:logicalName>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/hdl/synth_reg_w_init.vhd</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/hdl/synth_reg_w_init.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 				<spirit:logicalName>xil_defaultlib</spirit:logicalName>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/hdl/srl17e.vhd</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/hdl/srl17e.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 				<spirit:logicalName>xil_defaultlib</spirit:logicalName>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/hdl/synth_reg_reg.vhd</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/hdl/synth_reg_reg.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 				<spirit:logicalName>xil_defaultlib</spirit:logicalName>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/hdl/single_reg_w_init.vhd</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/hdl/single_reg_w_init.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 				<spirit:logicalName>xil_defaultlib</spirit:logicalName>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/hdl/xlclockdriver_rd.vhd</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/hdl/xlclockdriver_rd.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 				<spirit:logicalName>xil_defaultlib</spirit:logicalName>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/hdl/n3_te0722_entity_declarations.vhd</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/hdl/n3_te0722_entity_declarations.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 				<spirit:logicalName>xil_defaultlib</spirit:logicalName>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/hdl/n3_te0722.vhd</spirit:name>
+				<spirit:name>../../../../ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/hdl/n3_te0722.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
 				<spirit:logicalName>xil_defaultlib</spirit:logicalName>
 			</spirit:file>
@@ -3012,9 +3012,9 @@
 				<xilinx:taxonomy>/System_Generator_for_DSP</xilinx:taxonomy>
 			</xilinx:taxonomies>
 			<xilinx:displayName>n3_te0722</xilinx:displayName>
-			<xilinx:coreRevision>95111180</xilinx:coreRevision>
+			<xilinx:coreRevision>98385436</xilinx:coreRevision>
 			<xilinx:paymentRequired>false</xilinx:paymentRequired>
-			<xilinx:coreCreationDateTime>2016-05-25T18:49:05Z</xilinx:coreCreationDateTime>
+			<xilinx:coreCreationDateTime>2016-07-02T16:22:17Z</xilinx:coreCreationDateTime>
 		</xilinx:coreExtensions>
 		<xilinx:packagingInfo>
 			<xilinx:xilinxVersion>2014.4</xilinx:xilinxVersion>

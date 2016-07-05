@@ -13,7 +13,6 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../SysgenOutput/TE0722/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../trenz.biz_user_JTAG_Monitor_1.0"/>
   </Configuration>
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">

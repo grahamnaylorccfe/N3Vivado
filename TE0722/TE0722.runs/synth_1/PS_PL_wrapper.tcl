@@ -15,10 +15,7 @@ set_property webtalk.parent_dir /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3
 set_property parent.project_path /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_repo_paths {
-  /home/graham/Dropbox/SysgenOutput/TE0722/ip
-  /home/graham/Dropbox/N3workingG/TE0722Rebuild/trenz.biz_user_JTAG_Monitor_1.0
-} [current_project]
+set_property ip_repo_paths /home/graham/Dropbox/SysgenOutput/TE0722/ip [current_project]
 add_files /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_blk_mem_gen_v8_2_0_vivado.coe
 add_files /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_blk_mem_gen_v8_2_1_vivado.coe
 add_files /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_blk_mem_gen_v8_2_2_vivado.coe
@@ -70,8 +67,8 @@ set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N
 set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_mult_gen_v12_0_0/n3_te0722_mult_gen_v12_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_mult_gen_v12_0_1/n3_te0722_mult_gen_v12_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_mult_gen_v12_0_2/n3_te0722_mult_gen_v12_0_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/constrs/n3_te0722_clock.xdc]
-set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/ipshared/AssociationNicola/n3_te0722_v1_29/1a8f9962/constrs/n3_te0722.xdc]
+set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/constrs/n3_te0722_clock.xdc]
+set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/constrs/n3_te0722.xdc]
 set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_clk_wiz_0_1/PS_PL_clk_wiz_0_1_board.xdc]
 set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_clk_wiz_0_1/PS_PL_clk_wiz_0_1.xdc]
 set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_clk_wiz_0_1/PS_PL_clk_wiz_0_1_ooc.xdc]
