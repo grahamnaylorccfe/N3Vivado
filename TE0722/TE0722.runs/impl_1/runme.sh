@@ -7,9 +7,9 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/opt/Xilinx/SDK/2014.4/bin:/opt/Xilinx/Vivado/2014.4/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2014.4/bin
+  PATH=/opt/Xilinx/Vivado/2014.4/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2014.4/bin
 else
-  PATH=/opt/Xilinx/SDK/2014.4/bin:/opt/Xilinx/Vivado/2014.4/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2014.4/bin:$PATH
+  PATH=/opt/Xilinx/Vivado/2014.4/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2014.4/bin:$PATH
 fi
 export PATH
 
@@ -37,7 +37,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log PS_PL_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source PS_PL_wrapper.tcl -notrace
 
 

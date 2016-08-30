@@ -67,8 +67,8 @@ set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N
 set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_mult_gen_v12_0_0/n3_te0722_mult_gen_v12_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_mult_gen_v12_0_1/n3_te0722_mult_gen_v12_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_1/n3_te0722_mult_gen_v12_0_2/n3_te0722_mult_gen_v12_0_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/constrs/n3_te0722_clock.xdc]
-set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/ipshared/AssociationNicola/n3_te0722_v1_31/6ae78dae/constrs/n3_te0722.xdc]
+set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/ipshared/AssociationNicola/n3_te0722_v1_36/9512c179/constrs/n3_te0722_clock.xdc]
+set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/ipshared/AssociationNicola/n3_te0722_v1_36/9512c179/constrs/n3_te0722.xdc]
 set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_clk_wiz_0_1/PS_PL_clk_wiz_0_1_board.xdc]
 set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_clk_wiz_0_1/PS_PL_clk_wiz_0_1.xdc]
 set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_clk_wiz_0_1/PS_PL_clk_wiz_0_1_ooc.xdc]
@@ -76,8 +76,8 @@ set_property used_in_implementation false [get_files -all /home/graham/Dropbox/N
 set_property is_locked true [get_files /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/PS_PL.bd]
 
 read_verilog -library xil_defaultlib /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/sources_1/bd/PS_PL/hdl/PS_PL_wrapper.v
-read_xdc /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/constrs_1/imports/VivadoProject/n3_te0722a5_clock.xdc
-set_property used_in_implementation false [get_files /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/constrs_1/imports/VivadoProject/n3_te0722a5_clock.xdc]
+read_xdc /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/constrs_1/imports/VivadoProject/PrototypeConstraints.xdc
+set_property used_in_implementation false [get_files /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.srcs/constrs_1/imports/VivadoProject/PrototypeConstraints.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

@@ -29,4 +29,10 @@ Git push history:
 
 ..
 Production version (BOOT_prod2.bin) 2/6/2016
+Corrected for Bluetooth volume (AGC - BOOT_prod4.bin GV06)
+
+
+Switching between Production 1 build and the prototype build design
+i) For proto, set f target to 48.5169 in the clock wizard and 49.162 for the production build
+ii) Use PrototypeConstraints.xdc for proto and n3_te0722a5_clock.xdc for production (in ~\N3Vivado\TE0722\TE0722.srcs\constrs_1\imports\VivadoProject )
 

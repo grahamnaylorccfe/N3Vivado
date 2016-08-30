@@ -25,3 +25,8 @@ To create bin file:
 To program flash:
 /opt/Xilinx/SDK/2014.4/bin/zynq_flash -f BOOT.bin -flash_type qspi_single -verify
 
+Git push history:
+
+..
+Production version (BOOT_prod2.bin) 2/6/2016
+

@@ -46,8 +46,8 @@
 // 
 // DO NOT MODIFY THIS FILE.
 
-// IP VLNV: AssociationNicola:SysGen:n3_te0722:1.31
-// IP Revision: 98385436
+// IP VLNV: AssociationNicola:SysGen:n3_te0722:1.36
+// IP Revision: 99613104
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
@@ -56,6 +56,8 @@
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 PS_PL_n3_te0722_0_1 your_instance_name (
   .attenuatoron(attenuatoron),          // input wire [0 : 0] attenuatoron
+  .audiovolume(audiovolume),            // input wire [7 : 0] audiovolume
+  .defaultfreq(defaultfreq),            // input wire [1 : 0] defaultfreq
   .dummy(dummy),                        // input wire [0 : 0] dummy
   .ptt(ptt),                            // input wire [0 : 0] ptt
   .rs232_from_bt(rs232_from_bt),        // input wire [0 : 0] rs232_from_bt

@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date             : Sat Jul  2 18:02:01 2016
-| Host             : graham-Latitude-E5500 running 64-bit unknown
+| Date             : Mon Aug  1 19:38:22 2016
+| Host             : TheBeast running 64-bit Ubuntu 16.04 LTS
 | Command          : report_power -file PS_PL_wrapper_power_routed.rpt -pb PS_PL_wrapper_power_summary_routed.pb
 | Design           : PS_PL_wrapper
 | Device           : xc7z010clg225-1
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.917 |
-| Dynamic (W)              | 0.805 |
+| Total On-Chip Power (W)  | 0.889 |
+| Dynamic (W)              | 0.777 |
 | Device Static (W)        | 0.112 |
 | Effective TJA (C/W)      | 11.5  |
-| Max Ambient (C)          | 74.4  |
-| Junction Temperature (C) | 35.6  |
+| Max Ambient (C)          | 74.7  |
+| Junction Temperature (C) | 35.3  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -50,22 +50,22 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.005 |        6 |       --- |             --- |
-| Slice Logic              |     0.007 |     7065 |       --- |             --- |
-|   LUT as Logic           |     0.006 |     1828 |     17600 |           10.38 |
+| Slice Logic              |     0.007 |     7052 |       --- |             --- |
+|   LUT as Logic           |     0.005 |     1821 |     17600 |           10.34 |
 |   LUT as Distributed RAM |    <0.001 |      240 |      6000 |            4.00 |
 |   CARRY4                 |    <0.001 |      303 |      4400 |            6.88 |
-|   Register               |    <0.001 |     2713 |     35200 |            7.70 |
+|   Register               |    <0.001 |     2705 |     35200 |            7.68 |
 |   F7/F8 Muxes            |    <0.001 |      196 |     17600 |            1.11 |
 |   LUT as Shift Register  |    <0.001 |       86 |      6000 |            1.43 |
-|   Others                 |     0.000 |     1130 |       --- |             --- |
-| Signals                  |     0.008 |     4167 |       --- |             --- |
+|   Others                 |     0.000 |     1129 |       --- |             --- |
+| Signals                  |     0.008 |     4161 |       --- |             --- |
 | Block RAM                |     0.011 |     12.5 |        60 |           20.83 |
-| MMCM                     |     0.129 |        1 |         2 |           50.00 |
+| MMCM                     |     0.102 |        1 |         2 |           50.00 |
 | DSPs                     |     0.001 |        3 |        80 |            3.75 |
 | I/O                      |     0.007 |       49 |        54 |           90.74 |
 | PS7                      |     0.635 |        1 |       --- |             --- |
 | Static Power             |     0.112 |          |           |                 |
-| Total                    |     0.917 |          |           |                 |
+| Total                    |     0.889 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,8 +75,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.039 |       0.033 |      0.005 |
-| Vccaux    |       1.800 |     0.083 |       0.072 |      0.011 |
+| Vccint    |       1.000 |     0.038 |       0.033 |      0.005 |
+| Vccaux    |       1.800 |     0.068 |       0.057 |      0.011 |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -140,8 +140,8 @@ Table of Contents
 +----------------------------+----------------------------------------------------------+-----------------+
 | clk_fpga_0                 | PS_PL_i/processing_system7_0/inst/FCLK_CLK0              |            20.0 |
 | clk_fpga_0                 | PS_PL_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0] |            20.0 |
-| clk_out1_PS_PL_clk_wiz_0_1 | PS_PL_i/clk_wiz_0/inst/clk_out1_PS_PL_clk_wiz_0_1        |            20.3 |
-| clkfbout_PS_PL_clk_wiz_0_1 | PS_PL_i/clk_wiz_0/inst/clkfbout_PS_PL_clk_wiz_0_1        |            20.0 |
+| clk_out1_PS_PL_clk_wiz_0_1 | PS_PL_i/clk_wiz_0/inst/clk_out1_PS_PL_clk_wiz_0_1        |            20.6 |
+| clkfbout_PS_PL_clk_wiz_0_1 | PS_PL_i/clk_wiz_0/inst/clkfbout_PS_PL_clk_wiz_0_1        |            40.0 |
 +----------------------------+----------------------------------------------------------+-----------------+
 
 
@@ -154,10 +154,10 @@ Table of Contents
 +-------------------------------------------------------------------+-----------+
 | Name                                                              | Power (W) |
 +-------------------------------------------------------------------+-----------+
-| PS_PL_wrapper                                                     |     0.805 |
-|   PS_PL_i                                                         |     0.798 |
-|     clk_wiz_0                                                     |     0.129 |
-|       inst                                                        |     0.129 |
+| PS_PL_wrapper                                                     |     0.777 |
+|   PS_PL_i                                                         |     0.770 |
+|     clk_wiz_0                                                     |     0.102 |
+|       inst                                                        |     0.102 |
 |     n3_te0722_0                                                   |     0.033 |
 |       U0                                                          |     0.033 |
 |         n3_te0722_struct                                          |     0.033 |
@@ -308,7 +308,7 @@ Table of Contents
 |                 register1                                         |    <0.001 |
 |                   synth_reg_inst                                  |    <0.001 |
 |                     latency_gt_0.fd_array[1].reg_comp             |    <0.001 |
-|               subsystem12                                         |    <0.001 |
+|               subsystem12_x0                                      |    <0.001 |
 |                 register1                                         |    <0.001 |
 |                   synth_reg_inst                                  |    <0.001 |
 |                     latency_gt_0.fd_array[1].reg_comp             |    <0.001 |
@@ -903,7 +903,7 @@ Table of Contents
 |                 register1                                         |    <0.001 |
 |                   synth_reg_inst                                  |    <0.001 |
 |                     latency_gt_0.fd_array[1].reg_comp             |    <0.001 |
-|               subsystem12                                         |    <0.001 |
+|               subsystem12_x0                                      |    <0.001 |
 |                 register1                                         |    <0.001 |
 |                   synth_reg_inst                                  |    <0.001 |
 |                     latency_gt_0.fd_array[1].reg_comp             |    <0.001 |
@@ -1111,7 +1111,7 @@ Table of Contents
 |                 register1                                         |    <0.001 |
 |                   synth_reg_inst                                  |    <0.001 |
 |                     latency_gt_0.fd_array[1].reg_comp             |    <0.001 |
-|               subsystem12                                         |    <0.001 |
+|               subsystem12_x0                                      |    <0.001 |
 |                 register1                                         |    <0.001 |
 |                   synth_reg_inst                                  |    <0.001 |
 |                     latency_gt_0.fd_array[1].reg_comp             |    <0.001 |
@@ -1805,10 +1805,6 @@ Table of Contents
 |                   synth_reg_inst                                  |    <0.001 |
 |                     latency_gt_0.fd_array[1].reg_comp             |    <0.001 |
 |                 register3                                         |    <0.001 |
-|                   synth_reg_inst                                  |    <0.001 |
-|                     latency_gt_0.fd_array[1].reg_comp             |    <0.001 |
-|               subsystem12                                         |    <0.001 |
-|                 register1                                         |    <0.001 |
 |                   synth_reg_inst                                  |    <0.001 |
 |                     latency_gt_0.fd_array[1].reg_comp             |    <0.001 |
 |               subsystem13                                         |    <0.001 |

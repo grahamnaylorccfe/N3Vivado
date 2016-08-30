@@ -4,6 +4,6 @@ set_property SRC_FILE_INFO {cfile:/home/graham/Dropbox/N3workingG/TE0722Rebuild/
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_0 0.6
 set_property src_info {type:SCOPED_XDC file:2 line:56 export:INPUT save:INPUT read:READ} [current_design]
-set_input_jitter [get_clocks -of_objects [get_ports clk_in1]] 0.20000000000000001
+set_input_jitter [get_clocks -of_objects [get_ports clk_in1]] 0.2
 set_property src_info {type:XDC file:3 line:136 export:INPUT save:INPUT read:READ} [current_design]
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==n3_te0722_dist_mem_gen_v8_0_0 || ORIG_REF_NAME==n3_te0722_dist_mem_gen_v8_0_0}]
