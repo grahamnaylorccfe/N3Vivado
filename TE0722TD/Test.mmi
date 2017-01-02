@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MemInfo Version="1" Minor="0">
+  <Processor Endianness="Little" InstPath="dummy">
+  <AddressSpace Name="?????" Begin="0" End="4X2048-1">
+      <BusBlock>
+	<BitLane MemType="RAMB36" Placement="X1Y0">
+	  <DataWidth MSB="35" LSB="0"/>
+	  <AddressRange Begin="0" End="4X2048-1"/>
+	  <Parity ON="false" Numbits="0"/>
+	</BitLane>
+      </BusBlock>
+    </AddressSpace>
+  </Processor>
+<Config>
+  <Option Name="Part" Val="xc7z010clg225-1"/>
+</Config>
+</MemInfo>

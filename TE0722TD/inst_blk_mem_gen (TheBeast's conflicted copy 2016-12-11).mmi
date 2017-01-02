@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MemInfo Version="1" Minor="0">
+  <Processor Endianness="Little" InstPath="dummy">
+  <AddressSpace Name="inst_blk_mem_gen" Begin="0" End="49151">
+      <BusBlock>

@@ -1,0 +1,360 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Sat Oct  1 14:53:09 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3z_tonetest_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3z_tonetest_0_0 from AssociationNicola:SysGen:n3z_tonetest:1.07 (Rev. 106176882) to AssociationNicola:SysGen:n3z_tonetest:1.08 (Rev. 106228038)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Fri Sep 30 21:49:54 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3z_tonetest_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3z_tonetest_0_0 from AssociationNicola:SysGen:n3z_tonetest:1.06 (Rev. 105134871) to AssociationNicola:SysGen:n3z_tonetest:1.07 (Rev. 106176882)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Sun Sep 18 20:20:33 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3z_tonetest_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of PS_PL_n3z_tonetest_0_0 from AssociationNicola:SysGen:n3z_tonetest:1.05 (Rev. 105131788) to AssociationNicola:SysGen:n3z_tonetest:1.06 (Rev. 105134871)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'PS_PL_n3z_tonetest_0_0'.
+
+
+-Upgrade has added interface 'bram_addr' (xilinx.com:signal:data:1.0)
+
+-Upgrade has added interface 'bram_signal_data' (xilinx.com:signal:data:1.0)
+
+-Upgrade has added interface 'bram_w' (xilinx.com:signal:data:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'PS_PL_n3z_tonetest_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'n3z_tonetest_s_axi_araddr' width 5 differs from original width 6
+
+-Upgraded port 'n3z_tonetest_s_axi_awaddr' width 5 differs from original width 6
+
+-Upgrade has added port 'bram_addr'
+
+-Upgrade has added port 'bram_data'
+
+-Upgrade has added port 'bram_w'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Sun Sep 18 20:04:13 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3z_tonetest_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of PS_PL_n3z_tonetest_0_0 from AssociationNicola:SysGen:n3z_tonetest:1.04 (Rev. 104796281) to AssociationNicola:SysGen:n3z_tonetest:1.05 (Rev. 105131788)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'PS_PL_n3z_tonetest_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'n3z_tonetest_s_axi_araddr' width 6 differs from original width 5
+
+-Upgraded port 'n3z_tonetest_s_axi_awaddr' width 6 differs from original width 5
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Sun Sep 18 18:41:30 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_xlconstant_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_xlconstant_0_0 (xilinx.com:ip:xlconstant:1.1) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Sun Sep 18 18:41:30 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_rst_processing_system7_0_50M_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_rst_processing_system7_0_50M_0 (xilinx.com:ip:proc_sys_reset:5.0) from (Rev. 6) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Sun Sep 18 18:41:30 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_rst_clk_wiz_0_49M_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_rst_clk_wiz_0_49M_0 (xilinx.com:ip:proc_sys_reset:5.0) from (Rev. 6) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Sun Sep 18 18:41:30 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_processing_system7_0_axi_periph_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_processing_system7_0_axi_periph_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 5) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Sun Sep 18 18:41:29 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_processing_system7_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_processing_system7_0_0 (xilinx.com:ip:processing_system7:5.5) to (Rev. 3)
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot add parameter PCW_TRACE_INTERNAL_WIDTH with default value 32 : a parameter called PCW_TRACE_INTERNAL_WIDTH already exists in processing_system7_v5_5
+Added parameter PCW_USE_AXI_NONSECURE with value 0 (source 'default')
+Added parameter PCW_EN_PTP_ENET0 with value 1 (source 'default')
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Sun Sep 18 18:41:29 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3z_tonetest_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of PS_PL_n3z_tonetest_0_0 from AssociationNicola:SysGen:n3z_tonetest:1.02 (Rev. 104522968) to AssociationNicola:SysGen:n3z_tonetest:1.04 (Rev. 104796281)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'PS_PL_n3z_tonetest_0_0'.
+
+
+-Upgrade has removed interface 'data2arm'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'PS_PL_n3z_tonetest_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'data2arm_tdata'
+
+-Upgrade has removed port 'data2arm_tready'
+
+-Upgrade has removed port 'data2arm_tvalid'
+
+-Upgraded port 'n3z_tonetest_s_axi_araddr' width 5 differs from original width 4
+
+-Upgraded port 'n3z_tonetest_s_axi_awaddr' width 5 differs from original width 4
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Sun Sep 18 18:41:29 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_clk_wiz_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of PS_PL_clk_wiz_0_1 from xilinx.com:ip:clk_wiz:5.1 (Rev. 5) to xilinx.com:ip:clk_wiz:5.3 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'PS_PL_clk_wiz_0_1'. These changes may impact your design.
+
+
+-Upgraded port order differs after port 'resetn'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Sun Sep 18 18:41:29 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_axi_mem_intercon_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_axi_mem_intercon_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 5) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Sun Sep 18 18:41:29 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_axi_dma_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_axi_dma_0 (xilinx.com:ip:axi_dma:7.1) from (Rev. 4) to (Rev. 10)
+

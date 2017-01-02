@@ -1,0 +1,30 @@
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/user_interface/dual_port_ram/comp7.core_instance7/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/archiveram/comp0.core_instance0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/archiveram/comp0.core_instance0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/demodulationssb1/agcandfilter1/filter1/dual_port_ram/comp3.core_instance3/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/demodulationssb1/lut/comp0.core_instance0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/dsprocessor1/dual_port_ram/comp1.core_instance1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/dsprocessor1/dual_port_ram/comp1.core_instance1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/dsprocessor1/dual_port_ram1/comp2.core_instance2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/keypadinterface/dual_port_ram/comp4.core_instance4/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/keypadinterface/dual_port_ram/comp4.core_instance4/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/keypadinterface/dual_port_ram1/comp5.core_instance5/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/tonedetect/dual_port_ram/comp6.core_instance6/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/tonedetect/dual_port_ram/comp6.core_instance6/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/tonedetect/rom/comp1.core_instance1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/user_interface/dual_port_ram/comp7.core_instance7/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/user_interface/dual_port_ram/comp7.core_instance7/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+
+Rebuilt sysgen
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/dsprocessor1/dual_port_ram/comp1.core_instance1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/keypadinterface/dual_port_ram/comp4.core_instance4/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/tonedetect/dual_port_ram/comp6.core_instance6/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+PS_PL_i/n3z_tonetest_0/inst/n3z_tonetest_struct/user_interface/dual_port_ram/comp7.core_instance7/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+
+write_mmi comp.core_instance
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*microblaze*" }'.
+Warning: No Processor found
+MMI file (comp.core_instance.mmi) created successfully.
+To run Updatemem, use the command line below after write_bitstream:
+updatemem -force --meminfo comp.core_instance.mmi --data <path to data file>.elf/mem --bit <path to bit file>.bit --proc dummy --out <output bit file>.bit
+

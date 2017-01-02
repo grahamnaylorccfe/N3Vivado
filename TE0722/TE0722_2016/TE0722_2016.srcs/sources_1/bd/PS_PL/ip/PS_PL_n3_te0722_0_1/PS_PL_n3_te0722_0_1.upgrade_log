@@ -1,0 +1,830 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Sat Jul 16 22:25:41 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.35 (Rev. 99606674) to AssociationNicola:SysGen:n3_te0722:1.36 (Rev. 99613104)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Sat Jul 16 20:39:46 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of PS_PL_n3_te0722_0_1 (AssociationNicola:SysGen:n3_te0722:1.35) from (Rev. 99596585) to (Rev. 99606674)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'PS_PL_n3_te0722_0_1'. These changes may impact your design.
+
+
+-upgraded port order differs after port 'audiovolume'
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Sat Jul 16 18:57:04 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.34 (Rev. 99337719) to AssociationNicola:SysGen:n3_te0722:1.35 (Rev. 99596585)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading IP 'PS_PL_n3_te0722_0_1'.
+
+
+-upgrade has added interface 'audiovolume'
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'PS_PL_n3_te0722_0_1'. These changes may impact your design.
+
+
+-upgrade has added port 'audiovolume'
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Wed Jul 13 22:13:40 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.33 (Rev. 99182930) to AssociationNicola:SysGen:n3_te0722:1.34 (Rev. 99337719)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Tue Jul 12 07:48:53 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.32 (Rev. 99079875) to AssociationNicola:SysGen:n3_te0722:1.33 (Rev. 99182930)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Sun Jul 10 18:57:14 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 (AssociationNicola:SysGen:n3_te0722:1.32) from (Rev. 98643949) to (Rev. 99079875)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Tue Jul  5 17:54:55 2016
+| Host         : TheBeast running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.31 (Rev. 98385436) to AssociationNicola:SysGen:n3_te0722:1.32 (Rev. 98643949)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading IP 'PS_PL_n3_te0722_0_1'.
+
+
+-upgrade has added interface 'defaultfreq'
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'PS_PL_n3_te0722_0_1'. These changes may impact your design.
+
+
+-upgrade has added port 'defaultfreq'
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Sat Jul  2 17:29:21 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 (AssociationNicola:SysGen:n3_te0722:1.31) from (Rev. 98269431) to (Rev. 98385436)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Fri Jul  1 09:16:41 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 (AssociationNicola:SysGen:n3_te0722:1.31) from (Rev. 98020431) to (Rev. 98269431)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Tue Jun 28 12:36:09 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.30 (Rev. 97164769) to AssociationNicola:SysGen:n3_te0722:1.31 (Rev. 98020431)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Sat Jun 18 22:23:20 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.29 (Rev. 95111180) to AssociationNicola:SysGen:n3_te0722:1.30 (Rev. 97164769)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Wed May 25 20:05:07 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 (AssociationNicola:SysGen:n3_te0722:1.29) from (Rev. 95071500) to (Rev. 95111180)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Wed May 25 09:04:11 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 (AssociationNicola:SysGen:n3_te0722:1.29) from (Rev. 94946291) to (Rev. 95071500)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Mon May 23 22:07:42 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.28 (Rev. 94754361) to AssociationNicola:SysGen:n3_te0722:1.29 (Rev. 94946291)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Sat May 21 16:46:53 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.27 (Rev. 94688077) to AssociationNicola:SysGen:n3_te0722:1.28 (Rev. 94754361)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Fri May 20 22:26:09 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.26 (Rev. 94419547) to AssociationNicola:SysGen:n3_te0722:1.27 (Rev. 94688077)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Tue May 17 20:17:36 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 (AssociationNicola:SysGen:n3_te0722:1.26) from (Rev. 94242186) to (Rev. 94419547)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Sun May 15 18:32:33 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 (AssociationNicola:SysGen:n3_te0722:1.26) from (Rev. 94226746) to (Rev. 94242186)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Sun May 15 14:48:36 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 (AssociationNicola:SysGen:n3_te0722:1.26) from (Rev. 94062743) to (Rev. 94226746)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Fri May 13 16:39:57 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.25 (Rev. 93819216) to AssociationNicola:SysGen:n3_te0722:1.26 (Rev. 94062743)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Tue May 10 21:19:45 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 (AssociationNicola:SysGen:n3_te0722:1.25) from (Rev. 90924353) to (Rev. 93819216)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Thu Apr  7 09:55:06 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.24 (Rev. 89299520) to AssociationNicola:SysGen:n3_te0722:1.25 (Rev. 90924353)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Sat Mar 19 14:47:44 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.23 (Rev. 88813840) to AssociationNicola:SysGen:n3_te0722:1.24 (Rev. 89299520)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'PS_PL_n3_te0722_0_1'. These changes may impact your design.
+
+
+-upgraded port order differs after port 'attenuatoron'
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Sun Mar 13 22:37:20 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.22 (Rev. 88638722) to AssociationNicola:SysGen:n3_te0722:1.23 (Rev. 88813840)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading IP 'PS_PL_n3_te0722_0_1'.
+
+
+-upgrade has added interface 'dummy'
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'PS_PL_n3_te0722_0_1'. These changes may impact your design.
+
+
+-upgraded port 'attenuatoron' in differs from original direction out
+-upgrade has added port 'dummy'
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Fri Mar 11 22:40:45 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.21 (Rev. 88369731) to AssociationNicola:SysGen:n3_te0722:1.22 (Rev. 88638722)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Tue Mar  8 19:23:33 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.20 (Rev. 87813034) to AssociationNicola:SysGen:n3_te0722:1.21 (Rev. 88369731)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Wed Mar  2 08:41:28 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 (AssociationNicola:SysGen:n3_te0722:1.20) from (Rev. 87670762) to (Rev. 87813034)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Mon Feb 29 19:15:39 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.19 (Rev. 87642351) to AssociationNicola:SysGen:n3_te0722:1.20 (Rev. 87670762)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Mon Feb 29 09:22:04 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.18 (Rev. 86127846) to AssociationNicola:SysGen:n3_te0722:1.19 (Rev. 87642351)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Thu Feb 11 20:29:01 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.17 (Rev. 85574016) to AssociationNicola:SysGen:n3_te0722:1.18 (Rev. 86127846)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading IP 'PS_PL_n3_te0722_0_1'.
+
+
+-upgrade has added interface 'match_z'
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'PS_PL_n3_te0722_0_1'. These changes may impact your design.
+
+
+-upgrade has added port 'match_z'
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Fri Feb  5 10:53:39 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.16 (Rev. 85175329) to AssociationNicola:SysGen:n3_te0722:1.17 (Rev. 85574016)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Sun Jan 31 20:14:13 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.15 (Rev. 85093093) to AssociationNicola:SysGen:n3_te0722:1.16 (Rev. 85175329)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Sat Jan 30 21:17:28 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.14 (Rev. 84629421) to AssociationNicola:SysGen:n3_te0722:1.15 (Rev. 85093093)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'PS_PL_n3_te0722_0_1'. These changes may impact your design.
+
+
+-upgraded port order differs after port 'psuclk'
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Mon Jan 25 12:49:46 2016
+| Host         : graham-Latitude-E5500 running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3_te0722_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of PS_PL_n3_te0722_0_1 from AssociationNicola:SysGen:n3_te0722:1.12 (Rev. 84302604) to AssociationNicola:SysGen:n3_te0722:1.14 (Rev. 84629421)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading IP 'PS_PL_n3_te0722_0_1'.
+
+
+-upgrade has added interface 'psuclk'
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'PS_PL_n3_te0722_0_1'. These changes may impact your design.
+
+
+-upgrade has added port 'psuclk'
+
