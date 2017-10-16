@@ -1,2 +1,0 @@
-08:24:53 INFO  : Processing command line option -hwspec /home/graham/Dropbox/N3workingG/TE0722Rebuild/N3Vivado/TE0722/TE0722.sdk/PS_PL_wrapper.hdf.
-08:25:35 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450

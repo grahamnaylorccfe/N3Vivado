@@ -109,6 +109,38 @@ int Rx2Uart (XLlFifo *InstancePtr)
 
 D) To write 32 bit values ( Which Pico/3bits:Instruction/18bits :Addr/11bits) to pico BRAMs, use preprepared 32bit
 values seperated by (CR)LF - CR ignored, LF used as de-limiter.
+eg:
+
+/*
+Now send Pico instructions to Datafifo (not quite 2048 - keep a few spare locations in fifo!??)
+*/
+for ( i=0; i < 2040; i++) {
+
+         InstructionVal=0;
+            	do
+            	{
+            	while (!XUartPs_IsReceiveData(UART_BASEADDR));
+
+            			RecvChar = XUartPs_ReadReg(UART_BASEADDR,
+            						    XUARTPS_FIFO_OFFSET);
+
+            			if (('0' <= RecvChar) && ('9' >= RecvChar)) {
+            						/* Convert to digit decimal value */
+            						InstructionVal = InstructionVal*10+RecvChar - '0';
+            					}
+            	}
+            	while (RecvChar!=10); /*until line feed character*/
+/*
+            	xil_printf("You sent %d \n\r",InstructionVal);
+*/
+
+
+
+          if( XLlFifo_iTxVacancy(&DataFifo) ){
+				XLlFifo_TxPutWord(&DataFifo,InstructionVal);
+      }
+}
+
 
 E) To write characters to PL:
 
@@ -200,4 +232,6 @@ int RxReceive (XLlFifo *InstancePtr, u32* DestinationAddr)
 
 	return ReceiveLength;		/* Change to return a useful number*/
 }
+
+
 

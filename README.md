@@ -37,6 +37,20 @@ i) For proto, set f target to 48.5169 in the clock wizard and 49.162 for the pro
 ii) Use PrototypeConstraints.xdc for proto and n3_te0722a5_clock.xdc for production (in ~\N3Vivado\TE0722\TE0722.srcs\constrs_1\imports\VivadoProject )
 
 
+Streaming data from N3 DSP (PL)
+uint32 Values2Recover
+Bits 15:0 give number of samples to recover
+Bits 17:16 give the signal to recover stream of uint32
+i) 0 - Recover Filterred (demodulated) signal in lowest 18 bits
+ii) 1 - Recover Audio Out to Speaker in bits 15:0 and BTAudio from headset mic in bits 31:16
+iii) 2 Recover Amplitude and phase of Start tones
+iv) 3 Recover Amplitude and phase of Stop tones
+
+Write using something like
+n3z_tonetest_Values2Recover_write(InstancePtr, Values2Recover);
+
+
+
 A) To read from the N3 Uart, use eg:
 
 

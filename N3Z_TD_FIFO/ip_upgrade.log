@@ -1,0 +1,27 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Sat Oct 14 20:18:32 2017
+| Host         : F9316 running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PS_PL_n3z_tonetest_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of PS_PL_n3z_tonetest_0_0 (AssociationNicola:SysGen:n3z_tonetest:1.09) from (Rev. 131809680) to (Rev. 138917067)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'PS_PL_n3z_tonetest_0_0'. These changes may impact your design.
+
+
+-Upgraded port order differs after port 'keepon'
+
+

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<MemInfo Version="1" Minor="0">
-  <Processor Endianness="Little" InstPath="dummy">
-  <AddressSpace Name="axi_fifo_mm_s_0" Begin="0" End="20479">
-      <BusBlock>
